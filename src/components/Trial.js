@@ -1,113 +1,99 @@
 import styled from "@emotion/styled";
-import { TextField, Typography } from "@mui/material";
-import React, { useState } from "react";
-import { Paper } from "@mui/material";
-import { Button } from "@mui/material";
+import { Typography, Button } from "@mui/material";
+import React from "react";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import DownArrow from "./DownArrow";
 
 const Trial = () => {
   return (
-    <TrialContainer id="trial">
-      <TrialHeader>
-        <Typography
-          variant="h3"
-          gutterBottom
-          component="div"
-          textAlign="center"
-          letterSpacing="0.4rem"
-          fontWeight="bold"
-        >
-          Sign Up For Our 4 Week Trial Today!
-        </Typography>
-      </TrialHeader>
-      <TrialContent>
-        <div>
-          <Paper elevation={3} className="trial-info">
-            <Typography variant="h5">Includes:</Typography>
-            <ol>
-              <li>8 Classes</li>
-              <li>Private Assessment</li>
-            </ol>
-            <Typography variant="h5" fontWeight="bold" textAlign="center">
-              All for ONLY $39
-            </Typography>
-          </Paper>
-          <Paper elevation={3} className="more-info">
-            <Typography variant="subtitle2">
-              *For more info, use the form to send us a message and we'll reach
-              out to you!
-            </Typography>
-          </Paper>
-        </div>
-        <form
-          action="https://formsubmit.co/calvinkim1230@gmail.com"
-          method="POST"
-        >
-          <input type="hidden" name="_subject" value="New email woohoo" />
-          {/* <input type="hidden" name="_next" value="https://localhost3000/thanks" /> */}
-          <TextField
-            type="text"
-            name="name"
-            label="NAME"
-            className="input"
-            required
-          />
-          <TextField
-            type="email"
-            name="email"
-            label="EMAIL"
-            className="input"
-            required
-          />
-          <TextField
-            type="phone"
-            name="phone"
-            label="PHONE"
-            className="input"
-            required
-          />
-          <TextField
-            name="message"
-            label="SEND A MESSAGE..."
-            rows="7"
-            multiline
-            className="input"
-            required
-          />
-          <Button type="submit" variant="contained">
-            GET MORE INFO
+    <TrialPage id="trial-info">
+      <TrialContainer>
+        <TrialOffer>
+          <Typography variant="h4" fontWeight="bold" marginBottom="1rem">
+            EXCLUSIVE OFFER
+          </Typography>
+          <Typography variant="h6" marginBottom="2rem">
+            4 week trial that allows you to experience what it's like to be a
+            student at Victory Taekwondo for{" "}
+            <span className="trial-price">ONLY $39</span>!
+          </Typography>
+          <Button
+            variant="outlined"
+            size="large"
+            sx={{ height: 90, width: 300, fontSize: "1.1rem" }}
+            onClick={() => window.location.replace("/signup")}
+          >
+            SIGN UP
           </Button>
-        </form>
-      </TrialContent>
-    </TrialContainer>
+        </TrialOffer>
+        <TrialIncludes>
+          <ul>
+            <li>
+              01. <span className="trial-list">8 Classes</span>
+            </li>
+            <li>
+              02. <span className="trial-list">Private Assessment</span>
+            </li>
+            <li>
+              03. <span className="trial-list">Lorem ipsum</span>
+            </li>
+            <li>
+              04. <span className="trial-list">Lorem ipsum</span>
+            </li>
+            <li>
+              04. <span className="trial-list">Lorem ipsum</span>
+            </li>
+          </ul>
+        </TrialIncludes>
+      </TrialContainer>
+      <ArrowWrapper>
+        <KeyboardArrowDownIcon fontSize="large" className="down-arrow" />
+      </ArrowWrapper>
+    </TrialPage>
   );
 };
 
-const TrialContainer = styled.div``;
-const TrialHeader = styled.div``;
-const TrialContent = styled.div`
+const TrialPage = styled.div`
+  height: 100vh;
+  border: 1px solid white;
+  .down-arrow {
+    animation: animateDown infinite 1.5s;
+    margin: 3.5rem 0 0 0;
+  }
+`;
+
+const TrialContainer = styled.div`
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  .trial-info {
-    width: 20rem;
-    padding: 1rem;
-    margin: 0 auto;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+`;
+
+const TrialOffer = styled.div`
+  width: 21rem;
+  .trial-price {
+    text-decoration: underline;
+    font-weight: bold;
   }
-  .more-info {
-    margin-top: 2rem;
-    padding: 0.5rem 1rem;
-    border: 1px solid #1976d2;
-    color: #1976d2;
+  .signup {
+    text-decoration: none;
+    color: inherit;
   }
-  form {
-    display: flex;
-    flex-direction: column;
-    width: 30rem;
-    margin-top: 4rem;
+`;
+
+const TrialIncludes = styled.div`
+  ul li {
+    list-style: none;
+    line-height: 7rem;
   }
-  .input {
-    margin-bottom: 0.7rem;
+  .trial-list {
+    font-size: 4rem;
+    margin-left: 1rem;
   }
+`;
+
+const ArrowWrapper = styled.div`
+  text-align: center;
 `;
 
 export default Trial;

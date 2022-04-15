@@ -1,7 +1,8 @@
 import styled from "@emotion/styled";
-import React from "react";
 import logo from "../assets/logo.jpg";
 import { Link } from "react-router-dom";
+import * as React from "react";
+import Button from "@mui/material/Button";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import yelp from "../assets/yelp.png";
@@ -15,30 +16,34 @@ const Header = () => {
       </ImageWrapper>
       <NavlinkWrapper>
         <Link to="/" className="nav-link">
-          Home
+          <Button className="nav-btn">HOME</Button>
         </Link>
         <Link to="/about" className="nav-link">
-          About
-        </Link>
-        <Link to="/classes" className="nav-link">
-          Classes
+          <Button className="nav-btn">ABOUT</Button>
         </Link>
         <Link to="/instructors" className="nav-link">
-          Instructors
+          <Button className="nav-btn">INSTRUCTORS</Button>
+        </Link>
+        <Link to="/classes" className="nav-link">
+          <Button className="nav-btn">CLASSES</Button>
         </Link>
         <Link to="/class-schedule" className="nav-link">
-          Class Schedule
-        </Link>
-        <Link to="/trial" className="nav-link">
-          Trial
-        </Link>
-        <Link to="/news" className="nav-link">
-          News
+          <Button className="nav-btn">SCHEDULE</Button>
         </Link>
         <Link to="/contact" className="nav-link">
-          Contact Us
+          <Button className="nav-btn">CONTACT US</Button>
+        </Link>
+        <Link to="/news" className="nav-link">
+          <Button
+            variant="outlined"
+            className="signup-btn"
+            sx={{ height: 50, width: 150 }}
+          >
+            NEWS BOARD
+          </Button>
         </Link>
       </NavlinkWrapper>
+
       {/* <SocialsWrapper>
         <Link to="#">
           <FacebookOutlinedIcon />
@@ -61,7 +66,7 @@ const Navbar = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 3rem;
 `;
 
 const ImageWrapper = styled.div`
@@ -75,11 +80,18 @@ const ImageWrapper = styled.div`
 const NavlinkWrapper = styled.div`
   .nav-link {
     margin-right: 2rem;
-    color: black;
     text-decoration: none;
+    color: black;
   }
-  .nav-link:hover {
-    color: darkgrey;
+  .nav-btn {
+    color: black;
+    font-weight: bold;
+  }
+  .nav-btn:hover {
+    background-color: #f5f5f5;
+  }
+  .signup-btn {
+    font-weight: bold;
   }
 `;
 

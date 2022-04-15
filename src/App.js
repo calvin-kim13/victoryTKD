@@ -5,7 +5,8 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Instructors from "./components/Instructors";
 import ClassSchedule from "./components/ClassSchedule";
-import Trial from "./components/Trial";
+import Signup from "./components/Signup";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/instructors" element={<Instructors />} />
         <Route path="/class-schedule" element={<ClassSchedule />} />
-        <Route path="/trial" element={<Trial />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );

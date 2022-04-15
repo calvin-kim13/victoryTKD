@@ -12,7 +12,7 @@ const About = () => {
           gutterBottom
           component="div"
           textAlign="center"
-          letterSpacing="0.4rem"
+          letterSpacing="0.2rem"
           fontWeight="bold"
         >
           What is Victory Tae Kwon Do?
