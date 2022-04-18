@@ -6,10 +6,11 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Trial from "./Trial";
 import DownArrow from "./DownArrow";
 import Testimonial from "./Testimonial";
+import Signup from "./Signup";
 
 const Home = () => {
   return (
-    <HomeContainer>
+    <HomeContainer id="home">
       <HomeContent>
         <HomeTextWrapper>
           <Typography
@@ -38,7 +39,7 @@ const Home = () => {
             variant="contained"
             size="large"
             style={{ marginRight: "1.5rem" }}
-            onClick={() => window.location.replace("/signup")}
+            onClick={() => window.location.replace("#signup")}
             sx={{ height: 50, width: 150 }}
           >
             SIGN UP
@@ -56,6 +57,7 @@ const Home = () => {
       </HomeContent>
       <Trial />
       <Testimonial />
+      <Signup />
     </HomeContainer>
   );
 };

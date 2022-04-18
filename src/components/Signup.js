@@ -6,7 +6,7 @@ import { Button } from "@mui/material";
 
 const Signup = () => {
   return (
-    <TrialContainer id="trial">
+    <TrialContainer id="signup">
       <TrialHeader>
         <Typography
           variant="h3"
@@ -20,30 +20,12 @@ const Signup = () => {
         </Typography>
       </TrialHeader>
       <TrialContent>
-        <div>
-          <Paper elevation={3} className="trial-info">
-            <Typography
-              variant="h5"
-              fontWeight="bold"
-              textAlign="center"
-              className="trial-price"
-              marginBottom="1rem"
-            >
-              For ONLY $39
-            </Typography>
-            <Typography variant="h5">Includes:</Typography>
-            <ol>
-              <li>8 Classes</li>
-              <li>Private Assessment</li>
-            </ol>
-          </Paper>
-          <Paper elevation={3} className="more-info">
-            <Typography variant="subtitle2">
-              *Once you register, we'll reach out to you to schedule a starting
-              date!
-            </Typography>
-          </Paper>
-        </div>
+        <Paper elevation={3} className="more-info">
+          <Typography variant="subtitle2">
+            *Once you register, we'll reach out to you to schedule a starting
+            date!
+          </Typography>
+        </Paper>
         <form
           action="https://formsubmit.co/calvinkim1230@gmail.com"
           method="POST"
@@ -83,18 +65,29 @@ const Signup = () => {
             SEND
           </Button>
         </form>
+        {/* <Paper elevation={3} className="more-info">
+          <Typography variant="subtitle2">
+            *Once you register, we'll reach out to you to schedule a starting
+            date!
+          </Typography>
+        </Paper> */}
       </TrialContent>
     </TrialContainer>
   );
 };
 
-const TrialContainer = styled.div``;
-const TrialHeader = styled.div`
-  margin-top: 2rem;
+const TrialContainer = styled.div`
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
+const TrialHeader = styled.div``;
 const TrialContent = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   .trial-price {
     text-decoration: underline;
@@ -109,6 +102,7 @@ const TrialContent = styled.div`
     padding: 0.5rem 1rem;
     border: 1px solid #1976d2;
     color: #1976d2;
+    // width: 14rem;
   }
   form {
     display: flex;

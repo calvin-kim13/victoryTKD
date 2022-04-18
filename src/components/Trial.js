@@ -21,9 +21,9 @@ const Trial = () => {
             variant="outlined"
             size="large"
             sx={{ height: 90, width: 300, fontSize: "1.1rem" }}
-            onClick={() => window.location.replace("/signup")}
+            onClick={() => window.location.replace("/classes")}
           >
-            SIGN UP
+            VIEW CLASSES
           </Button>
         </TrialOffer>
         <TrialIncludes>
