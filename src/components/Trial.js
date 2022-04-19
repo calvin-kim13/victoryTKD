@@ -55,18 +55,21 @@ const Trial = () => {
 
 const TrialPage = styled.div`
   height: 100vh;
-  border: 1px solid white;
   .down-arrow {
     animation: animateDown infinite 1.5s;
     margin: 3.5rem 0 0 0;
   }
+  display: flex;
+  align-items: space-evenly;
+  justify-content: center;
+  flex-direction: column;
 `;
 
 const TrialContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 5rem;
+  margin-top: 8rem;
 `;
 
 const TrialOffer = styled.div`
@@ -84,10 +87,10 @@ const TrialOffer = styled.div`
 const TrialIncludes = styled.div`
   ul li {
     list-style: none;
-    line-height: 7rem;
+    line-height: 6rem;
   }
   .trial-list {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-left: 1rem;
   }
 `;

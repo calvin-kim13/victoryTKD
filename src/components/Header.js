@@ -63,17 +63,21 @@ const Header = () => {
 };
 
 const Navbar = styled.div`
+  position: sticky;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 3rem;
+  background-color: #f8f8f8;
+  z-index: 100;
 `;
 
 const ImageWrapper = styled.div`
   margin-left: 2rem;
   img {
-    height: 8rem;
-    width: 9rem;
+    height: 6rem;
+    width: 7rem;
   }
 `;
 

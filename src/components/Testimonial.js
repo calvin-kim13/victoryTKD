@@ -73,18 +73,22 @@ const Testimonial = () => {
 
 const TestimonialPage = styled.div`
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 const TestimonialHeader = styled.div`
-  padding: 4rem;
+  padding: 3rem;
   text-align: center;
 `;
 
 const TestimonialContent = styled.div`
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  height: 80%;
+  width: 100%;
+  margin-top: 6rem;
 `;
 
 const Testimony = styled.div`
@@ -100,7 +104,7 @@ const ArrowWrapper = styled.div`
   .down-arrow {
     animation: animateDown infinite 1.5s;
   }
-  margin-top: -4rem;
+  margin-top: 6rem;
 `;
 
 export default Testimonial;

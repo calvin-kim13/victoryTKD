@@ -9,6 +9,7 @@ import teenAdult from "../assets/teenAdult.png";
 import weapons from "../assets/weapons.png";
 import sparring from "../assets/sparring.png";
 import elitecomp from "../assets/elitecomp.png";
+import { Container } from "@mui/material";
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: "relative",
@@ -77,7 +78,7 @@ const ImageMarked = styled("span")(({ theme }) => ({
 
 export default function ButtonBases() {
   return (
-    <>
+    <Container style={{ height: "100vh" }}>
       <Typography
         variant="h3"
         gutterBottom
@@ -85,15 +86,16 @@ export default function ButtonBases() {
         textAlign="center"
         letterSpacing="0.2rem"
         fontWeight="bold"
+        marginTop="2rem"
       >
-        Our Classes
+        OUR CLASSES
       </Typography>
       <Box
         sx={{
           minWidth: 300,
           width: "100%",
           textAlign: "center",
-          marginTop: "2rem",
+          marginTop: "3rem",
         }}
       >
         <ImageButton
@@ -259,6 +261,6 @@ export default function ButtonBases() {
           </Image>
         </ImageButton>
       </Box>
-    </>
+    </Container>
   );
 }

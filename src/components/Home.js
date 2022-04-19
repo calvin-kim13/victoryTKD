@@ -1,12 +1,10 @@
 import styled from "@emotion/styled";
 import { Button, Typography } from "@mui/material";
 import React from "react";
-import { Link } from "react-router-dom";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Trial from "./Trial";
 import DownArrow from "./DownArrow";
 import Testimonial from "./Testimonial";
-import Signup from "./Signup";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
@@ -39,7 +37,7 @@ const Home = () => {
             variant="contained"
             size="large"
             style={{ marginRight: "1.5rem" }}
-            onClick={() => window.location.replace("#signup")}
+            onClick={() => window.location.replace("#contact")}
             sx={{ height: 50, width: 150 }}
           >
             SIGN UP
@@ -57,7 +55,7 @@ const Home = () => {
       </HomeContent>
       <Trial />
       <Testimonial />
-      <Signup />
+      <Contact />
     </HomeContainer>
   );
 };
@@ -69,6 +67,7 @@ const HomeContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-top: 4rem;
   .down-arrow {
     margin-bottom: 1.7rem;

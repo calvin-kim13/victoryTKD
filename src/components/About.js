@@ -15,7 +15,7 @@ const About = () => {
           letterSpacing="0.2rem"
           fontWeight="bold"
         >
-          What is Victory Tae Kwon Do?
+          WHAT IS VICTORY TAE KWON DO?
         </Typography>
       </AboutHeader>
       <AboutContent>
@@ -55,7 +55,7 @@ const AboutContent = styled.div`
   justify-content: center;
   align-items: center;
   width: 40rem;
-  margin: 4rem auto;
+  margin: 3rem auto;
 `;
 
 export default About;

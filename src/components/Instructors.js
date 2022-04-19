@@ -20,7 +20,7 @@ const Instructors = () => {
           letterSpacing="0.2rem"
           fontWeight="bold"
         >
-          Meet The Team
+          MEET THE TEAM
         </Typography>
       </InstructorsHeader>
       <InstructorsContent>
@@ -120,7 +120,7 @@ const InstructorsContent = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 4rem auto;
+  margin: 3rem auto;
   width: 50rem;
   .master-img {
     width: 20rem;
