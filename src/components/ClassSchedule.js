@@ -14,6 +14,7 @@ const ClassSchedule = () => {
         letterSpacing="0.2rem"
         fontWeight="bold"
         marginTop="2rem"
+        className="classSchedule"
       >
         CLASS SCHEDULE
       </Typography>
@@ -39,6 +40,15 @@ const ClassScheduleContainer = styled.div`
   }
   .schedule {
     margin-top: 2rem;
+  }
+  @media screen and (max-width: 1200px) {
+    .classSchedule {
+      font-size: 2rem;
+    }
+    img {
+      width: 29rem;
+      height: 18rem;
+    }
   }
 `;
 

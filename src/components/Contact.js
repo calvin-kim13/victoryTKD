@@ -10,11 +10,11 @@ import ContactInfo from "./ContactInfo";
 
 const Contact = () => {
   return (
-    <div id="contact">
-      <ContactContainer>
+    <div>
+      <ContactContainer id="contact">
         <ContactHeader>
-          <img src={contact1} alt="Student Image" />
-          <img src={contact3} alt="Student Image" />
+          <img src={contact1} alt="Student Image" className="studentone" />
+          <img src={contact3} alt="Student Image" className="studenttwo" />
           <Typography
             variant="h2"
             gutterBottom
@@ -22,11 +22,12 @@ const Contact = () => {
             textAlign="center"
             letterSpacing="0.2rem"
             fontWeight="bold"
+            className="talk"
           >
             LET'S TALK
           </Typography>
-          <img src={contact2} alt="Student Image" />
-          <img src={contact4} alt="Student Image" />
+          <img src={contact2} alt="Student Image" className="studentthree" />
+          <img src={contact4} alt="Student Image" className="studentfour" />
         </ContactHeader>
         <ContactContent>
           <div className="info">
@@ -112,6 +113,33 @@ const ContactHeader = styled.div`
   img {
     height: 25rem;
   }
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: 1fr;
+    .studenttwo {
+      display: none;
+    }
+    .studentone {
+      display: none;
+    }
+    .studentthree {
+      display: none;
+    }
+    .studentfour {
+      display: none;
+    }
+    .talk {
+      font-size: 2.5rem;
+    }
+  }
+  @media screen and (max-width: 1500px) {
+    grid-template-columns: 1fr;
+    .studenttwo {
+      display: none;
+    }
+    .studentthree {
+      display: none;
+    }
+  }
 `;
 
 const ContactContent = styled.div`
@@ -138,6 +166,9 @@ const ContactContent = styled.div`
   }
   .input label {
     font-size: 0.7rem;
+  }
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: 1fr;
   }
 `;
 

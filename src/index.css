@@ -31,3 +31,11 @@ code {
     transform: translateY(3px);
   }
 }
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

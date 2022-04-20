@@ -14,11 +14,12 @@ const About = () => {
           textAlign="center"
           letterSpacing="0.2rem"
           fontWeight="bold"
+          className="aboutHeader"
         >
           WHAT IS VICTORY TAE KWON DO?
         </Typography>
       </AboutHeader>
-      <AboutContent>
+      <AboutContent className="paragraph">
         <Typography variant="body1" gutterBottom>
           Taekwondo is a Korean martial art that strengthens the mind and body
           through disciplined training. Tae ("foot"), Kwon ("fist"), and Do
@@ -42,6 +43,15 @@ const AboutContainer = styled.div`
   //   background-repeat: no-repeat;
   //   background-size: 50rem 50rem;
   //   height: 42.7rem;
+  @media screen and (max-width: 1000px) {
+    .paragraph {
+      width: 20rem;
+    }
+    .aboutHeader {
+      font-size: 2rem;
+      width: 100%;
+    }
+  }
 `;
 
 const AboutHeader = styled.div`

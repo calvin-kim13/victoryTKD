@@ -50,12 +50,18 @@ const WeaponsContent = styled.div`
   .description {
     width: 25rem;
   }
+  @media screen and (max-width: 1200px) {
+    flex-direction: column-reverse;
+  }
 `;
 const WeaponsImage = styled.div``;
 
 const BackButton = styled.div`
   text-align: center;
   padding: 1rem;
+  @media screen and (max-width: 1200px) {
+    padding: 2rem;
+  }
 `;
 
 export default Weapons;

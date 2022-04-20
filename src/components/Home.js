@@ -73,6 +73,9 @@ const HomeContent = styled.div`
     margin-bottom: 1.7rem;
     animation: animateDown infinite 1.5s;
   }
+  @media screen and (max-width: 1000px) {
+    height: 85vh;
+  }
 `;
 
 const HomeTextWrapper = styled.div`
@@ -80,6 +83,14 @@ const HomeTextWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
+  @media screen and (max-width: 1000px) {
+    .victory-tkd {
+      font-size: 3rem;
+    }
+    .three-values {
+      font-size: 1.2rem;
+    }
+  }
 `;
 
 const ButtonWrapper = styled.div`

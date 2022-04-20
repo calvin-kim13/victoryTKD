@@ -11,7 +11,7 @@ const ContactInfo = () => {
       <Typography
         variant="h3"
         fontWeight="bold"
-        marginBottom="3rem"
+        marginBottom="2rem"
         marginLeft="2rem"
       >
         Meet us
@@ -51,7 +51,6 @@ const InfoContainer = styled.div`
   .item-content {
     margin-left: 1rem;
     color: black;
-    text-decoration: none;
   }
   .item-content a {
     color: black;

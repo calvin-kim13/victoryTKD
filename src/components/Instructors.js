@@ -19,12 +19,13 @@ const Instructors = () => {
           textAlign="center"
           letterSpacing="0.2rem"
           fontWeight="bold"
+          className="meetTeam"
         >
           MEET THE TEAM
         </Typography>
       </InstructorsHeader>
       <InstructorsContent>
-        <Card sx={{ maxWidth: 600 }}>
+        <Card sx={{ maxWidth: 600 }} className="grand-master">
           {/* <CardMedia
             component="img"
             alt="Image of Grand Master Hyun Y. Kim"
@@ -113,6 +114,11 @@ const InstructorsContainer = styled.div``;
 
 const InstructorsHeader = styled.div`
   margin-top: 2rem;
+  @media screen and (max-width: 1000px) {
+    .meetTeam {
+      font-size: 2rem;
+    }
+  }
 `;
 
 const InstructorsContent = styled.div`
@@ -131,6 +137,20 @@ const InstructorsContent = styled.div`
   }
   ul {
     padding: 0 2rem;
+  }
+  @media screen and (max-width: 1000px) {
+    .grand-master {
+      width: 20rem;
+    }
+    .master-michael {
+      width: 20rem;
+    }
+    .master-img {
+      width: 16rem;
+      height: 17rem;
+      margin: 1rem auto;
+    }
+    width: 100%;
   }
 `;
 

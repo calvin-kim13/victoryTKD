@@ -8,8 +8,12 @@ const Testimonial = () => {
   return (
     <TestimonialPage>
       <TestimonialHeader>
-        <Typography variant="h3" fontWeight="bold">
-          What they say about us
+        <Typography
+          variant="h3"
+          fontWeight="bold"
+          className="testimonialHeader"
+        >
+          WHAT THEY SAY
         </Typography>
       </TestimonialHeader>
       <TestimonialContent>
@@ -21,7 +25,7 @@ const Testimonial = () => {
           <Typography
             textAlign="center"
             marginTop="2rem"
-            marginBottom="3rem"
+            marginBottom="2rem"
             lineHeight="1.7rem"
           >
             The best thing to ever happen to my son. Bring your kids to Victory
@@ -37,7 +41,7 @@ const Testimonial = () => {
           <Typography
             textAlign="center"
             marginTop="2rem"
-            marginBottom="3rem"
+            marginBottom="2rem"
             lineHeight="1.7rem"
           >
             It's a great studio. At first, our son didn't want to join, but now
@@ -54,7 +58,7 @@ const Testimonial = () => {
           <Typography
             textAlign="center"
             marginTop="2rem"
-            marginBottom="3rem"
+            marginBottom="2rem"
             lineHeight="1.7rem"
           >
             If you're looking to teach your kids discipline, respect, and
@@ -77,11 +81,21 @@ const TestimonialPage = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 1rem;
+  @media screen and (max-width: 1000px) {
+    height: fit-content;
+    margin-top: 7rem;
+  }
 `;
 
 const TestimonialHeader = styled.div`
   padding: 3rem;
   text-align: center;
+  @media screen and (max-width: 1000px) {
+    .testimonialHeader {
+      font-size: 2.5rem;
+    }
+  }
 `;
 
 const TestimonialContent = styled.div`
@@ -89,6 +103,11 @@ const TestimonialContent = styled.div`
   justify-content: space-evenly;
   width: 100%;
   margin-top: 6rem;
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    margin-top: 0;
+    align-items: center;
+  }
 `;
 
 const Testimony = styled.div`
@@ -97,6 +116,9 @@ const Testimony = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 1000px) {
+    margin-top: 3rem;
+  }
 `;
 
 const ArrowWrapper = styled.div`
@@ -105,6 +127,10 @@ const ArrowWrapper = styled.div`
     animation: animateDown infinite 1.5s;
   }
   margin-top: 6rem;
+  @media screen and (max-width: 1000px) {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
 `;
 
 export default Testimonial;

@@ -63,6 +63,13 @@ const TrialPage = styled.div`
   align-items: space-evenly;
   justify-content: center;
   flex-direction: column;
+  }
+  // @media screen and (max-width: 1000px) {
+  //   .down-arrow {
+  //     margin: .5rem 0 0 0;
+  //   }
+  // }
+
 `;
 
 const TrialContainer = styled.div`
@@ -70,6 +77,12 @@ const TrialContainer = styled.div`
   align-items: center;
   justify-content: space-evenly;
   margin-top: 8rem;
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    .trial-list {
+      font-size: 1.8rem;
+    }
+  }
 `;
 
 const TrialOffer = styled.div`
