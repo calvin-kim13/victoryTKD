@@ -80,7 +80,7 @@ const TrialContainer = styled.div`
   @media screen and (max-width: 1000px) {
     flex-direction: column;
     .trial-list {
-      font-size: 1.8rem;
+      font-size: 1.7rem;
     }
   }
 `;

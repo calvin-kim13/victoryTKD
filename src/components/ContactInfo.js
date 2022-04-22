@@ -9,7 +9,7 @@ const ContactInfo = () => {
   return (
     <ContactInfoContainer>
       <Typography
-        variant="h3"
+        variant="h5"
         fontWeight="bold"
         marginBottom="2rem"
         marginLeft="2rem"

@@ -13,7 +13,7 @@ const Instructors = () => {
     <InstructorsContainer>
       <InstructorsHeader>
         <Typography
-          variant="h3"
+          variant="h5"
           gutterBottom
           component="div"
           textAlign="center"
@@ -25,7 +25,7 @@ const Instructors = () => {
         </Typography>
       </InstructorsHeader>
       <InstructorsContent>
-        <Card sx={{ maxWidth: 600 }} className="grand-master">
+        <Card sx={{ maxWidth: 800 }} className="grand-master">
           {/* <CardMedia
             component="img"
             alt="Image of Grand Master Hyun Y. Kim"
@@ -33,23 +33,30 @@ const Instructors = () => {
             className="master-img"
             image={grandmasterImg}
           /> */}
-          <Avatar
+          {/* <Avatar
             alt="Grand Master Hyun Y. Kim"
             src={grandmasterImg}
-            sx={{ width: 400, height: 350 }}
+            sx={{ width: 200, height: 300, backgroundPosition: "bottom" }}
             className="master-img"
-          />
-          <CardContent>
+          /> */}
+          <div className="image">
+            <img src={grandmasterImg} alt="" className="master-img" />
+          </div>
+          <CardContent className="team-text">
             <Typography
               gutterBottom
-              variant="h5"
+              variant="overline"
               component="div"
               textAlign="center"
               fontWeight="bold"
             >
               Grand Master Hyun Y. Kim
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography
+              variant="caption"
+              color="text.secondary"
+              lineHeight="1.5rem"
+            >
               <ul>
                 <li>Founder of Victory Taekwondo Center</li>
                 <li>
@@ -69,7 +76,7 @@ const Instructors = () => {
           </CardContent>
         </Card>
 
-        <Card sx={{ maxWidth: 600 }} className="master-michael">
+        <Card sx={{ maxWidth: 800 }} className="master-michael">
           {/* <CardMedia
             component="img"
             alt="Image of Master Michael Guajardo"
@@ -77,23 +84,30 @@ const Instructors = () => {
             className="master-img"
             image={michaelImg}
           /> */}
-          <Avatar
+          {/* <Avatar
             alt="Master Michael Guajardo"
             src={michaelImg}
-            sx={{ width: 400, height: 350 }}
+            sx={{ width: 200, height: 300 }}
             className="master-img"
-          />
-          <CardContent>
+          /> */}
+          <div className="image">
+            <img src={michaelImg} alt="" className="master-img" />
+          </div>
+          <CardContent className="team-text">
             <Typography
               gutterBottom
-              variant="h5"
+              variant="overline"
               component="div"
               textAlign="center"
               fontWeight="bold"
             >
               Master Michael Guajardo
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography
+              variant="caption"
+              color="text.secondary"
+              lineHeight="1.5rem"
+            >
               <ul>
                 <li>
                   4th Degree Black Belt certified by the World Taekwondo
@@ -110,13 +124,17 @@ const Instructors = () => {
   );
 };
 
-const InstructorsContainer = styled.div``;
+const InstructorsContainer = styled.div`
+  ul li {
+    list-style: square;
+  }
+`;
 
 const InstructorsHeader = styled.div`
   margin-top: 2rem;
   @media screen and (max-width: 1000px) {
     .meetTeam {
-      font-size: 2rem;
+      // font-size: 2rem;
     }
   }
 `;
@@ -139,18 +157,41 @@ const InstructorsContent = styled.div`
     padding: 0 2rem;
   }
   @media screen and (max-width: 1000px) {
+    .image {
+      display: flex;
+      align-items: center;
+    }
     .grand-master {
-      width: 20rem;
+      width: 26rem;
+      padding: 1rem;
     }
     .master-michael {
-      width: 20rem;
+      width: 26rem;
+      padding: 1rem;
     }
     .master-img {
-      width: 16rem;
-      height: 17rem;
-      margin: 1rem auto;
+      width: 10rem;
+      height: 12rem;
+      // margin: 1rem auto;
     }
     width: 100%;
+  }
+  @media screen and (min-width: 1000px) {
+    .grand-master {
+      display: flex;
+      padding-left: 1rem;
+    }
+    .master-michael {
+      display: flex;
+      flex-direction: row-reverse;
+      padding-right: 1rem;
+    }
+    .team-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 `;
 

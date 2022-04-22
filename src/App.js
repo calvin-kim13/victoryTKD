@@ -13,6 +13,7 @@ import TeenAdult from "./components/TeenAdult";
 import Weapons from "./components/Weapons";
 import Sparring from "./components/Sparring";
 import EliteCompetition from "./components/EliteCompetition";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/class-schedule" element={<ClassSchedule />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

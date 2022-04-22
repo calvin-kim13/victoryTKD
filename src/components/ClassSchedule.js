@@ -7,7 +7,7 @@ const ClassSchedule = () => {
   return (
     <ClassScheduleContainer>
       <Typography
-        variant="h3"
+        variant="h5"
         gutterBottom
         component="div"
         textAlign="center"
@@ -32,18 +32,25 @@ const ClassScheduleContainer = styled.div`
   flex-direction: column;
   // justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 73vh;
+  margin-bottom: 4rem;
   img {
-    width: 70rem;
-    height: 40rem;
+    width: 55rem;
+    height: 30rem;
     border: 5px solid black;
   }
   .schedule {
     margin-top: 2rem;
   }
   @media screen and (max-width: 1200px) {
+    img {
+      width: 40rem;
+      height: 25rem;
+    }
+  }
+  @media screen and (max-width: 800px) {
     .classSchedule {
-      font-size: 2rem;
+      // font-size: 2rem;
     }
     img {
       width: 29rem;

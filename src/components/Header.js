@@ -3,10 +3,6 @@ import logo from "../assets/logo.jpg";
 import { Link } from "react-router-dom";
 import * as React from "react";
 import Button from "@mui/material/Button";
-import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import yelp from "../assets/yelp.png";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./styles/Navbar.css";
 
@@ -14,6 +10,14 @@ const Header = () => {
   const [click, setClick] = React.useState(false);
 
   const handleClick = () => setClick(!click);
+
+  React.useEffect(() => {
+    if (click) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "scroll";
+    }
+  }, [click]);
 
   return (
     <div className="navbar">

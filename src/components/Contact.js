@@ -16,7 +16,7 @@ const Contact = () => {
           <img src={contact1} alt="Student Image" className="studentone" />
           <img src={contact3} alt="Student Image" className="studenttwo" />
           <Typography
-            variant="h2"
+            variant="h4"
             gutterBottom
             component="div"
             textAlign="center"
@@ -35,7 +35,7 @@ const Contact = () => {
           </div>
           <div className="send-message">
             <Typography
-              variant="h3"
+              variant="h5"
               fontWeight="bold"
               marginBottom="1rem"
               marginLeft="2rem"
@@ -101,10 +101,11 @@ const Contact = () => {
 
 const ContactContainer = styled.div`
   height: 100vh;
+  height: fit-content;
 `;
 
 const ContactHeader = styled.div`
-  min-height: 30%;
+  height: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,6 +115,7 @@ const ContactHeader = styled.div`
     height: 25rem;
   }
   @media screen and (max-width: 1200px) {
+    height: 10rem;
     grid-template-columns: 1fr;
     .studenttwo {
       display: none;
@@ -126,9 +128,6 @@ const ContactHeader = styled.div`
     }
     .studentfour {
       display: none;
-    }
-    .talk {
-      font-size: 2.5rem;
     }
   }
   @media screen and (max-width: 1500px) {
