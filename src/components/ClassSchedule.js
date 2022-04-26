@@ -47,6 +47,9 @@ const ClassScheduleContainer = styled.div`
       width: 40rem;
       height: 25rem;
     }
+    .schedule {
+      margin-top: 5rem;
+    }
   }
   @media screen and (max-width: 800px) {
     .classSchedule {

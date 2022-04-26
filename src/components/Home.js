@@ -75,6 +75,7 @@ const HomeContent = styled.div`
   }
   @media screen and (max-width: 1000px) {
     height: 85vh;
+    margin-top: 2rem;
   }
 `;
 
@@ -85,7 +86,7 @@ const HomeTextWrapper = styled.div`
   text-align: center;
   @media screen and (max-width: 1000px) {
     .victory-tkd {
-      font-size: 3rem;
+      font-size: 3.5rem;
     }
     .three-values {
       font-size: 1.2rem;

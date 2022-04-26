@@ -79,9 +79,6 @@ const TrialContainer = styled.div`
   margin-top: 8rem;
   @media screen and (max-width: 1000px) {
     flex-direction: column;
-    .trial-list {
-      font-size: 1.7rem;
-    }
   }
 `;
 
@@ -105,6 +102,11 @@ const TrialIncludes = styled.div`
   .trial-list {
     font-size: 3rem;
     margin-left: 1rem;
+  }
+  @media screen and (max-width: 1000px) {
+    .trial-list {
+      font-size: 1.7rem;
+    }
   }
 `;
 

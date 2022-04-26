@@ -41,6 +41,9 @@
     transition: 0.4s;
     z-index: 1000;
   }
+  body {
+    overflow: hidden;
+  }
   .nav-menu.active {
     left: 0;
   }

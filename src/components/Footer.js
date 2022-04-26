@@ -2,11 +2,14 @@ import styled from "@emotion/styled";
 import { Button, Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaYelp, FaFacebookF, FaTwitter } from "react-icons/fa";
+import { FaYelp, FaFacebook, FaTwitter } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
-import { grey } from "@mui/material/colors";
+import { grey, red, blue } from "@mui/material/colors";
 const footerColor = grey[900];
 const footerTextColor = grey[200];
+const footerHeaderColorRed = red[300];
+const footerHeaderColorBlue = blue[300];
+const footerHeaderColorWhite = grey[50];
 
 const Footer = () => {
   return (
@@ -14,35 +17,52 @@ const Footer = () => {
       <FooterContainer>
         <CompanyContainer>
           <CompanyHeader>
-            <Typography fontWeight="bold">COMPANY</Typography>
+            <Typography
+              fontWeight="bold"
+              className="footerHeaderRed"
+              fontSize=".8rem"
+            >
+              COMPANY
+            </Typography>
           </CompanyHeader>
           <CompanyContent>
-            <Link to="/about">About</Link>
+            <Link to="/about" className="links">
+              About
+            </Link>
 
-            <Link to="/classes">Classes</Link>
+            <Link to="/classes" className="links">
+              Classes
+            </Link>
 
-            <Link to="/class-schedule">Schedule</Link>
+            <Link to="/class-schedule" className="links">
+              Schedule
+            </Link>
           </CompanyContent>
         </CompanyContainer>
         <ContactContainer>
           <ContactHeader>
-            <Typography fontWeight="bold">CONTACT</Typography>
+            <Typography
+              fontWeight="bold"
+              className="footerHeaderWhite"
+              fontSize=".8rem"
+            >
+              CONTACT
+            </Typography>
           </ContactHeader>
           <ContactContent>
-            <Link to="/contact">victorytkdcenter@gmail.com</Link>
-
-            <div>
+            <span className="email">victorytkdcenter@gmail.com</span>
+            <div className="phone">
               <a href="tel:7144773232">(562) 907-2700</a>
             </div>
-
             <div className="social-links">
               <a href="">
-                <FaFacebookF
+                <FaFacebook
                   style={{
                     border: "1px solid white",
                     borderRadius: "50px",
                     backgroundColor: "white",
-                    padding: ".2rem",
+                    padding: ".3rem",
+                    color: "black",
                   }}
                 />
               </a>
@@ -52,7 +72,8 @@ const Footer = () => {
                     border: "1px solid white",
                     borderRadius: "50px",
                     backgroundColor: "white",
-                    padding: ".2rem",
+                    padding: ".3rem",
+                    color: "black",
                   }}
                 />
               </a>
@@ -62,7 +83,8 @@ const Footer = () => {
                     border: "1px solid white",
                     borderRadius: "50px",
                     backgroundColor: "white",
-                    padding: ".2rem",
+                    padding: ".3rem",
+                    color: "black",
                   }}
                 />
               </a>
@@ -72,7 +94,8 @@ const Footer = () => {
                     border: "1px solid white",
                     borderRadius: "50px",
                     backgroundColor: "white",
-                    padding: ".2rem",
+                    padding: ".3rem",
+                    color: "black",
                   }}
                 />
               </a>
@@ -81,10 +104,18 @@ const Footer = () => {
         </ContactContainer>
         <AddressContainer>
           <AddressHeader>
-            <Typography fontWeight="bold">ADDRESS</Typography>
+            <Typography
+              fontWeight="bold"
+              className="footerHeaderBlue"
+              fontSize=".8rem"
+            >
+              ADDRESS
+            </Typography>
           </AddressHeader>
           <AddressContent>
-            <Typography>11758 E. Whittier Blvd. Whittier, CA 90601</Typography>
+            <Typography fontSize=".8rem">
+              11758 E. Whittier Blvd. Whittier, CA 90601
+            </Typography>
           </AddressContent>
         </AddressContainer>
       </FooterContainer>
@@ -98,7 +129,7 @@ const Footer = () => {
 };
 
 const FooterWrapper = styled.div`
-  height: 50vh;
+  height: 55vh;
   //   margin-top: 1rem;
   background-color: ${footerColor};
   color: ${footerTextColor};
@@ -107,6 +138,9 @@ const FooterWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  @media screen and (min-width: 1200px) {
+    height: 35vh;
+  }
 `;
 
 const FooterContainer = styled.div`
@@ -114,6 +148,21 @@ const FooterContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  .footerHeaderRed {
+    color: ${footerHeaderColorBlue};
+  }
+  .footerHeaderWhite {
+    color: ${footerHeaderColorBlue};
+  }
+  .footerHeaderBlue {
+    color: ${footerHeaderColorBlue};
+  }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
 `;
 
 const CompanyContainer = styled.div`
@@ -121,7 +170,11 @@ const CompanyContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  @media screen and (min-width: 1200px) {
+    width: 20%;
+    height: 50%;
+  }
 `;
 
 const CompanyHeader = styled.div`
@@ -137,6 +190,10 @@ const CompanyContent = styled.div`
   align-items: center;
   justify-content: center;
   line-height: 1.5rem;
+  .links {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+  }
 `;
 
 const ContactContainer = styled.div`
@@ -145,6 +202,11 @@ const ContactContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 2rem;
+  @media screen and (min-width: 1200px) {
+    width: 20%;
+    height: 50%;
+    margin-top: 1.2rem;
+  }
 `;
 
 const ContactHeader = styled.div`
@@ -160,6 +222,16 @@ const ContactContent = styled.div`
   align-items: center;
   justify-content: center;
   line-height: 1.5rem;
+  .email {
+    font-size: 0.8rem;
+  }
+  .phone {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .social-links {
+    margin-top: 1.2rem;
+  }
   .social-links a {
     margin: 0.3rem;
   }
@@ -169,6 +241,11 @@ const AddressContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media screen and (min-width: 1200px) {
+    width: 20%;
+    height: 50%;
+    margin-top: -5.2rem;
+  }
 `;
 
 const AddressHeader = styled.div`
@@ -184,12 +261,18 @@ const AddressContent = styled.div`
   align-items: center;
   justify-content: center;
   line-height: 1.5rem;
+  @media screen and (min-width: 1200px) {
+    width: 10rem;
+    text-align: center;
+  }
 `;
 
 const CopyrightContainer = styled.div`
   .copyright {
     font-size: 0.6rem;
+    color: white;
   }
+  margin-top: 2.5rem;
 `;
 
 export default Footer;

@@ -1,4 +1,3 @@
-import styled from "@emotion/styled";
 import logo from "../assets/logo.jpg";
 import { Link } from "react-router-dom";
 import * as React from "react";
@@ -11,8 +10,10 @@ const Header = () => {
 
   const handleClick = () => setClick(!click);
 
+  const handleNavClick = () => setClick(false);
+
   React.useEffect(() => {
-    if (click) {
+    if (click === true) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "scroll";
@@ -26,38 +27,42 @@ const Header = () => {
       </div>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li className="nav-item">
-          <Link to="/" onClick={handleClick}>
-            <Button>Home</Button>
+          <Link to="/">
+            <Button onClick={handleNavClick}>Home</Button>
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/about" onClick={handleClick}>
-            <Button>About</Button>
+          <Link to="/about">
+            <Button onClick={handleNavClick}>About</Button>
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/instructors" onClick={handleClick}>
-            <Button>Instructors</Button>
+          <Link to="/instructors">
+            <Button onClick={handleNavClick}>Instructors</Button>
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/classes" onClick={handleClick}>
-            <Button>Classes</Button>
+          <Link to="/classes">
+            <Button onClick={handleNavClick}>Classes</Button>
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/class-schedule" onClick={handleClick}>
-            <Button>Schedule</Button>
+          <Link to="/class-schedule">
+            <Button onClick={handleNavClick}>Schedule</Button>
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/contact" onClick={handleClick}>
-            <Button>Contact</Button>
+          <Link to="/contact">
+            <Button onClick={handleNavClick}>Contact</Button>
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/news-board" onClick={handleClick}>
-            <Button variant="contained" sx={{ height: 50, width: 150 }}>
+          <Link to="/news-board">
+            <Button
+              onClick={handleNavClick}
+              variant="contained"
+              sx={{ height: 50, width: 150 }}
+            >
               News Board
             </Button>
           </Link>
