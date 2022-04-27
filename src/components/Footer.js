@@ -1,15 +1,12 @@
 import styled from "@emotion/styled";
-import { Button, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import React from "react";
-import { Link } from "react-router-dom";
 import { FaYelp, FaFacebook, FaTwitter } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
-import { grey, red, blue } from "@mui/material/colors";
+import { grey, blue } from "@mui/material/colors";
 const footerColor = grey[900];
 const footerTextColor = grey[200];
-const footerHeaderColorRed = red[300];
 const footerHeaderColorBlue = blue[300];
-const footerHeaderColorWhite = grey[50];
 
 const Footer = () => {
   return (
@@ -26,17 +23,26 @@ const Footer = () => {
             </Typography>
           </CompanyHeader>
           <CompanyContent>
-            <Link to="/about" className="links">
+            <p
+              className="links"
+              onClick={() => window.location.replace("/about")}
+            >
               About
-            </Link>
+            </p>
 
-            <Link to="/classes" className="links">
+            <p
+              className="links"
+              onClick={() => window.location.replace("/classes")}
+            >
               Classes
-            </Link>
+            </p>
 
-            <Link to="/class-schedule" className="links">
+            <p
+              className="links"
+              onClick={() => window.location.replace("/class-schedule")}
+            >
               Schedule
-            </Link>
+            </p>
           </CompanyContent>
         </CompanyContainer>
         <ContactContainer>
@@ -189,9 +195,8 @@ const CompanyContent = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  line-height: 1.5rem;
   .links {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
     font-size: 0.8rem;
   }
 `;

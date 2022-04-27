@@ -76,7 +76,7 @@ const TrialContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 8rem;
+  margin-top: 5rem;
   @media screen and (max-width: 1000px) {
     flex-direction: column;
   }

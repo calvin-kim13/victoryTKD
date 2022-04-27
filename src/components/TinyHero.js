@@ -44,7 +44,9 @@ const TinyHero = () => {
   );
 };
 
-const TinyHeroContainer = styled.div``;
+const TinyHeroContainer = styled.div`
+  margin-top: 3rem;
+`;
 const TinyHeroContent = styled.div`
   display: flex;
   justify-content: center;
@@ -61,6 +63,8 @@ const TinyHeroImage = styled.div``;
 const BackButton = styled.div`
   text-align: center;
   padding: 1rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
   @media screen and (max-width: 1200px) {
     padding: 2rem;
   }
