@@ -29,32 +29,62 @@ const Header = () => {
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li className="nav-item">
           <Link to="/" onClick={handleNavClick}>
-            HOME
+            <Button
+              size="small"
+              sx={{ color: "black", ":hover": { bgcolor: "lightgrey" } }}
+            >
+              home
+            </Button>
           </Link>
         </li>
         <li className="nav-item">
           <Link to="/about" onClick={handleNavClick}>
-            ABOUT
+            <Button
+              size="small"
+              sx={{ color: "black", ":hover": { bgcolor: "lightgrey" } }}
+            >
+              about
+            </Button>
           </Link>
         </li>
         <li className="nav-item">
           <Link to="/instructors" onClick={handleNavClick}>
-            INSTRUCTORS
+            <Button
+              size="small"
+              sx={{ color: "black", ":hover": { bgcolor: "lightgrey" } }}
+            >
+              instructors
+            </Button>
           </Link>
         </li>
         <li className="nav-item">
           <Link to="/classes" onClick={handleNavClick}>
-            CLASSES
+            <Button
+              sx={{ color: "black", ":hover": { bgcolor: "lightgrey" } }}
+              size="small"
+            >
+              classes
+            </Button>
           </Link>
         </li>
         <li className="nav-item">
           <Link to="/class-schedule" onClick={handleNavClick}>
-            SCHEDULE
+            <Button
+              size="small"
+              sx={{ color: "black", ":hover": { bgcolor: "lightgrey" } }}
+            >
+              schedule
+            </Button>
           </Link>
         </li>
         <li className="nav-item">
           <Link to="/contact" onClick={handleNavClick}>
-            CONTACT
+            <Button
+              size="small"
+              sx={{ color: "black", ":hover": { bgcolor: "lightgrey" } }}
+            >
+              contact
+            </Button>
           </Link>
         </li>
         <li className="nav-item">
@@ -62,13 +92,16 @@ const Header = () => {
             <Button
               onClick={handleNavClick}
               variant="contained"
-              sx={{ height: 50, width: 150 }}
+              sx={{
+                height: 45,
+                width: 140,
+              }}
             >
               News Board
             </Button>
           </Link>
         </li>
-        <div className="social">
+        {/* <div className="social">
           <a href="">
             <FaFacebook size={30} className="facebook" />
           </a>
@@ -81,7 +114,7 @@ const Header = () => {
           <a href="">
             <FaYelp size={30} className="yelp" />
           </a>
-        </div>
+        </div> */}
       </ul>
       <div className="hamburger" onClick={handleClick}>
         {click ? <FaTimes size={30} /> : <FaBars size={30} />}

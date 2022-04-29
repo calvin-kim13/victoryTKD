@@ -26,7 +26,7 @@ const Weapons = () => {
           techniques.
         </Typography>
         <WeaponsImage>
-          <img src={weapons} alt="Weapons Image" />
+          <img src={weapons} alt="Weapons" />
         </WeaponsImage>
       </WeaponsContent>
       <BackButton>

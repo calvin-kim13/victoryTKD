@@ -38,7 +38,7 @@ const About = () => {
 };
 
 const AboutContainer = styled.div`
-  height: 69vh;
+  height: 60vh;
   @media screen and (max-width: 1000px) {
     .paragraph {
       width: 22rem;

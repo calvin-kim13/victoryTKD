@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Typography, Button } from "@mui/material";
+import { Typography, Button, Card } from "@mui/material";
 import React from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import DownArrow from "./DownArrow";
@@ -91,6 +91,9 @@ const TrialOffer = styled.div`
   .signup {
     text-decoration: none;
     color: inherit;
+  }
+  @media screen and (max-width: 1000px) {
+    text-align: center;
   }
 `;
 

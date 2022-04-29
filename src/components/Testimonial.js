@@ -18,7 +18,7 @@ const Testimonial = () => {
       </TestimonialHeader>
       <TestimonialContent>
         <Testimony>
-          <Typography variant="h4" fontWeight="bold">
+          <Typography variant="h5" fontWeight="bold">
             Veronica M.
           </Typography>
           <Typography marginTop="1rem">June 10, 2019</Typography>
@@ -34,7 +34,7 @@ const Testimonial = () => {
           <FormatQuoteIcon fontSize="large" sx={{ fontSize: "5rem" }} />
         </Testimony>
         <Testimony>
-          <Typography variant="h4" fontWeight="bold">
+          <Typography variant="h5" fontWeight="bold">
             Ana Gutierrez
           </Typography>
           <Typography marginTop="1rem">March 18, 2018</Typography>
@@ -51,7 +51,7 @@ const Testimonial = () => {
           <FormatQuoteIcon fontSize="large" sx={{ fontSize: "5rem" }} />
         </Testimony>
         <Testimony>
-          <Typography variant="h4" fontWeight="bold">
+          <Typography variant="h5" fontWeight="bold">
             JL Cotton
           </Typography>
           <Typography marginTop="1rem">September 21, 2017</Typography>
@@ -81,7 +81,7 @@ const TestimonialPage = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
+  // margin-top: 1rem;
   @media screen and (max-width: 1000px) {
     height: fit-content;
     margin-top: 7rem;
@@ -93,7 +93,7 @@ const TestimonialHeader = styled.div`
   text-align: center;
   @media screen and (max-width: 1000px) {
     .testimonialHeader {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
     }
   }
 `;

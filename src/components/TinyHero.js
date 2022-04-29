@@ -28,7 +28,7 @@ const TinyHero = () => {
           <br /> Plus, the Tiny Heroes have a blast!
         </Typography>
         <TinyHeroImage>
-          <img src={tinyHero} alt="Tiny Hero Image" />
+          <img src={tinyHero} alt="Tiny Hero" />
         </TinyHeroImage>
       </TinyHeroContent>
       <BackButton>

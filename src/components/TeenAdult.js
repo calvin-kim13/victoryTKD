@@ -29,7 +29,7 @@ const TeenAdult = () => {
           situations.
         </Typography>
         <TeenAdultImage>
-          <img src={teenAdult} alt="Teen Adult Image" />
+          <img src={teenAdult} alt="Teen Adult" />
         </TeenAdultImage>
       </TeenAdultContent>
       <BackButton>

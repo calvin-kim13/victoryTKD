@@ -31,7 +31,7 @@ const TinyHero = () => {
           are highly encouraged to join.
         </Typography>
         <EliteCompetitionImage>
-          <img src={elitecomp} alt="Elite Competition Image" />
+          <img src={elitecomp} alt="Elite Competition" />
         </EliteCompetitionImage>
       </EliteCompetitionContent>
       <BackButton>

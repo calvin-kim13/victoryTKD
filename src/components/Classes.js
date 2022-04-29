@@ -79,7 +79,7 @@ const ImageMarked = styled("span")(({ theme }) => ({
 
 const ClassesContainer = styled("div")({
   height: "fit-content",
-  marginBottom: "4rem",
+  marginBottom: "6rem",
 });
 
 export default function ButtonBases() {

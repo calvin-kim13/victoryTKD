@@ -5,6 +5,10 @@ import Trial from "./Trial";
 import DownArrow from "./DownArrow";
 import Testimonial from "./Testimonial";
 import Contact from "./Contact";
+import { grey, indigo } from "@mui/material/colors";
+
+const backgroundColor = indigo[900];
+const fontColor = grey[300];
 
 const Home = () => {
   return (
@@ -38,7 +42,10 @@ const Home = () => {
             size="large"
             style={{ marginRight: "1.5rem" }}
             onClick={() => window.location.replace("#contact")}
-            sx={{ height: 50, width: 150 }}
+            sx={{
+              height: 50,
+              width: 150,
+            }}
           >
             SIGN UP
           </Button>
@@ -46,7 +53,10 @@ const Home = () => {
             variant="outlined"
             size="large"
             onClick={() => window.location.replace("/#trial-info")}
-            sx={{ height: 50, width: 150 }}
+            sx={{
+              height: 50,
+              width: 150,
+            }}
           >
             LEARN MORE
           </Button>
@@ -60,7 +70,9 @@ const Home = () => {
   );
 };
 
-const HomeContainer = styled.div``;
+const HomeContainer = styled.div`
+  color: #424242;
+`;
 
 const HomeContent = styled.div`
   // height: 100vh;

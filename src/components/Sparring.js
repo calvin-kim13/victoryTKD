@@ -27,7 +27,7 @@ const Sparring = () => {
           develop confidence and self-defense skills.
         </Typography>
         <SparringImage>
-          <img src={sparring} alt="Sparring Image" />
+          <img src={sparring} alt="Sparring" />
         </SparringImage>
       </SparringContent>
       <BackButton>

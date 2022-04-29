@@ -28,7 +28,7 @@ const Children = () => {
           children grow into healthy and strong-minded individuals.
         </Typography>
         <ChildrenImage>
-          <img src={children} alt="Children Image" />
+          <img src={children} alt="Children" />
         </ChildrenImage>
       </ChildrenContent>
       <BackButton>

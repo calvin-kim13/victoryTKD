@@ -23,25 +23,25 @@ const Footer = () => {
             </Typography>
           </CompanyHeader>
           <CompanyContent>
-            <p
-              className="links"
-              onClick={() => window.location.replace("/about")}
-            >
-              About
+            <p>
+              <a href="/about" className="links">
+                About
+              </a>
             </p>
-
-            <p
-              className="links"
-              onClick={() => window.location.replace("/classes")}
-            >
-              Classes
+            <p>
+              <a href="/classes" className="links">
+                Classes
+              </a>
             </p>
-
-            <p
-              className="links"
-              onClick={() => window.location.replace("/class-schedule")}
-            >
-              Schedule
+            <p>
+              <a href="/class-schedule" className="links">
+                Schedule
+              </a>
+            </p>
+            <p>
+              <a href="/news-board" className="links">
+                News
+              </a>
             </p>
           </CompanyContent>
         </CompanyContainer>
@@ -135,7 +135,7 @@ const Footer = () => {
 };
 
 const FooterWrapper = styled.div`
-  height: 55vh;
+  height: 58vh;
   //   margin-top: 1rem;
   background-color: ${footerColor};
   color: ${footerTextColor};
@@ -155,13 +155,16 @@ const FooterContainer = styled.div`
   align-items: center;
   justify-content: space-evenly;
   .footerHeaderRed {
-    color: ${footerHeaderColorBlue};
+    color: white;
+    font-weight: bold;
   }
   .footerHeaderWhite {
-    color: ${footerHeaderColorBlue};
+    color: white;
+    font-weight: bold;
   }
   .footerHeaderBlue {
-    color: ${footerHeaderColorBlue};
+    color: white;
+    font-weight: bold;
   }
   @media screen and (min-width: 1200px) {
     width: 100%;
@@ -176,7 +179,8 @@ const CompanyContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
+  margin-top: 0.5rem;
   @media screen and (min-width: 1200px) {
     width: 20%;
     height: 50%;
@@ -185,7 +189,7 @@ const CompanyContainer = styled.div`
 
 const CompanyHeader = styled.div`
   width: 100%;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.3rem;
   text-align: center;
 `;
 
@@ -195,8 +199,11 @@ const CompanyContent = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  p {
+    line-height: 0.6rem;
+    margin-bottom: -0.1rem;
+  }
   .links {
-    margin-bottom: 0.2rem;
     font-size: 0.8rem;
   }
 `;
@@ -206,7 +213,7 @@ const ContactContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   @media screen and (min-width: 1200px) {
     width: 20%;
     height: 50%;
@@ -249,7 +256,7 @@ const AddressContainer = styled.div`
   @media screen and (min-width: 1200px) {
     width: 20%;
     height: 50%;
-    margin-top: -5.2rem;
+    margin-top: -6.3rem;
   }
 `;
 

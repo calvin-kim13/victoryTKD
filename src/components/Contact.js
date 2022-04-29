@@ -46,7 +46,11 @@ const Contact = () => {
               action="https://formsubmit.co/calvinkim1230@gmail.com"
               method="POST"
             >
-              <input type="hidden" name="_subject" value="New email woohoo" />
+              <input
+                type="hidden"
+                name="_subject"
+                value="Taekwondo website form"
+              />
               {/* <input type="hidden" name="_next" value="https://localhost3000/thanks" /> */}
               <TextField
                 type="text"

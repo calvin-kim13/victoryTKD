@@ -25,7 +25,10 @@ const Instructors = () => {
         </Typography>
       </InstructorsHeader>
       <InstructorsContent>
-        <Card sx={{ maxWidth: 800 }} className="grand-master">
+        <Card
+          sx={{ maxWidth: 800, backgroundColor: "#eee" }}
+          className="grand-master"
+        >
           {/* <CardMedia
             component="img"
             alt="Image of Grand Master Hyun Y. Kim"
@@ -40,7 +43,11 @@ const Instructors = () => {
             className="master-img"
           /> */}
           <div className="image">
-            <img src={grandmasterImg} alt="" className="master-img" />
+            <img
+              src={grandmasterImg}
+              alt="grandmaster"
+              className="master-img"
+            />
           </div>
           <CardContent className="team-text">
             <Typography
@@ -76,7 +83,10 @@ const Instructors = () => {
           </CardContent>
         </Card>
 
-        <Card sx={{ maxWidth: 800 }} className="master-michael">
+        <Card
+          sx={{ maxWidth: 800, backgroundColor: "#eee" }}
+          className="master-michael"
+        >
           {/* <CardMedia
             component="img"
             alt="Image of Master Michael Guajardo"
@@ -91,7 +101,7 @@ const Instructors = () => {
             className="master-img"
           /> */}
           <div className="image">
-            <img src={michaelImg} alt="" className="master-img" />
+            <img src={michaelImg} alt="michael" className="master-img" />
           </div>
           <CardContent className="team-text">
             <Typography

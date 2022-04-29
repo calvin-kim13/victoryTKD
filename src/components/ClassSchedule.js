@@ -32,7 +32,7 @@ const ClassScheduleContainer = styled.div`
   flex-direction: column;
   // justify-content: center;
   align-items: center;
-  height: 73vh;
+  height: 70vh;
   margin-bottom: 4rem;
   img {
     width: 55rem;
