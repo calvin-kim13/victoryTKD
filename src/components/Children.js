@@ -1,21 +1,22 @@
 import styled from "@emotion/styled";
-import { Button, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import React from "react";
 import children from "../assets/children.png";
-import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
+import Button from "./Button";
 
 const Children = () => {
   return (
     <ChildrenContainer>
       <Typography
-        variant="h3"
+        variant="h5"
         gutterBottom
         component="div"
         textAlign="center"
         letterSpacing="0.2rem"
         fontWeight="bold"
+        marginTop="2rem"
       >
-        Children
+        CHILDREN
       </Typography>
       <ChildrenContent>
         <Typography variant="body1" gutterBottom className="description">
@@ -33,8 +34,7 @@ const Children = () => {
       </ChildrenContent>
       <BackButton>
         <Button
-          variant="contained"
-          startIcon={<ArrowLeftIcon />}
+          className="classes-btn"
           onClick={() => window.location.replace("/classes")}
         >
           Back to Classes
@@ -44,7 +44,9 @@ const Children = () => {
   );
 };
 
-const ChildrenContainer = styled.div``;
+const ChildrenContainer = styled.div`
+  margin-top: 3rem;
+`;
 const ChildrenContent = styled.div`
   display: flex;
   justify-content: center;
@@ -63,6 +65,10 @@ const ChildrenImage = styled.div`
 const BackButton = styled.div`
   text-align: center;
   padding: 1rem;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
   @media screen and (max-width: 1200px) {
     padding: 2rem;
   }

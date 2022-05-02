@@ -1,10 +1,10 @@
 import logo from "../assets/logo.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import * as React from "react";
 import Button from "@mui/material/Button";
-import { FaBars, FaTimes, FaYelp, FaFacebook, FaTwitter } from "react-icons/fa";
-import { RiInstagramFill } from "react-icons/ri";
+import { FaBars, FaTimes } from "react-icons/fa";
 import "./styles/Navbar.css";
+import CustomBtn from "./Button";
 
 const Header = () => {
   const [click, setClick] = React.useState(false);
@@ -28,93 +28,75 @@ const Header = () => {
       </div>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li className="nav-item">
-          <Link to="/" onClick={handleNavClick}>
+          <NavLink to="/" onClick={handleNavClick}>
             <Button
               size="small"
-              sx={{ color: "black", ":hover": { bgcolor: "lightgrey" } }}
+              sx={{ color: "white", ":hover": { bgcolor: "darkgrey" } }}
             >
               home
             </Button>
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link to="/about" onClick={handleNavClick}>
+          <NavLink to="/about" onClick={handleNavClick}>
             <Button
               size="small"
-              sx={{ color: "black", ":hover": { bgcolor: "lightgrey" } }}
+              sx={{ color: "white", ":hover": { bgcolor: "darkgrey" } }}
             >
               about
             </Button>
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link to="/instructors" onClick={handleNavClick}>
+          <NavLink to="/instructors" onClick={handleNavClick}>
             <Button
               size="small"
-              sx={{ color: "black", ":hover": { bgcolor: "lightgrey" } }}
+              sx={{ color: "white", ":hover": { bgcolor: "darkgrey" } }}
             >
               instructors
             </Button>
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link to="/classes" onClick={handleNavClick}>
+          <NavLink to="/classes" onClick={handleNavClick}>
             <Button
-              sx={{ color: "black", ":hover": { bgcolor: "lightgrey" } }}
+              sx={{ color: "white", ":hover": { bgcolor: "darkgrey" } }}
               size="small"
             >
               classes
             </Button>
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link to="/class-schedule" onClick={handleNavClick}>
+          <NavLink to="/class-schedule" onClick={handleNavClick}>
             <Button
               size="small"
-              sx={{ color: "black", ":hover": { bgcolor: "lightgrey" } }}
+              sx={{ color: "white", ":hover": { bgcolor: "darkgrey" } }}
             >
               schedule
             </Button>
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link to="/contact" onClick={handleNavClick}>
+          <NavLink to="/contact" onClick={handleNavClick}>
             <Button
               size="small"
-              sx={{ color: "black", ":hover": { bgcolor: "lightgrey" } }}
+              sx={{ color: "white", ":hover": { bgcolor: "darkgrey" } }}
             >
               contact
             </Button>
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link to="/news-board">
-            <Button
+          <NavLink to="/news-board">
+            <CustomBtn
               onClick={handleNavClick}
-              variant="contained"
-              sx={{
-                height: 45,
-                width: 140,
-              }}
+              className="solid-btn header-btn"
             >
               News Board
-            </Button>
-          </Link>
+            </CustomBtn>
+          </NavLink>
         </li>
-        {/* <div className="social">
-          <a href="">
-            <FaFacebook size={30} className="facebook" />
-          </a>
-          <a href="">
-            <RiInstagramFill size={30} className="instagram" />
-          </a>
-          <a href="">
-            <FaTwitter size={30} className="twitter" />
-          </a>
-          <a href="">
-            <FaYelp size={30} className="yelp" />
-          </a>
-        </div> */}
       </ul>
       <div className="hamburger" onClick={handleClick}>
         {click ? <FaTimes size={30} /> : <FaBars size={30} />}

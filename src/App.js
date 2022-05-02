@@ -1,12 +1,10 @@
 import "./index.css";
-import Header from "./components/Header";
-import { Link, Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
 import Instructors from "./components/Instructors";
 import ClassSchedule from "./components/ClassSchedule";
 import Contact from "./components/Contact";
-import Classes from "./components/Classes";
 import TinyHero from "./components/TinyHero";
 import Children from "./components/Children";
 import TeenAdult from "./components/TeenAdult";
@@ -14,6 +12,8 @@ import Weapons from "./components/Weapons";
 import Sparring from "./components/Sparring";
 import EliteCompetition from "./components/EliteCompetition";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
+import OurClasses from "./components/OurClasses";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/instructors" element={<Instructors />} />
-        <Route path="/classes" element={<Classes />} />
+        <Route path="classes" element={<OurClasses />} />
         <Route path="/tiny-heroes" element={<TinyHero />} />
         <Route path="/children" element={<Children />} />
         <Route path="/teen-adult" element={<TeenAdult />} />

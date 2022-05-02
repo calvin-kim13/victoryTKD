@@ -1,21 +1,22 @@
 import styled from "@emotion/styled";
-import { Button, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import React from "react";
 import weapons from "../assets/weapons.png";
-import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
+import Button from "./Button";
 
 const Weapons = () => {
   return (
     <WeaponsContainer>
       <Typography
-        variant="h3"
+        variant="h5"
         gutterBottom
         component="div"
         textAlign="center"
         letterSpacing="0.2rem"
         fontWeight="bold"
+        marginTop="2rem"
       >
-        Weapons
+        WEAPONS
       </Typography>
       <WeaponsContent>
         <Typography variant="body1" gutterBottom className="description">
@@ -31,8 +32,7 @@ const Weapons = () => {
       </WeaponsContent>
       <BackButton>
         <Button
-          variant="contained"
-          startIcon={<ArrowLeftIcon />}
+          className="classes-btn"
           onClick={() => window.location.replace("/classes")}
         >
           Back to Classes
@@ -42,7 +42,9 @@ const Weapons = () => {
   );
 };
 
-const WeaponsContainer = styled.div``;
+const WeaponsContainer = styled.div`
+  margin-top: 3rem;
+`;
 const WeaponsContent = styled.div`
   display: flex;
   justify-content: center;
@@ -59,6 +61,8 @@ const WeaponsImage = styled.div``;
 const BackButton = styled.div`
   text-align: center;
   padding: 1rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
   @media screen and (max-width: 1200px) {
     padding: 2rem;
   }

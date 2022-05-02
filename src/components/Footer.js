@@ -3,10 +3,9 @@ import { Typography } from "@mui/material";
 import React from "react";
 import { FaYelp, FaFacebook, FaTwitter } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
-import { grey, blue } from "@mui/material/colors";
+import { grey } from "@mui/material/colors";
 const footerColor = grey[900];
 const footerTextColor = grey[200];
-const footerHeaderColorBlue = blue[300];
 
 const Footer = () => {
   return (
@@ -61,7 +60,11 @@ const Footer = () => {
               <a href="tel:7144773232">(562) 907-2700</a>
             </div>
             <div className="social-links">
-              <a href="">
+              <a
+                href="https://www.facebook.com/victorytkdcenter/"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <FaFacebook
                   style={{
                     border: "1px solid white",
@@ -72,7 +75,11 @@ const Footer = () => {
                   }}
                 />
               </a>
-              <a href="">
+              <a
+                href="https://www.instagram.com/victorytkdcenter/?hl=en"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <RiInstagramFill
                   style={{
                     border: "1px solid white",
@@ -83,7 +90,11 @@ const Footer = () => {
                   }}
                 />
               </a>
-              <a href="">
+              <a
+                href="https://www.yelp.com/biz/victory-taekwondo-center-whittier?osq=victory+taekwondo"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <FaYelp
                   style={{
                     border: "1px solid white",
@@ -94,7 +105,11 @@ const Footer = () => {
                   }}
                 />
               </a>
-              <a href="">
+              <a
+                href="https://twitter.com/victorytkd11"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <FaTwitter
                   style={{
                     border: "1px solid white",
@@ -206,6 +221,9 @@ const CompanyContent = styled.div`
   .links {
     font-size: 0.8rem;
   }
+  .links:hover {
+    text-decoration: underline;
+  }
 `;
 
 const ContactContainer = styled.div`
@@ -240,6 +258,9 @@ const ContactContent = styled.div`
   .phone {
     margin-top: 0.5rem;
     font-size: 0.8rem;
+  }
+  .phone a:hover {
+    text-decoration: underline;
   }
   .social-links {
     margin-top: 1.2rem;

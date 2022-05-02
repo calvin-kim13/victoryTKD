@@ -14,7 +14,6 @@ const DownArrowWrapper = styled.div`
   text-align: center;
   .down-arrow {
     animation: animateDown infinite 1.5s;
-    margin: 9rem 0 0 0;
   }
 `;
 

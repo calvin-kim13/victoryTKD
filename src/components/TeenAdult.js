@@ -1,21 +1,22 @@
 import styled from "@emotion/styled";
-import { Button, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import React from "react";
 import teenAdult from "../assets/teenAdult.png";
-import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
+import Button from "./Button";
 
 const TeenAdult = () => {
   return (
     <TeenAdultContainer>
       <Typography
-        variant="h3"
+        variant="h5"
         gutterBottom
         component="div"
         textAlign="center"
         letterSpacing="0.2rem"
         fontWeight="bold"
+        marginTop="2rem"
       >
-        Teens & Adults
+        TEENS & ADULTS
       </Typography>
       <TeenAdultContent>
         <Typography variant="body1" gutterBottom className="description">
@@ -34,8 +35,7 @@ const TeenAdult = () => {
       </TeenAdultContent>
       <BackButton>
         <Button
-          variant="contained"
-          startIcon={<ArrowLeftIcon />}
+          className="classes-btn"
           onClick={() => window.location.replace("/classes")}
         >
           Back to Classes
@@ -45,7 +45,9 @@ const TeenAdult = () => {
   );
 };
 
-const TeenAdultContainer = styled.div``;
+const TeenAdultContainer = styled.div`
+  margin-top: 3rem;
+`;
 const TeenAdultContent = styled.div`
   display: flex;
   justify-content: center;
@@ -62,6 +64,8 @@ const TeenAdultImage = styled.div``;
 const BackButton = styled.div`
   text-align: center;
   padding: 1rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
   @media screen and (max-width: 1200px) {
     padding: 2rem;
   }

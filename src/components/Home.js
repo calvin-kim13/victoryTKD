@@ -1,19 +1,18 @@
 import styled from "@emotion/styled";
-import { Button, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import React from "react";
 import Trial from "./Trial";
 import DownArrow from "./DownArrow";
 import Testimonial from "./Testimonial";
 import Contact from "./Contact";
-import { grey, indigo } from "@mui/material/colors";
-
-const backgroundColor = indigo[900];
-const fontColor = grey[300];
+import video from "../assets/video.mp4";
+import CustomBtn from "./Button";
 
 const Home = () => {
   return (
     <HomeContainer id="home">
       <HomeContent>
+        <video src={video} autoPlay loop muted />
         <HomeTextWrapper>
           <Typography
             variant="h1"
@@ -21,15 +20,16 @@ const Home = () => {
             gutterBottom
             className="victory-tkd"
             fontWeight="bold"
+            color="#fafafa"
           >
             VICTORY <br /> TAEKWONDO
           </Typography>
           <Typography
-            variant="h5"
+            variant="h6"
             component="div"
             gutterBottom
             className="three-values"
-            // fontWeight="bold"
+            color="#eeeeee"
           >
             BETTER ATTITUDE <br />
             BETTER DISCIPLINE <br />
@@ -37,31 +37,16 @@ const Home = () => {
           </Typography>
         </HomeTextWrapper>
         <ButtonWrapper>
-          <Button
-            variant="contained"
-            size="large"
-            style={{ marginRight: "1.5rem" }}
-            onClick={() => window.location.replace("#contact")}
-            sx={{
-              height: 50,
-              width: 150,
-            }}
-          >
-            SIGN UP
-          </Button>
-          <Button
-            variant="outlined"
-            size="large"
-            onClick={() => window.location.replace("/#trial-info")}
-            sx={{
-              height: 50,
-              width: 150,
-            }}
-          >
-            LEARN MORE
-          </Button>
+          <a href="#contact">
+            <CustomBtn className="solid-btn">Sign up</CustomBtn>
+          </a>
+          <a href="#trial-info">
+            <CustomBtn className="outline-btn">Learn More</CustomBtn>
+          </a>
         </ButtonWrapper>
-        <DownArrow className="down-arrow" />
+        <div className="arrow-wrapper">
+          <DownArrow className="down-arrow" />
+        </div>
       </HomeContent>
       <Trial />
       <Testimonial />
@@ -75,19 +60,32 @@ const HomeContainer = styled.div`
 `;
 
 const HomeContent = styled.div`
-  // height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 4rem;
+  width: 100%;
+  height: 85vh;
+  background: rgba(0, 0, 0, 0.5);
+  video {
+    z-index: -1;
+    height: 85vh;
+    width: 100%;
+    position: absolute;
+    object-fit: fill;
+    opacity: 0.6;
+  }
+  .arrow-wrapper {
+    margin-top: 6rem;
+  }
   .down-arrow {
-    margin-bottom: 1.7rem;
     animation: animateDown infinite 1.5s;
+    color: white;
   }
   @media screen and (max-width: 1000px) {
-    height: 85vh;
-    margin-top: 2rem;
+    video {
+      object-fit: cover;
+    }
   }
 `;
 
@@ -108,14 +106,6 @@ const HomeTextWrapper = styled.div`
 
 const ButtonWrapper = styled.div`
   margin-top: 2rem;
-  .signup {
-    text-decoration: none;
-    color: inherit;
-  }
-  .learn-more {
-    text-decoration: none;
-    color: inherit;
-  }
 `;
 
 export default Home;

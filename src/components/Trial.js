@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
-import { Typography, Button, Card } from "@mui/material";
+import { Typography } from "@mui/material";
 import React from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import DownArrow from "./DownArrow";
+import CustomBtn from "./Button";
 
 const Trial = () => {
   return (
@@ -17,14 +17,9 @@ const Trial = () => {
             student at Victory Taekwondo for{" "}
             <span className="trial-price">ONLY $39</span>!
           </Typography>
-          <Button
-            variant="outlined"
-            size="large"
-            sx={{ height: 90, width: 300, fontSize: "1.1rem" }}
-            onClick={() => window.location.replace("/classes")}
-          >
-            VIEW CLASSES
-          </Button>
+          <a href="/classes">
+            <CustomBtn className="solid-btn view-btn">VIEW CLASSES</CustomBtn>
+          </a>
         </TrialOffer>
         <TrialIncludes>
           <ul>
@@ -54,29 +49,24 @@ const Trial = () => {
 };
 
 const TrialPage = styled.div`
-  height: 100vh;
+  height: 90vh;
+  padding: 5rem 0;
   .down-arrow {
     animation: animateDown infinite 1.5s;
-    margin: 3.5rem 0 0 0;
   }
   display: flex;
   align-items: space-evenly;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
+  @media screen and (min-width: 1000px) {
+    padding: 0;
   }
-  // @media screen and (max-width: 1000px) {
-  //   .down-arrow {
-  //     margin: .5rem 0 0 0;
-  //   }
-  // }
-
 `;
 
 const TrialContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 5rem;
   @media screen and (max-width: 1000px) {
     flex-direction: column;
   }
@@ -88,12 +78,12 @@ const TrialOffer = styled.div`
     text-decoration: underline;
     font-weight: bold;
   }
-  .signup {
-    text-decoration: none;
-    color: inherit;
-  }
   @media screen and (max-width: 1000px) {
     text-align: center;
+    .view-btn {
+      width: 250px;
+      height: 60px;
+    }
   }
 `;
 
@@ -107,6 +97,9 @@ const TrialIncludes = styled.div`
     margin-left: 1rem;
   }
   @media screen and (max-width: 1000px) {
+    ul li {
+      line-height: 5rem;
+    }
     .trial-list {
       font-size: 1.7rem;
     }
@@ -115,6 +108,7 @@ const TrialIncludes = styled.div`
 
 const ArrowWrapper = styled.div`
   text-align: center;
+  // margin-top: 2rem;
 `;
 
 export default Trial;

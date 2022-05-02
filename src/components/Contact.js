@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, TextField, Button, Paper } from "@mui/material";
+import { Typography, TextField } from "@mui/material";
 import styled from "@emotion/styled";
 import Map from "./Map";
 import contact1 from "../assets/contact1.png";
@@ -7,14 +7,15 @@ import contact2 from "../assets/contact2.png";
 import contact3 from "../assets/contact3.png";
 import contact4 from "../assets/contact4.png";
 import ContactInfo from "./ContactInfo";
+import CustomBtn from "./Button";
 
 const Contact = () => {
   return (
     <div>
       <ContactContainer id="contact">
         <ContactHeader>
-          <img src={contact1} alt="Student Image" className="studentone" />
-          <img src={contact3} alt="Student Image" className="studenttwo" />
+          <img src={contact1} alt="Student" className="studentone" />
+          <img src={contact3} alt="Student" className="studenttwo" />
           <Typography
             variant="h4"
             gutterBottom
@@ -26,8 +27,8 @@ const Contact = () => {
           >
             LET'S TALK
           </Typography>
-          <img src={contact2} alt="Student Image" className="studentthree" />
-          <img src={contact4} alt="Student Image" className="studentfour" />
+          <img src={contact2} alt="Student" className="studentthree" />
+          <img src={contact4} alt="Student" className="studentfour" />
         </ContactHeader>
         <ContactContent>
           <div className="info">
@@ -35,12 +36,13 @@ const Contact = () => {
           </div>
           <div className="send-message">
             <Typography
-              variant="h5"
+              variant="h6"
               fontWeight="bold"
               marginBottom="1rem"
-              marginLeft="2rem"
+              textAlign="center"
+              textTransform="uppercase"
             >
-              Ask us
+              Send an Email directly
             </Typography>
             <form
               action="https://formsubmit.co/calvinkim1230@gmail.com"
@@ -88,12 +90,11 @@ const Contact = () => {
                 inputProps={{ style: { fontSize: 13 } }}
                 required
               />
-              <Button type="submit" variant="contained">
+              <CustomBtn type="submit" className="solid-btn contact-btn">
                 SEND
-              </Button>
+              </CustomBtn>
             </form>
           </div>
-
           <div className="map">
             <Map />
           </div>
@@ -104,7 +105,6 @@ const Contact = () => {
 };
 
 const ContactContainer = styled.div`
-  height: 100vh;
   height: fit-content;
 `;
 
@@ -147,7 +147,7 @@ const ContactHeader = styled.div`
 
 const ContactContent = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   .map {
   }
   .info {
@@ -170,8 +170,15 @@ const ContactContent = styled.div`
   .input label {
     font-size: 0.7rem;
   }
-  @media screen and (max-width: 1200px) {
-    grid-template-columns: 1fr;
+  .contact-btn {
+    height: 55px;
+    width: 390px;
+  }
+  @media screen and (min-width: 800px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 `;
 

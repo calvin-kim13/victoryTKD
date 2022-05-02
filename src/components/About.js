@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 import { Typography } from "@mui/material";
 import React from "react";
-import img from "../assets/flag.png";
 
 const About = () => {
   return (
@@ -20,7 +19,7 @@ const About = () => {
         </Typography>
       </AboutHeader>
       <AboutContent className="paragraph">
-        <Typography variant="button" gutterBottom>
+        <Typography variant="subtitle2" gutterBottom>
           Taekwondo is a Korean martial art that strengthens the mind and body
           through disciplined training. Tae ("foot"), Kwon ("fist"), and Do
           ("way") translates to "the way of the foot and fist." <br /> <br />
@@ -38,11 +37,15 @@ const About = () => {
 };
 
 const AboutContainer = styled.div`
-  height: 60vh;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   @media screen and (max-width: 1000px) {
     .paragraph {
       width: 22rem;
-      text-align: center;
+      text-align: justify;
     }
     .aboutHeader {
       font-size: 1.2rem;
@@ -50,10 +53,7 @@ const AboutContainer = styled.div`
   }
 `;
 
-const AboutHeader = styled.div`
-  margin-top: 6rem;
-  // border-bottom: 1px solid black;
-`;
+const AboutHeader = styled.div``;
 
 const AboutContent = styled.div`
   display: flex;
@@ -61,7 +61,7 @@ const AboutContent = styled.div`
   justify-content: center;
   align-items: center;
   width: 40rem;
-  margin: 3rem auto;
+  margin-top: 3rem;
 `;
 
 export default About;

@@ -1,21 +1,22 @@
 import styled from "@emotion/styled";
-import { Button, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import React from "react";
 import tinyHero from "../assets/tinyHero.png";
-import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
+import Button from "./Button";
 
 const TinyHero = () => {
   return (
     <TinyHeroContainer>
       <Typography
-        variant="h3"
+        variant="h5"
         gutterBottom
         component="div"
         textAlign="center"
         letterSpacing="0.2rem"
         fontWeight="bold"
+        marginTop="2rem"
       >
-        Tiny Heroes
+        TINY HEROES
       </Typography>
       <TinyHeroContent>
         <Typography variant="body1" gutterBottom className="description">
@@ -33,8 +34,7 @@ const TinyHero = () => {
       </TinyHeroContent>
       <BackButton>
         <Button
-          variant="contained"
-          startIcon={<ArrowLeftIcon />}
+          className="classes-btn"
           onClick={() => window.location.replace("/classes")}
         >
           Back to Classes
@@ -45,7 +45,7 @@ const TinyHero = () => {
 };
 
 const TinyHeroContainer = styled.div`
-  margin-top: 3rem;
+  height: fit-content;
 `;
 const TinyHeroContent = styled.div`
   display: flex;

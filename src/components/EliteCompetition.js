@@ -1,21 +1,22 @@
 import styled from "@emotion/styled";
-import { Button, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import React from "react";
 import elitecomp from "../assets/elitecomp.png";
-import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
+import Button from "./Button";
 
 const TinyHero = () => {
   return (
     <EliteCompetitionContainer>
       <Typography
-        variant="h3"
+        variant="h5"
         gutterBottom
         component="div"
         textAlign="center"
         letterSpacing="0.2rem"
         fontWeight="bold"
+        marginTop="2rem"
       >
-        Elite Competition
+        ELITE COMPETITION
       </Typography>
       <EliteCompetitionContent>
         <Typography variant="body1" gutterBottom className="description">
@@ -36,8 +37,7 @@ const TinyHero = () => {
       </EliteCompetitionContent>
       <BackButton>
         <Button
-          variant="contained"
-          startIcon={<ArrowLeftIcon />}
+          className="classes-btn"
           onClick={() => window.location.replace("/classes")}
         >
           Back to Classes
@@ -47,7 +47,9 @@ const TinyHero = () => {
   );
 };
 
-const EliteCompetitionContainer = styled.div``;
+const EliteCompetitionContainer = styled.div`
+  margin-top: 3rem;
+`;
 const EliteCompetitionContent = styled.div`
   display: flex;
   justify-content: center;
@@ -64,6 +66,8 @@ const EliteCompetitionImage = styled.div``;
 const BackButton = styled.div`
   text-align: center;
   padding: 1rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
   @media screen and (max-width: 1200px) {
     padding: 2rem;
   }
