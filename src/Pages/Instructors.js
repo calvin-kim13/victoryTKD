@@ -5,8 +5,6 @@ import grandmasterImg from "../assets/grandmaster.jpg";
 import michaelImg from "../assets/michael.jpg";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import { Avatar } from "@mui/material";
 
 const Instructors = () => {
   return (

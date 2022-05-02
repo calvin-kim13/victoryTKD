@@ -1,12 +1,12 @@
 import styled from "@emotion/styled";
 import { Typography } from "@mui/material";
 import React from "react";
-import sparring from "../assets/sparring.png";
-import Button from "./Button";
+import teenAdult from "../assets/teenAdult.png";
+import Button from "../components/Button";
 
-const Sparring = () => {
+const TeenAdult = () => {
   return (
-    <SparringContainer>
+    <TeenAdultContainer>
       <Typography
         variant="h5"
         gutterBottom
@@ -16,21 +16,23 @@ const Sparring = () => {
         fontWeight="bold"
         marginTop="2rem"
       >
-        SPARRING
+        TEENS & ADULTS
       </Typography>
-      <SparringContent>
+      <TeenAdultContent>
         <Typography variant="body1" gutterBottom className="description">
-          Sparring Program is an extra class designed to teach students how to
-          protect themselves through physical contact. They learn different
-          strategies and techniques to improve their sparring skills, such as
-          footwork and timing. <br />
-          <br /> This class is an effective and practical way for students to
-          develop confidence and self-defense skills.
+          Teens & Adults Class is for those ages 13 and up. This exclusive
+          program promotes weight loss, physical fitness, flexibility, and
+          self-defense.
+          <br />
+          <br /> Through challenging, yet fun and energizing workouts, students
+          are able to maintain a healthy weight. Furthermore, they learn
+          practical self-defense techniques to protect themselves from dangerous
+          situations.
         </Typography>
-        <SparringImage>
-          <img src={sparring} alt="Sparring" />
-        </SparringImage>
-      </SparringContent>
+        <TeenAdultImage>
+          <img src={teenAdult} alt="Teen Adult" />
+        </TeenAdultImage>
+      </TeenAdultContent>
       <BackButton>
         <Button
           className="classes-btn"
@@ -39,14 +41,14 @@ const Sparring = () => {
           Back to Classes
         </Button>
       </BackButton>
-    </SparringContainer>
+    </TeenAdultContainer>
   );
 };
 
-const SparringContainer = styled.div`
+const TeenAdultContainer = styled.div`
   margin-top: 3rem;
 `;
-const SparringContent = styled.div`
+const TeenAdultContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +59,7 @@ const SparringContent = styled.div`
     flex-direction: column-reverse;
   }
 `;
-const SparringImage = styled.div``;
+const TeenAdultImage = styled.div``;
 
 const BackButton = styled.div`
   text-align: center;
@@ -69,4 +71,4 @@ const BackButton = styled.div`
   }
 `;
 
-export default Sparring;
+export default TeenAdult;

@@ -20,7 +20,7 @@ const ClassSchedule = () => {
       </Typography>
       <img
         src={scheduleImg}
-        alt="Image of Victory Tae Kwon Do class schedule"
+        alt="Victory Tae Kwon Do class schedule"
         className="schedule"
       />
     </ClassScheduleContainer>

@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { Typography } from "@mui/material";
 import React from "react";
 import elitecomp from "../assets/elitecomp.png";
-import Button from "./Button";
+import Button from "../components/Button";
 
 const TinyHero = () => {
   return (

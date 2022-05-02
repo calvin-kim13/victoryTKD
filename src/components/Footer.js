@@ -23,22 +23,22 @@ const Footer = () => {
           </CompanyHeader>
           <CompanyContent>
             <p>
-              <a href="/about" className="links">
+              <a href="/about" className="footer-links">
                 About
               </a>
             </p>
             <p>
-              <a href="/classes" className="links">
+              <a href="/classes" className="footer-links">
                 Classes
               </a>
             </p>
             <p>
-              <a href="/class-schedule" className="links">
+              <a href="/class-schedule" className="footer-links">
                 Schedule
               </a>
             </p>
             <p>
-              <a href="/news-board" className="links">
+              <a href="/news-board" className="footer-links">
                 News
               </a>
             </p>
@@ -56,9 +56,7 @@ const Footer = () => {
           </ContactHeader>
           <ContactContent>
             <span className="email">victorytkdcenter@gmail.com</span>
-            <div className="phone">
-              <a href="tel:7144773232">(562) 907-2700</a>
-            </div>
+            <div className="phone">(562) 907-2700</div>
             <div className="social-links">
               <a
                 href="https://www.facebook.com/victorytkdcenter/"
@@ -218,11 +216,13 @@ const CompanyContent = styled.div`
     line-height: 0.6rem;
     margin-bottom: -0.1rem;
   }
-  .links {
+  .footer-links {
     font-size: 0.8rem;
+    opacity: 0.7;
   }
-  .links:hover {
+  .footer-links:hover {
     text-decoration: underline;
+    opacity: 1;
   }
 `;
 
@@ -254,19 +254,22 @@ const ContactContent = styled.div`
   line-height: 1.5rem;
   .email {
     font-size: 0.8rem;
+    opacity: 0.7;
   }
   .phone {
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
     font-size: 0.8rem;
-  }
-  .phone a:hover {
-    text-decoration: underline;
+    opacity: 0.7;
   }
   .social-links {
-    margin-top: 1.2rem;
+    margin-top: 1.4rem;
   }
   .social-links a {
-    margin: 0.3rem;
+    margin: 0.4rem;
+    opacity: 0.7;
+  }
+  .social-links a:hover {
+    opacity: 1;
   }
 `;
 const AddressContainer = styled.div`
@@ -294,6 +297,7 @@ const AddressContent = styled.div`
   align-items: center;
   justify-content: center;
   line-height: 1.5rem;
+  opacity: 0.7;
   @media screen and (min-width: 1200px) {
     width: 10rem;
     text-align: center;

@@ -1,12 +1,12 @@
 import styled from "@emotion/styled";
 import { Typography } from "@mui/material";
 import React from "react";
-import teenAdult from "../assets/teenAdult.png";
-import Button from "./Button";
+import weapons from "../assets/weapons.png";
+import Button from "../components/Button";
 
-const TeenAdult = () => {
+const Weapons = () => {
   return (
-    <TeenAdultContainer>
+    <WeaponsContainer>
       <Typography
         variant="h5"
         gutterBottom
@@ -16,23 +16,20 @@ const TeenAdult = () => {
         fontWeight="bold"
         marginTop="2rem"
       >
-        TEENS & ADULTS
+        WEAPONS
       </Typography>
-      <TeenAdultContent>
+      <WeaponsContent>
         <Typography variant="body1" gutterBottom className="description">
-          Teens & Adults Class is for those ages 13 and up. This exclusive
-          program promotes weight loss, physical fitness, flexibility, and
-          self-defense.
-          <br />
-          <br /> Through challenging, yet fun and energizing workouts, students
-          are able to maintain a healthy weight. Furthermore, they learn
-          practical self-defense techniques to protect themselves from dangerous
-          situations.
+          Weapons Program is an extra class where students learn how to properly
+          and safely use various weapons: Nunchucks, Long Staff, Short Staff,
+          and Cane. <br />
+          <br /> Students also take a Weapon's Test to level up their skills and
+          techniques.
         </Typography>
-        <TeenAdultImage>
-          <img src={teenAdult} alt="Teen Adult" />
-        </TeenAdultImage>
-      </TeenAdultContent>
+        <WeaponsImage>
+          <img src={weapons} alt="Weapons" />
+        </WeaponsImage>
+      </WeaponsContent>
       <BackButton>
         <Button
           className="classes-btn"
@@ -41,14 +38,14 @@ const TeenAdult = () => {
           Back to Classes
         </Button>
       </BackButton>
-    </TeenAdultContainer>
+    </WeaponsContainer>
   );
 };
 
-const TeenAdultContainer = styled.div`
+const WeaponsContainer = styled.div`
   margin-top: 3rem;
 `;
-const TeenAdultContent = styled.div`
+const WeaponsContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,7 +56,7 @@ const TeenAdultContent = styled.div`
     flex-direction: column-reverse;
   }
 `;
-const TeenAdultImage = styled.div``;
+const WeaponsImage = styled.div``;
 
 const BackButton = styled.div`
   text-align: center;
@@ -71,4 +68,4 @@ const BackButton = styled.div`
   }
 `;
 
-export default TeenAdult;
+export default Weapons;

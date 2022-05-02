@@ -1,13 +1,13 @@
 import React from "react";
 import { Typography, TextField } from "@mui/material";
 import styled from "@emotion/styled";
-import Map from "./Map";
+import Map from "../components/Map";
 import contact1 from "../assets/contact1.png";
 import contact2 from "../assets/contact2.png";
 import contact3 from "../assets/contact3.png";
 import contact4 from "../assets/contact4.png";
-import ContactInfo from "./ContactInfo";
-import CustomBtn from "./Button";
+import ContactInfo from "../components/ContactInfo";
+import CustomBtn from "../components/Button";
 
 const Contact = () => {
   return (

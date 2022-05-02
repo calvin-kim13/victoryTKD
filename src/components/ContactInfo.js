@@ -25,9 +25,7 @@ const ContactInfo = () => {
         <div>
           <div className="item">
             <LocalPhoneOutlinedIcon />{" "}
-            <span className="item-content">
-              <a href="tel:7144773232">(562) 907-2700</a>
-            </span>
+            <span className="item-content">(562) 907-2700</span>
           </div>
           <div className="item">
             <AlternateEmailOutlinedIcon />{" "}
@@ -41,10 +39,34 @@ const ContactInfo = () => {
           </div>
         </div>
         <div className="social">
-          <img src={facebook} alt="social link"></img>
-          <img src={instagram} alt="social link"></img>
-          <img src={yelp} alt="social link"></img>
-          <img src={twitter} alt="social link"></img>
+          <a
+            href="https://www.facebook.com/victorytkdcenter/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img src={facebook} alt="social link"></img>
+          </a>
+          <a
+            href="https://www.instagram.com/victorytkdcenter/?hl=en"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img src={instagram} alt="social link"></img>
+          </a>
+          <a
+            href="https://www.yelp.com/biz/victory-taekwondo-center-whittier?osq=victory+taekwondo"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img src={yelp} alt="social link"></img>
+          </a>
+          <a
+            href="https://twitter.com/victorytkd11"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img src={twitter} alt="social link"></img>
+          </a>
         </div>
       </InfoContainer>
     </ContactInfoContainer>
@@ -58,13 +80,12 @@ const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: space-evenly;
+  align-items: center;
   height: 80%;
   .item {
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
-    margin-left: 2rem;
   }
   .item-content {
     margin-left: 1rem;
@@ -75,13 +96,18 @@ const InfoContainer = styled.div`
   }
   .social {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    margin-left: 2rem;
   }
   .social img {
     width: 2.5rem;
     padding: 0.7rem;
+    opacity: 0.7;
+  }
+  .social img:hover {
+    transform: scale(1.1);
+    transition: transform 200ms;
+    opacity: 1;
   }
   @media screen and (max-width: 1200px) {
     .social {

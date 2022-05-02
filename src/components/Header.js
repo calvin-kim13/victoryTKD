@@ -1,10 +1,10 @@
 import logo from "../assets/logo.png";
 import { NavLink } from "react-router-dom";
 import * as React from "react";
-import Button from "@mui/material/Button";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./styles/Navbar.css";
 import CustomBtn from "./Button";
+import { Typography } from "@mui/material";
 
 const Header = () => {
   const [click, setClick] = React.useState(false);
@@ -28,63 +28,49 @@ const Header = () => {
       </div>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li className="nav-item">
-          <NavLink to="/" onClick={handleNavClick}>
-            <Button
-              size="small"
-              sx={{ color: "white", ":hover": { bgcolor: "darkgrey" } }}
-            >
+          <NavLink to="/" onClick={handleNavClick} className="links">
+            <Typography fontWeight="bold" variant="overline">
               home
-            </Button>
+            </Typography>
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/about" onClick={handleNavClick}>
-            <Button
-              size="small"
-              sx={{ color: "white", ":hover": { bgcolor: "darkgrey" } }}
-            >
+          <NavLink to="/about" onClick={handleNavClick} className="links">
+            <Typography fontWeight="bold" variant="overline">
               about
-            </Button>
+            </Typography>
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/instructors" onClick={handleNavClick}>
-            <Button
-              size="small"
-              sx={{ color: "white", ":hover": { bgcolor: "darkgrey" } }}
-            >
+          <NavLink to="/instructors" onClick={handleNavClick} className="links">
+            <Typography fontWeight="bold" variant="overline">
               instructors
-            </Button>
+            </Typography>
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/classes" onClick={handleNavClick}>
-            <Button
-              sx={{ color: "white", ":hover": { bgcolor: "darkgrey" } }}
-              size="small"
-            >
+          <NavLink to="/classes" onClick={handleNavClick} className="links">
+            <Typography fontWeight="bold" variant="overline">
               classes
-            </Button>
+            </Typography>
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/class-schedule" onClick={handleNavClick}>
-            <Button
-              size="small"
-              sx={{ color: "white", ":hover": { bgcolor: "darkgrey" } }}
-            >
+          <NavLink
+            to="/class-schedule"
+            onClick={handleNavClick}
+            className="links"
+          >
+            <Typography fontWeight="bold" variant="overline">
               schedule
-            </Button>
+            </Typography>
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/contact" onClick={handleNavClick}>
-            <Button
-              size="small"
-              sx={{ color: "white", ":hover": { bgcolor: "darkgrey" } }}
-            >
+          <NavLink to="/contact" onClick={handleNavClick} className="links">
+            <Typography fontWeight="bold" variant="overline">
               contact
-            </Button>
+            </Typography>
           </NavLink>
         </li>
         <li className="nav-item">

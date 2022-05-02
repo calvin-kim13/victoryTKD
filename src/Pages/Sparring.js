@@ -1,12 +1,12 @@
 import styled from "@emotion/styled";
 import { Typography } from "@mui/material";
 import React from "react";
-import children from "../assets/children.png";
-import Button from "./Button";
+import sparring from "../assets/sparring.png";
+import Button from "../components/Button";
 
-const Children = () => {
+const Sparring = () => {
   return (
-    <ChildrenContainer>
+    <SparringContainer>
       <Typography
         variant="h5"
         gutterBottom
@@ -16,22 +16,21 @@ const Children = () => {
         fontWeight="bold"
         marginTop="2rem"
       >
-        CHILDREN
+        SPARRING
       </Typography>
-      <ChildrenContent>
+      <SparringContent>
         <Typography variant="body1" gutterBottom className="description">
-          Children's Class is for those ages 6-12 years old. This popular class
-          helps students develop confidence, discipline, and respect. They also
-          learn self-defense techniques to protect themselves from dangerous
-          situations.
-          <br />
-          <br /> This class promotes physical and character development to help
-          children grow into healthy and strong-minded individuals.
+          Sparring Program is an extra class designed to teach students how to
+          protect themselves through physical contact. They learn different
+          strategies and techniques to improve their sparring skills, such as
+          footwork and timing. <br />
+          <br /> This class is an effective and practical way for students to
+          develop confidence and self-defense skills.
         </Typography>
-        <ChildrenImage>
-          <img src={children} alt="Children" />
-        </ChildrenImage>
-      </ChildrenContent>
+        <SparringImage>
+          <img src={sparring} alt="Sparring" />
+        </SparringImage>
+      </SparringContent>
       <BackButton>
         <Button
           className="classes-btn"
@@ -40,14 +39,14 @@ const Children = () => {
           Back to Classes
         </Button>
       </BackButton>
-    </ChildrenContainer>
+    </SparringContainer>
   );
 };
 
-const ChildrenContainer = styled.div`
+const SparringContainer = styled.div`
   margin-top: 3rem;
 `;
-const ChildrenContent = styled.div`
+const SparringContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,13 +57,9 @@ const ChildrenContent = styled.div`
     flex-direction: column-reverse;
   }
 `;
-const ChildrenImage = styled.div`
-  margin-top: 3rem;
-`;
+const SparringImage = styled.div``;
 
 const BackButton = styled.div`
-  text-align: center;
-  padding: 1rem;
   text-align: center;
   padding: 1rem;
   margin-bottom: 4rem;
@@ -74,4 +69,4 @@ const BackButton = styled.div`
   }
 `;
 
-export default Children;
+export default Sparring;

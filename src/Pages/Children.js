@@ -1,12 +1,12 @@
 import styled from "@emotion/styled";
 import { Typography } from "@mui/material";
 import React from "react";
-import weapons from "../assets/weapons.png";
-import Button from "./Button";
+import children from "../assets/children.png";
+import Button from "../components/Button";
 
-const Weapons = () => {
+const Children = () => {
   return (
-    <WeaponsContainer>
+    <ChildrenContainer>
       <Typography
         variant="h5"
         gutterBottom
@@ -16,20 +16,22 @@ const Weapons = () => {
         fontWeight="bold"
         marginTop="2rem"
       >
-        WEAPONS
+        CHILDREN
       </Typography>
-      <WeaponsContent>
+      <ChildrenContent>
         <Typography variant="body1" gutterBottom className="description">
-          Weapons Program is an extra class where students learn how to properly
-          and safely use various weapons: Nunchucks, Long Staff, Short Staff,
-          and Cane. <br />
-          <br /> Students also take a Weapon's Test to level up their skills and
-          techniques.
+          Children's Class is for those ages 6-12 years old. This popular class
+          helps students develop confidence, discipline, and respect. They also
+          learn self-defense techniques to protect themselves from dangerous
+          situations.
+          <br />
+          <br /> This class promotes physical and character development to help
+          children grow into healthy and strong-minded individuals.
         </Typography>
-        <WeaponsImage>
-          <img src={weapons} alt="Weapons" />
-        </WeaponsImage>
-      </WeaponsContent>
+        <ChildrenImage>
+          <img src={children} alt="Children" />
+        </ChildrenImage>
+      </ChildrenContent>
       <BackButton>
         <Button
           className="classes-btn"
@@ -38,14 +40,14 @@ const Weapons = () => {
           Back to Classes
         </Button>
       </BackButton>
-    </WeaponsContainer>
+    </ChildrenContainer>
   );
 };
 
-const WeaponsContainer = styled.div`
+const ChildrenContainer = styled.div`
   margin-top: 3rem;
 `;
-const WeaponsContent = styled.div`
+const ChildrenContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,9 +58,13 @@ const WeaponsContent = styled.div`
     flex-direction: column-reverse;
   }
 `;
-const WeaponsImage = styled.div``;
+const ChildrenImage = styled.div`
+  margin-top: 3rem;
+`;
 
 const BackButton = styled.div`
+  text-align: center;
+  padding: 1rem;
   text-align: center;
   padding: 1rem;
   margin-bottom: 4rem;
@@ -68,4 +74,4 @@ const BackButton = styled.div`
   }
 `;
 
-export default Weapons;
+export default Children;

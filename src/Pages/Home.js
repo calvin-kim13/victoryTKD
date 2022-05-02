@@ -1,12 +1,12 @@
 import styled from "@emotion/styled";
 import { Typography } from "@mui/material";
 import React from "react";
-import Trial from "./Trial";
-import DownArrow from "./DownArrow";
-import Testimonial from "./Testimonial";
+import Trial from "../components/Trial";
+import DownArrow from "../components/DownArrow";
+import Testimonial from "../components/Testimonial";
 import Contact from "./Contact";
 import video from "../assets/video.mp4";
-import CustomBtn from "./Button";
+import CustomBtn from "../components/Button";
 
 const Home = () => {
   return (
@@ -66,7 +66,7 @@ const HomeContent = styled.div`
   justify-content: center;
   width: 100%;
   height: 85vh;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   video {
     z-index: -1;
     height: 85vh;
