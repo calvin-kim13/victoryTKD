@@ -3,10 +3,15 @@ import { Typography } from "@mui/material";
 import React from "react";
 import sparring from "../assets/sparring.png";
 import Button from "../components/Button";
+import { motion } from "framer-motion";
 
 const Sparring = () => {
   return (
-    <SparringContainer>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Typography
         variant="h5"
         gutterBottom
@@ -39,13 +44,10 @@ const Sparring = () => {
           Back to Classes
         </Button>
       </BackButton>
-    </SparringContainer>
+    </motion.div>
   );
 };
 
-const SparringContainer = styled.div`
-  margin-top: 3rem;
-`;
 const SparringContent = styled.div`
   display: flex;
   justify-content: center;

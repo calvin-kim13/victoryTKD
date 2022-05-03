@@ -3,10 +3,15 @@ import { Typography } from "@mui/material";
 import React from "react";
 import children from "../assets/children.png";
 import Button from "../components/Button";
+import { motion } from "framer-motion";
 
 const Children = () => {
   return (
-    <ChildrenContainer>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Typography
         variant="h5"
         gutterBottom
@@ -40,13 +45,10 @@ const Children = () => {
           Back to Classes
         </Button>
       </BackButton>
-    </ChildrenContainer>
+    </motion.div>
   );
 };
 
-const ChildrenContainer = styled.div`
-  margin-top: 3rem;
-`;
 const ChildrenContent = styled.div`
   display: flex;
   justify-content: center;

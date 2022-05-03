@@ -3,10 +3,15 @@ import { Typography } from "@mui/material";
 import React from "react";
 import teenAdult from "../assets/teenAdult.png";
 import Button from "../components/Button";
+import { motion } from "framer-motion";
 
 const TeenAdult = () => {
   return (
-    <TeenAdultContainer>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Typography
         variant="h5"
         gutterBottom
@@ -41,13 +46,10 @@ const TeenAdult = () => {
           Back to Classes
         </Button>
       </BackButton>
-    </TeenAdultContainer>
+    </motion.div>
   );
 };
 
-const TeenAdultContainer = styled.div`
-  margin-top: 3rem;
-`;
 const TeenAdultContent = styled.div`
   display: flex;
   justify-content: center;

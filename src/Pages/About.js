@@ -1,13 +1,21 @@
 import styled from "@emotion/styled";
 import { Typography } from "@mui/material";
 import React from "react";
+import "./styles/About.css";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <AboutContainer>
+    <motion.div
+      className="about-container"
+      initial={{ scaleY: 0 }}
+      animate={{ scaleY: 1 }}
+      exit={{ scaleY: 0 }}
+    >
       <AboutHeader>
         <Typography
-          variant="h5"
+          variant="h4"
+          marginTop="6rem"
           gutterBottom
           component="div"
           textAlign="center"
@@ -32,36 +40,29 @@ const About = () => {
           leaders not just in Taekwondo, but also in life.
         </Typography>
       </AboutContent>
-    </AboutContainer>
+    </motion.div>
   );
 };
 
-const AboutContainer = styled.div`
-  height: 75vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+const AboutHeader = styled.div`
   @media screen and (max-width: 1000px) {
-    .paragraph {
-      width: 22rem;
-      text-align: justify;
-    }
     .aboutHeader {
       font-size: 1.2rem;
     }
   }
 `;
 
-const AboutHeader = styled.div``;
-
 const AboutContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40rem;
+  width: 32rem;
   margin-top: 3rem;
+  @media screen and (max-width: 1000px) {
+    width: 22rem;
+    text-align: justify;
+  }
 `;
 
 export default About;

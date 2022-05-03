@@ -8,14 +8,19 @@ import contact3 from "../assets/contact3.png";
 import contact4 from "../assets/contact4.png";
 import ContactInfo from "../components/ContactInfo";
 import CustomBtn from "../components/Button";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ scaleY: 0 }}
+      animate={{ scaleY: 1 }}
+      exit={{ scaleY: 0 }}
+    >
       <ContactContainer id="contact">
         <ContactHeader>
-          <img src={contact1} alt="Student" className="studentone" />
-          <img src={contact3} alt="Student" className="studenttwo" />
+          {/* <img src={contact1} alt="Student" className="studentone" />
+          <img src={contact3} alt="Student" className="studenttwo" /> */}
           <Typography
             variant="h4"
             gutterBottom
@@ -27,8 +32,8 @@ const Contact = () => {
           >
             LET'S TALK
           </Typography>
-          <img src={contact2} alt="Student" className="studentthree" />
-          <img src={contact4} alt="Student" className="studentfour" />
+          {/* <img src={contact2} alt="Student" className="studentthree" />
+          <img src={contact4} alt="Student" className="studentfour" /> */}
         </ContactHeader>
         <ContactContent>
           <div className="info">
@@ -38,6 +43,7 @@ const Contact = () => {
             <Typography
               variant="h6"
               fontWeight="bold"
+              marginTop="3rem"
               marginBottom="1rem"
               textAlign="center"
               textTransform="uppercase"
@@ -100,16 +106,16 @@ const Contact = () => {
           </div>
         </ContactContent>
       </ContactContainer>
-    </div>
+    </motion.div>
   );
 };
 
 const ContactContainer = styled.div`
-  height: fit-content;
+  height: 90vh;
 `;
 
 const ContactHeader = styled.div`
-  height: 30%;
+  height: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,6 +152,7 @@ const ContactHeader = styled.div`
 `;
 
 const ContactContent = styled.div`
+  height: 80%;
   display: grid;
   grid-template-columns: 1fr;
   .map {
@@ -160,7 +167,7 @@ const ContactContent = styled.div`
   form {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 2rem auto;
     width: 25rem;
     padding: 1rem;
   }

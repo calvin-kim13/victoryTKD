@@ -8,10 +8,17 @@ import weapons from "../assets/weapons.png";
 import sparring from "../assets/sparring.png";
 import elitecomp from "../assets/elitecomp.png";
 import { Link } from "react-router-dom";
+import "./styles/OurClasses.css";
+import { motion } from "framer-motion";
 
 const OurClasses = () => {
   return (
-    <ClassesContainer>
+    <motion.div
+      className="classes-container"
+      initial={{ scaleY: 0 }}
+      animate={{ scaleY: 1 }}
+      exit={{ scaleY: 0 }}
+    >
       <ClassesHeader>
         <Typography
           variant="h5"
@@ -75,13 +82,10 @@ const OurClasses = () => {
           </div>
         </Link>
       </ClassesContent>
-    </ClassesContainer>
+    </motion.div>
   );
 };
 
-const ClassesContainer = styled.div`
-  padding: 2rem;
-`;
 const ClassesHeader = styled.div``;
 const ClassesContent = styled.div`
   padding: 2rem;
@@ -106,7 +110,7 @@ const ClassesContent = styled.div`
       border-radius: 4px;
       border: 2px solid white;
       color: #ffffff;
-      transition: all 0.4s;
+      transition: 0.4s;
       cursor: pointer;
       margin: 5px;
     }

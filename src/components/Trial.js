@@ -3,10 +3,12 @@ import { Typography } from "@mui/material";
 import React from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import CustomBtn from "./Button";
+import image from "../assets/img4.png";
 
 const Trial = () => {
   return (
     <TrialPage id="trial-info">
+      {/* <img className="trial-background" src={image} alt="" /> */}
       <TrialContainer>
         <TrialOffer>
           <Typography variant="h4" fontWeight="bold" marginBottom="1rem">
@@ -49,8 +51,16 @@ const Trial = () => {
 };
 
 const TrialPage = styled.div`
-  height: 90vh;
-  padding: 5rem 0;
+  .trial-background {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: fit;
+    opacity: 0.6;
+  }
+  height: fit-content;
+  // padding: 5rem 0;
   .down-arrow {
     animation: animateDown infinite 1.5s;
   }

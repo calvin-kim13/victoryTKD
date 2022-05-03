@@ -3,10 +3,15 @@ import { Typography } from "@mui/material";
 import React from "react";
 import elitecomp from "../assets/elitecomp.png";
 import Button from "../components/Button";
+import { motion } from "framer-motion";
 
 const TinyHero = () => {
   return (
-    <EliteCompetitionContainer>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Typography
         variant="h5"
         gutterBottom
@@ -43,13 +48,10 @@ const TinyHero = () => {
           Back to Classes
         </Button>
       </BackButton>
-    </EliteCompetitionContainer>
+    </motion.div>
   );
 };
 
-const EliteCompetitionContainer = styled.div`
-  margin-top: 3rem;
-`;
 const EliteCompetitionContent = styled.div`
   display: flex;
   justify-content: center;

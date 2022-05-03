@@ -3,10 +3,16 @@ import { Typography } from "@mui/material";
 import React from "react";
 import tinyHero from "../assets/tinyHero.png";
 import Button from "../components/Button";
+import "./styles/TinyHero.css";
+import { motion } from "framer-motion";
 
 const TinyHero = () => {
   return (
-    <TinyHeroContainer>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Typography
         variant="h5"
         gutterBottom
@@ -40,13 +46,10 @@ const TinyHero = () => {
           Back to Classes
         </Button>
       </BackButton>
-    </TinyHeroContainer>
+    </motion.div>
   );
 };
 
-const TinyHeroContainer = styled.div`
-  height: fit-content;
-`;
 const TinyHeroContent = styled.div`
   display: flex;
   justify-content: center;

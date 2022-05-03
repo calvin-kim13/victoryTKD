@@ -12,6 +12,10 @@
   cursor: pointer;
   margin: 5px;
 }
+.solid-btn:active {
+  transform: scale(1.05);
+  transition: transform 200ms;
+}
 .solid-btn span {
   cursor: pointer;
   position: relative;
@@ -47,6 +51,10 @@
   transition: all 0.4s;
   cursor: pointer;
   margin: 5px;
+}
+.outline-btn:active {
+  transform: scale(1.05);
+  transition: transform 200ms;
 }
 .outline-btn span {
   cursor: pointer;
@@ -93,6 +101,10 @@
   transition: all 0.4s;
   cursor: pointer;
   margin: 5px;
+}
+.classes-btn:active {
+  transform: scale(1.05);
+  transition: transform 200ms;
 }
 .classes-btn span {
   cursor: pointer;

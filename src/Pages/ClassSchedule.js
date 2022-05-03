@@ -1,11 +1,17 @@
-import styled from "@emotion/styled";
 import { Typography } from "@mui/material";
 import React from "react";
 import scheduleImg from "../assets/schedule.png";
+import { motion } from "framer-motion";
+import "./styles/ClassSchedule.css";
 
 const ClassSchedule = () => {
   return (
-    <ClassScheduleContainer>
+    <motion.div
+      className="class-schedule-container"
+      initial={{ scaleY: 0 }}
+      animate={{ scaleY: 1 }}
+      exit={{ scaleY: 0 }}
+    >
       <Typography
         variant="h5"
         gutterBottom
@@ -13,7 +19,7 @@ const ClassSchedule = () => {
         textAlign="center"
         letterSpacing="0.2rem"
         fontWeight="bold"
-        marginTop="2rem"
+        marginTop="4rem"
         className="classSchedule"
       >
         CLASS SCHEDULE
@@ -23,43 +29,8 @@ const ClassSchedule = () => {
         alt="Victory Tae Kwon Do class schedule"
         className="schedule"
       />
-    </ClassScheduleContainer>
+    </motion.div>
   );
 };
-
-const ClassScheduleContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  // justify-content: center;
-  align-items: center;
-  height: 70vh;
-  margin-bottom: 4rem;
-  img {
-    width: 55rem;
-    height: 30rem;
-    border: 5px solid black;
-  }
-  .schedule {
-    margin-top: 2rem;
-  }
-  @media screen and (max-width: 1200px) {
-    img {
-      width: 40rem;
-      height: 25rem;
-    }
-    .schedule {
-      margin-top: 5rem;
-    }
-  }
-  @media screen and (max-width: 800px) {
-    .classSchedule {
-      // font-size: 2rem;
-    }
-    img {
-      width: 29rem;
-      height: 18rem;
-    }
-  }
-`;
 
 export default ClassSchedule;

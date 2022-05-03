@@ -5,10 +5,15 @@ import grandmasterImg from "../assets/grandmaster.jpg";
 import michaelImg from "../assets/michael.jpg";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
+import { motion } from "framer-motion";
 
 const Instructors = () => {
   return (
-    <InstructorsContainer>
+    <motion.div
+      initial={{ scaleY: 0 }}
+      animate={{ scaleY: 1 }}
+      exit={{ scaleY: 0 }}
+    >
       <InstructorsHeader>
         <Typography
           variant="h5"
@@ -27,19 +32,6 @@ const Instructors = () => {
           sx={{ maxWidth: 800, backgroundColor: "#eee" }}
           className="grand-master"
         >
-          {/* <CardMedia
-            component="img"
-            alt="Image of Grand Master Hyun Y. Kim"
-            height="400"
-            className="master-img"
-            image={grandmasterImg}
-          /> */}
-          {/* <Avatar
-            alt="Grand Master Hyun Y. Kim"
-            src={grandmasterImg}
-            sx={{ width: 200, height: 300, backgroundPosition: "bottom" }}
-            className="master-img"
-          /> */}
           <div className="image">
             <img
               src={grandmasterImg}
@@ -85,19 +77,6 @@ const Instructors = () => {
           sx={{ maxWidth: 800, backgroundColor: "#eee" }}
           className="master-michael"
         >
-          {/* <CardMedia
-            component="img"
-            alt="Image of Master Michael Guajardo"
-            height="400"
-            className="master-img"
-            image={michaelImg}
-          /> */}
-          {/* <Avatar
-            alt="Master Michael Guajardo"
-            src={michaelImg}
-            sx={{ width: 200, height: 300 }}
-            className="master-img"
-          /> */}
           <div className="image">
             <img src={michaelImg} alt="michael" className="master-img" />
           </div>
@@ -128,18 +107,12 @@ const Instructors = () => {
           </CardContent>
         </Card>
       </InstructorsContent>
-    </InstructorsContainer>
+    </motion.div>
   );
 };
 
-const InstructorsContainer = styled.div`
-  ul li {
-    list-style: square;
-  }
-`;
-
 const InstructorsHeader = styled.div`
-  margin-top: 2rem;
+  margin-top: 4rem;
   @media screen and (max-width: 1000px) {
     .meetTeam {
       // font-size: 2rem;
@@ -163,6 +136,9 @@ const InstructorsContent = styled.div`
   }
   ul {
     padding: 0 2rem;
+  }
+  ul li {
+    list-style: square;
   }
   @media screen and (max-width: 1000px) {
     .image {

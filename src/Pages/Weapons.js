@@ -3,10 +3,15 @@ import { Typography } from "@mui/material";
 import React from "react";
 import weapons from "../assets/weapons.png";
 import Button from "../components/Button";
+import { motion } from "framer-motion";
 
 const Weapons = () => {
   return (
-    <WeaponsContainer>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Typography
         variant="h5"
         gutterBottom
@@ -38,13 +43,10 @@ const Weapons = () => {
           Back to Classes
         </Button>
       </BackButton>
-    </WeaponsContainer>
+    </motion.div>
   );
 };
 
-const WeaponsContainer = styled.div`
-  margin-top: 3rem;
-`;
 const WeaponsContent = styled.div`
   display: flex;
   justify-content: center;

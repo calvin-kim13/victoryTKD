@@ -15,6 +15,7 @@ const ContactInfo = () => {
       <Typography
         variant="h6"
         fontWeight="bold"
+        marginTop="3rem"
         marginBottom="2rem"
         textAlign="center"
         textTransform="uppercase"

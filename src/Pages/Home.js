@@ -7,57 +7,83 @@ import Testimonial from "../components/Testimonial";
 import Contact from "./Contact";
 import video from "../assets/video.mp4";
 import CustomBtn from "../components/Button";
+import { motion } from "framer-motion";
+import {
+  Animator,
+  MoveOut,
+  ScrollPage,
+  ScrollContainer,
+  FadeIn,
+  ZoomIn,
+  FadeOut,
+  MoveIn,
+} from "react-scroll-motion";
 
 const Home = () => {
   return (
-    <HomeContainer id="home">
-      <HomeContent>
-        <video src={video} autoPlay loop muted />
-        <HomeTextWrapper>
-          <Typography
-            variant="h1"
-            component="div"
-            gutterBottom
-            className="victory-tkd"
-            fontWeight="bold"
-            color="#fafafa"
-          >
-            VICTORY <br /> TAEKWONDO
-          </Typography>
-          <Typography
-            variant="h6"
-            component="div"
-            gutterBottom
-            className="three-values"
-            color="#eeeeee"
-          >
-            BETTER ATTITUDE <br />
-            BETTER DISCIPLINE <br />
-            BETTER RESPECT
-          </Typography>
-        </HomeTextWrapper>
-        <ButtonWrapper>
-          <a href="#contact">
-            <CustomBtn className="solid-btn">Sign up</CustomBtn>
-          </a>
-          <a href="#trial-info">
-            <CustomBtn className="outline-btn">Learn More</CustomBtn>
-          </a>
-        </ButtonWrapper>
-        <div className="arrow-wrapper">
-          <DownArrow className="down-arrow" />
-        </div>
-      </HomeContent>
-      <Trial />
-      <Testimonial />
-      <Contact />
-    </HomeContainer>
+    <ScrollContainer>
+      <motion.div
+        id="home"
+        initial={{ scaleY: 0 }}
+        animate={{ scaleY: 1 }}
+        exit={{ scaleY: 0 }}
+      >
+        <ScrollPage page={0}>
+          <Animator animation={MoveOut(0, -500)}>
+            <HomeContent>
+              <video src={video} autoPlay loop muted />
+              <HomeTextWrapper>
+                <Typography
+                  variant="h1"
+                  component="div"
+                  gutterBottom
+                  className="victory-tkd"
+                  fontWeight="bold"
+                  color="#fafafa"
+                >
+                  VICTORY <br /> TAEKWONDO
+                </Typography>
+                <Typography
+                  variant="h6"
+                  component="div"
+                  gutterBottom
+                  className="three-values"
+                  color="#eeeeee"
+                >
+                  BETTER ATTITUDE <br />
+                  BETTER DISCIPLINE <br />
+                  BETTER RESPECT
+                </Typography>
+              </HomeTextWrapper>
+              <ButtonWrapper>
+                <a href="#contact">
+                  <CustomBtn className="solid-btn">Sign up</CustomBtn>
+                </a>
+                <a href="#trial-info">
+                  <CustomBtn className="outline-btn">Learn More</CustomBtn>
+                </a>
+              </ButtonWrapper>
+              <div className="arrow-wrapper">
+                <DownArrow className="down-arrow" />
+              </div>
+            </HomeContent>
+          </Animator>
+        </ScrollPage>
+        <ScrollPage page={1}>
+          <Animator animation={FadeIn()}>
+            <Trial />
+          </Animator>
+        </ScrollPage>
+        <ScrollPage page={2}>
+          <Animator animation={FadeIn()}>
+            <Testimonial />
+          </Animator>
+        </ScrollPage>
+        <Contact />
+      </motion.div>
+    </ScrollContainer>
   );
 };
-
-const HomeContainer = styled.div`
-  color: #424242;
-`;
 
 const HomeContent = styled.div`
   display: flex;
