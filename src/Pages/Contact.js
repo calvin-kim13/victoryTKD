@@ -2,10 +2,6 @@ import React from "react";
 import { Typography, TextField } from "@mui/material";
 import styled from "@emotion/styled";
 import Map from "../components/Map";
-import contact1 from "../assets/contact1.png";
-import contact2 from "../assets/contact2.png";
-import contact3 from "../assets/contact3.png";
-import contact4 from "../assets/contact4.png";
 import ContactInfo from "../components/ContactInfo";
 import CustomBtn from "../components/Button";
 import { motion } from "framer-motion";
@@ -111,11 +107,11 @@ const Contact = () => {
 };
 
 const ContactContainer = styled.div`
-  height: 90vh;
+  height: fit-content;
 `;
 
 const ContactHeader = styled.div`
-  height: 20%;
+  height: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;

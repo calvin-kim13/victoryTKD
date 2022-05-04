@@ -4,8 +4,10 @@ import React from "react";
 import weapons from "../assets/weapons.png";
 import Button from "../components/Button";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const Weapons = () => {
+  const navigate = useNavigate();
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -36,10 +38,7 @@ const Weapons = () => {
         </WeaponsImage>
       </WeaponsContent>
       <BackButton>
-        <Button
-          className="classes-btn"
-          onClick={() => window.location.replace("/classes")}
-        >
+        <Button className="classes-btn" onClick={() => navigate(-1)}>
           Back to Classes
         </Button>
       </BackButton>

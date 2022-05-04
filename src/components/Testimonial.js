@@ -3,17 +3,19 @@ import { Typography } from "@mui/material";
 import React from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Carousel from "./Carousel";
+import stone from "../assets/stones.png";
 
 const Testimonial = () => {
   return (
     <TestimonialPage>
+      <img className="stone-img" src={stone} alt="stone" />
       <TestimonialHeader>
         <Typography
           variant="h4"
           fontWeight="bold"
           className="testimonialHeader"
         >
-          WHAT THEY SAY
+          WHAT STUDENTS SAY ABOUT US...
         </Typography>
       </TestimonialHeader>
       <Carousel />
@@ -25,19 +27,30 @@ const Testimonial = () => {
 };
 
 const TestimonialPage = styled.div`
-  height: fit-content;
-  background-color: #616161;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  @media screen and (min-width: 1000px) {
+  background: rgba(0, 0, 0);
+  .stone-img {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    opacity: 0.4;
+    object-fit: cover;
+  }
+  @media screen and (max-width: 1000px) {
     height: 100vh;
+    .stone-img {
+      height: 100%;
+    }
   }
 `;
 
 const TestimonialHeader = styled.div`
-  color: #fafafa;
+  color: #fff;
+  z-index: 10;
   text-align: center;
   margin-top: 3rem;
   @media screen and (min-width: 1000px) {
@@ -45,7 +58,7 @@ const TestimonialHeader = styled.div`
   }
   @media screen and (max-width: 1000px) {
     .testimonialHeader {
-      font-size: 2.2rem;
+      font-size: 1.2rem;
       padding: 3rem;
     }
   }
@@ -58,7 +71,7 @@ const ArrowWrapper = styled.div`
   .down-arrow {
     animation: animateDown infinite 1.5s;
   }
-  color: white;
+  color: #fff;
 `;
 
 export default Testimonial;

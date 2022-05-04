@@ -1,6 +1,5 @@
-import styled from "@emotion/styled";
 import React from "react";
-import { MapContainer, TileLayer, Marker, Popup, Tooltip } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 import "../App.css";
 

@@ -5,7 +5,7 @@ import Trial from "../components/Trial";
 import DownArrow from "../components/DownArrow";
 import Testimonial from "../components/Testimonial";
 import Contact from "./Contact";
-import video from "../assets/video.mp4";
+import video from "../assets/background.mp4";
 import CustomBtn from "../components/Button";
 import { motion } from "framer-motion";
 import {
@@ -13,9 +13,6 @@ import {
   MoveOut,
   ScrollPage,
   ScrollContainer,
-  FadeIn,
-  ZoomIn,
-  FadeOut,
   MoveIn,
 } from "react-scroll-motion";
 
@@ -29,7 +26,7 @@ const Home = () => {
         exit={{ scaleY: 0 }}
       >
         <ScrollPage page={0}>
-          <Animator animation={MoveOut(0, -500)}>
+          <Animator animation={MoveOut(0, -50)}>
             <HomeContent>
               <video src={video} autoPlay loop muted />
               <HomeTextWrapper>
@@ -70,12 +67,12 @@ const Home = () => {
           </Animator>
         </ScrollPage>
         <ScrollPage page={1}>
-          <Animator animation={FadeIn()}>
+          <Animator animation={MoveIn(800, 0)}>
             <Trial />
           </Animator>
         </ScrollPage>
         <ScrollPage page={2}>
-          <Animator animation={FadeIn()}>
+          <Animator animation={MoveIn(-800, 0)}>
             <Testimonial />
           </Animator>
         </ScrollPage>

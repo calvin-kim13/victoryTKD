@@ -99,6 +99,7 @@ const InfoContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem 0 2rem 0;
   }
   .social img {
     width: 2.5rem;

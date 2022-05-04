@@ -4,8 +4,10 @@ import React from "react";
 import teenAdult from "../assets/teenAdult.png";
 import Button from "../components/Button";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const TeenAdult = () => {
+  const navigate = useNavigate();
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -39,10 +41,7 @@ const TeenAdult = () => {
         </TeenAdultImage>
       </TeenAdultContent>
       <BackButton>
-        <Button
-          className="classes-btn"
-          onClick={() => window.location.replace("/classes")}
-        >
+        <Button className="classes-btn" onClick={() => navigate(-1)}>
           Back to Classes
         </Button>
       </BackButton>

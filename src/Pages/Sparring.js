@@ -4,8 +4,10 @@ import React from "react";
 import sparring from "../assets/sparring.png";
 import Button from "../components/Button";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const Sparring = () => {
+  const navigate = useNavigate();
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -37,10 +39,7 @@ const Sparring = () => {
         </SparringImage>
       </SparringContent>
       <BackButton>
-        <Button
-          className="classes-btn"
-          onClick={() => window.location.replace("/classes")}
-        >
+        <Button className="classes-btn" onClick={() => navigate(-1)}>
           Back to Classes
         </Button>
       </BackButton>

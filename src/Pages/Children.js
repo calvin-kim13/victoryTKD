@@ -4,8 +4,10 @@ import React from "react";
 import children from "../assets/children.png";
 import Button from "../components/Button";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const Children = () => {
+  const navigate = useNavigate();
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -38,10 +40,7 @@ const Children = () => {
         </ChildrenImage>
       </ChildrenContent>
       <BackButton>
-        <Button
-          className="classes-btn"
-          onClick={() => window.location.replace("/classes")}
-        >
+        <Button className="classes-btn" onClick={() => navigate(-1)}>
           Back to Classes
         </Button>
       </BackButton>

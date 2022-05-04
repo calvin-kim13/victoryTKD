@@ -4,8 +4,10 @@ import React from "react";
 import elitecomp from "../assets/elitecomp.png";
 import Button from "../components/Button";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const TinyHero = () => {
+  const navigate = useNavigate();
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -41,10 +43,7 @@ const TinyHero = () => {
         </EliteCompetitionImage>
       </EliteCompetitionContent>
       <BackButton>
-        <Button
-          className="classes-btn"
-          onClick={() => window.location.replace("/classes")}
-        >
+        <Button className="classes-btn" onClick={() => navigate(-1)}>
           Back to Classes
         </Button>
       </BackButton>

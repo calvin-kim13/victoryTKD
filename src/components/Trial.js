@@ -3,7 +3,6 @@ import { Typography } from "@mui/material";
 import React from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import CustomBtn from "./Button";
-import image from "../assets/img4.png";
 
 const Trial = () => {
   return (
@@ -11,10 +10,19 @@ const Trial = () => {
       {/* <img className="trial-background" src={image} alt="" /> */}
       <TrialContainer>
         <TrialOffer>
-          <Typography variant="h4" fontWeight="bold" marginBottom="1rem">
+          <Typography
+            className="offer"
+            variant="h4"
+            fontWeight="bold"
+            marginBottom="1rem"
+          >
             EXCLUSIVE OFFER
           </Typography>
-          <Typography variant="h6" marginBottom="2rem">
+          <Typography
+            className="offer-description"
+            variant="h6"
+            marginBottom="2rem"
+          >
             4 week trial that allows you to experience what it's like to be a
             student at Victory Taekwondo for{" "}
             <span className="trial-price">ONLY $39</span>!
@@ -60,7 +68,7 @@ const TrialPage = styled.div`
     opacity: 0.6;
   }
   height: fit-content;
-  // padding: 5rem 0;
+  padding: 5rem 0;
   .down-arrow {
     animation: animateDown infinite 1.5s;
   }
@@ -90,6 +98,12 @@ const TrialOffer = styled.div`
   }
   @media screen and (max-width: 1000px) {
     text-align: center;
+    .offer {
+      font-size: 1.5rem;
+    }
+    .offer-description {
+      font-size: 1.1rem;
+    }
     .view-btn {
       width: 250px;
       height: 60px;
