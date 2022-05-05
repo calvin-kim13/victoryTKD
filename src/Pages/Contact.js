@@ -18,7 +18,7 @@ const Contact = () => {
           {/* <img src={contact1} alt="Student" className="studentone" />
           <img src={contact3} alt="Student" className="studenttwo" /> */}
           <Typography
-            variant="h4"
+            variant="h5"
             gutterBottom
             component="div"
             textAlign="center"

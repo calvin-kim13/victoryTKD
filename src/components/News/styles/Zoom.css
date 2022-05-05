@@ -1,0 +1,40 @@
+.zoom-wrapper {
+  width: 70vw;
+  margin: 2rem auto;
+  padding: 2rem 0;
+}
+
+.zoom-text,
+.zoom-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  max-width: 50%;
+  padding: 2rem;
+}
+
+.zoom-id {
+  color: dodgerblue;
+}
+
+.zoom-pw {
+  color: red;
+}
+
+.zoom-text ul li {
+  list-style: decimal-leading-zero;
+  font-size: 0.7rem;
+}
+
+@media screen and (max-width: 700px) {
+  .zoom-wrapper {
+    width: 90vw;
+  }
+
+  .zoom-text,
+  .zoom-info {
+    max-width: 100%;
+  }
+}

@@ -13,6 +13,7 @@ import EliteCompetition from "../Pages/EliteCompetition";
 import OurClasses from "../Pages/OurClasses";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import News from "../Pages/News";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -32,6 +33,7 @@ const AnimatedRoutes = () => {
         <Route path="/elite-competition" element={<EliteCompetition />} />
         <Route path="/class-schedule" element={<ClassSchedule />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/news" element={<News />} />
       </Routes>
     </AnimatePresence>
   );

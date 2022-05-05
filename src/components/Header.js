@@ -74,7 +74,7 @@ const Header = () => {
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/news-board">
+          <NavLink to="/news">
             <CustomBtn
               onClick={handleNavClick}
               className="solid-btn header-btn"

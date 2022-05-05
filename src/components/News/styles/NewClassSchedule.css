@@ -1,0 +1,49 @@
+.new-class-schedule-wrapper {
+  width: 70vw;
+  margin: 2rem auto;
+  padding: 2rem 0;
+}
+
+.new-class-schedule-text {
+  max-width: 50%;
+  text-align: center;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.new-class-schedule-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-class-schedule-img {
+  width: 40rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .new-class-schedule-img {
+    width: 35rem;
+  }
+  .new-class-schedule-text {
+    max-width: 85%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .new-class-schedule-img {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .new-class-schedule-img {
+    width: 25rem;
+  }
+  .new-class-schedule-text {
+    max-width: 100%;
+  }
+  .new-class-schedule-wrapper {
+    width: 90vw;
+  }
+}
