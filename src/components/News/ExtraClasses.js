@@ -43,7 +43,12 @@ const ExtraClasses = () => {
         <Typography variant="overline">
           If you're interested in joining, you can sign up at the front desk!
         </Typography>
-        <Typography variant="overline" fontWeight="bold" sx={{ color: "red" }}>
+        <Typography
+          marginTop="1rem"
+          variant="overline"
+          fontWeight="bold"
+          sx={{ color: "red" }}
+        >
           *The final date to register is December 17 (Fri). Register while you
           can!
         </Typography>
