@@ -140,7 +140,7 @@ const Footer = () => {
       </FooterContainer>
       <CopyrightContainer>
         <Typography variant="overline" className="copyright">
-          Copyright &copy; 2022 Victory Taekwondo. All Rights Reserved
+          Copyright &copy; 2022 Victory Taekwondo.
         </Typography>
       </CopyrightContainer>
     </FooterWrapper>

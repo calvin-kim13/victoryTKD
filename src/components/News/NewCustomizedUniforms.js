@@ -9,7 +9,7 @@ const NewCustomizedUniforms = () => {
   return (
     <Paper elevation={12} className="new-uniform-wrapper">
       <Typography
-        variant="h5"
+        variant="h6"
         gutterBottom
         component="div"
         textAlign="center"

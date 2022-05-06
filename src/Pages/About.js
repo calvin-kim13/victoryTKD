@@ -45,7 +45,12 @@ const About = () => {
 };
 
 const AboutHeader = styled.div`
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 700px) {
+    .aboutHeader {
+      font-size: 0.9rem;
+    }
+  }
+  @media screen and (min-width: 700px) {
     .aboutHeader {
       font-size: 1.2rem;
     }
@@ -59,9 +64,17 @@ const AboutContent = styled.div`
   align-items: center;
   width: 32rem;
   margin-top: 3rem;
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 700px) {
+    width: 18rem;
+    font-size: .2rem
+    text-align: justify;
+  }
+  @media screen and (min-width: 700px) {
     width: 22rem;
     text-align: justify;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 35rem;
   }
 `;
 

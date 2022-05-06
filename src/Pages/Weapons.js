@@ -34,7 +34,7 @@ const Weapons = () => {
           techniques.
         </Typography>
         <WeaponsImage>
-          <img src={weapons} alt="Weapons" />
+          <img src={weapons} alt="Weapons" className="weapon-img" />
         </WeaponsImage>
       </WeaponsContent>
       <BackButton>
@@ -53,11 +53,22 @@ const WeaponsContent = styled.div`
   .description {
     width: 25rem;
   }
+  @media screen and (max-width: 700px) {
+    .description {
+      width: 18rem;
+    }
+  }
   @media screen and (max-width: 1200px) {
     flex-direction: column-reverse;
   }
 `;
-const WeaponsImage = styled.div``;
+const WeaponsImage = styled.div`
+  @media screen and (max-width: 700px) {
+    .weapon-img {
+      width: 20rem;
+    }
+  }
+`;
 
 const BackButton = styled.div`
   text-align: center;

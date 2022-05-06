@@ -37,7 +37,7 @@ const TeenAdult = () => {
           situations.
         </Typography>
         <TeenAdultImage>
-          <img src={teenAdult} alt="Teen Adult" />
+          <img src={teenAdult} alt="Teen Adult" className="teen-img" />
         </TeenAdultImage>
       </TeenAdultContent>
       <BackButton>
@@ -56,11 +56,22 @@ const TeenAdultContent = styled.div`
   .description {
     width: 25rem;
   }
+  @media screen and (max-width: 700px) {
+    .description {
+      width: 18rem;
+    }
+  }
   @media screen and (max-width: 1200px) {
     flex-direction: column-reverse;
   }
 `;
-const TeenAdultImage = styled.div``;
+const TeenAdultImage = styled.div`
+  @media screen and (max-width: 700px) {
+    .teen-img {
+      width: 20rem;
+    }
+  }
+`;
 
 const BackButton = styled.div`
   text-align: center;

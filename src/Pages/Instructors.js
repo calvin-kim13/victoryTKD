@@ -146,11 +146,11 @@ const InstructorsContent = styled.div`
       align-items: center;
     }
     .grand-master {
-      width: 26rem;
+      width: 20rem;
       padding: 1rem;
     }
     .master-michael {
-      width: 26rem;
+      width: 20rem;
       padding: 1rem;
     }
     .master-img {

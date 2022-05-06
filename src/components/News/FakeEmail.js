@@ -6,7 +6,7 @@ const FakeEmail = () => {
   return (
     <Paper elevation={12} className="fake-email-wrapper">
       <Typography
-        variant="h5"
+        variant="h6"
         gutterBottom
         component="div"
         textAlign="center"

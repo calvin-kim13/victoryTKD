@@ -11,11 +11,11 @@ const Testimonial = () => {
       <img className="stone-img" src={stone} alt="stone" />
       <TestimonialHeader>
         <Typography
-          variant="h4"
+          variant="h5"
           fontWeight="bold"
           className="testimonialHeader"
         >
-          WHAT STUDENTS SAY ABOUT US...
+          WHAT THEY SAY...
         </Typography>
       </TestimonialHeader>
       <Carousel />
@@ -43,7 +43,7 @@ const TestimonialPage = styled.div`
   @media screen and (max-width: 1000px) {
     height: 100vh;
     .stone-img {
-      height: 100%;
+      height: 100vh;
     }
   }
 `;
@@ -58,7 +58,6 @@ const TestimonialHeader = styled.div`
   }
   @media screen and (max-width: 1000px) {
     .testimonialHeader {
-      font-size: 1.2rem;
       padding: 3rem;
     }
   }

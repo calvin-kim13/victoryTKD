@@ -10,7 +10,7 @@ const ExtraClasses = () => {
   return (
     <Paper elevation={12} className="extra-classes-wrapper">
       <Typography
-        variant="h5"
+        variant="h6"
         gutterBottom
         component="div"
         textAlign="center"

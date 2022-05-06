@@ -21,25 +21,22 @@
   width: 40rem;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 700px) {
   .new-class-schedule-img {
-    width: 35rem;
+    width: 21rem;
   }
   .new-class-schedule-text {
     max-width: 85%;
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (min-width: 700px) {
   .new-class-schedule-img {
     width: 30rem;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .new-class-schedule-img {
-    width: 25rem;
-  }
   .new-class-schedule-text {
     max-width: 100%;
   }

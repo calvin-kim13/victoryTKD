@@ -35,7 +35,7 @@ const Sparring = () => {
           develop confidence and self-defense skills.
         </Typography>
         <SparringImage>
-          <img src={sparring} alt="Sparring" />
+          <img src={sparring} alt="Sparring" className="sparring-img" />
         </SparringImage>
       </SparringContent>
       <BackButton>
@@ -54,11 +54,22 @@ const SparringContent = styled.div`
   .description {
     width: 25rem;
   }
+  @media screen and (max-width: 700px) {
+    .description {
+      width: 18rem;
+    }
+  }
   @media screen and (max-width: 1200px) {
     flex-direction: column-reverse;
   }
 `;
-const SparringImage = styled.div``;
+const SparringImage = styled.div`
+  @media screen and (max-width: 700px) {
+    .sparring-img {
+      width: 20rem;
+    }
+  }
+`;
 
 const BackButton = styled.div`
   text-align: center;

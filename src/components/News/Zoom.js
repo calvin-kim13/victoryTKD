@@ -6,7 +6,7 @@ const Zoom = () => {
   return (
     <Paper elevation={12} className="zoom-wrapper">
       <Typography
-        variant="h5"
+        variant="h6"
         gutterBottom
         component="div"
         textAlign="center"

@@ -88,7 +88,7 @@ const HomeContent = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 85vh;
+  height: 87vh;
   background: rgba(0, 0, 0, 0.6);
   video {
     z-index: -1;
@@ -117,9 +117,17 @@ const HomeTextWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 700px) {
     .victory-tkd {
-      font-size: 3.5rem;
+      font-size: 3rem;
+    }
+    .three-values {
+      font-size: 0.8rem;
+    }
+  }
+  @media screen and (min-width: 700px) {
+    .victory-tkd {
+      font-size: 5rem;
     }
     .three-values {
       font-size: 1.2rem;
@@ -129,6 +137,10 @@ const HomeTextWrapper = styled.div`
 
 const ButtonWrapper = styled.div`
   margin-top: 2rem;
+  @media screen and (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export default Home;

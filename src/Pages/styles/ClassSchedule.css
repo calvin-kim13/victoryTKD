@@ -12,16 +12,21 @@
   margin-top: 2rem;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 700px) {
   .schedule {
-    width: 40rem;
-    height: 25rem;
-    margin-top: 5rem;
+    width: 21rem;
+    height: 13rem;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 700px) {
   .schedule {
-    width: 29rem;
-    height: 18rem;
+    width: 35rem;
+    height: 20rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .schedule {
+    width: 50rem;
+    height: 28rem;
   }
 }

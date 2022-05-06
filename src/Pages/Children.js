@@ -36,7 +36,7 @@ const Children = () => {
           children grow into healthy and strong-minded individuals.
         </Typography>
         <ChildrenImage>
-          <img src={children} alt="Children" />
+          <img src={children} alt="Children" className="children-img" />
         </ChildrenImage>
       </ChildrenContent>
       <BackButton>
@@ -55,12 +55,22 @@ const ChildrenContent = styled.div`
   .description {
     width: 25rem;
   }
+  @media screen and (max-width: 700px) {
+    .description {
+      width: 18rem;
+    }
+  }
   @media screen and (max-width: 1200px) {
     flex-direction: column-reverse;
   }
 `;
 const ChildrenImage = styled.div`
   margin-top: 3rem;
+  @media screen and (max-width: 700px) {
+    .children-img {
+      width: 20rem;
+    }
+  }
 `;
 
 const BackButton = styled.div`

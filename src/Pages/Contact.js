@@ -117,33 +117,9 @@ const ContactHeader = styled.div`
   justify-content: center;
   background-color: #181818;
   color: white;
-  img {
-    height: 25rem;
-  }
   @media screen and (max-width: 1200px) {
     height: 10rem;
     grid-template-columns: 1fr;
-    .studenttwo {
-      display: none;
-    }
-    .studentone {
-      display: none;
-    }
-    .studentthree {
-      display: none;
-    }
-    .studentfour {
-      display: none;
-    }
-  }
-  @media screen and (max-width: 1500px) {
-    grid-template-columns: 1fr;
-    .studenttwo {
-      display: none;
-    }
-    .studentthree {
-      display: none;
-    }
   }
 `;
 
@@ -154,8 +130,9 @@ const ContactContent = styled.div`
   .map {
   }
   .info {
-    padding: 1rem;
     background-color: #e8e8e8;
+    width: fit-content;
+    padding: 1rem;
   }
   .send-message {
     padding: 1rem;
@@ -164,7 +141,7 @@ const ContactContent = styled.div`
     display: flex;
     flex-direction: column;
     margin: 2rem auto;
-    width: 25rem;
+    width: fit-content;
     padding: 1rem;
   }
   .input {
@@ -175,7 +152,8 @@ const ContactContent = styled.div`
   }
   .contact-btn {
     height: 55px;
-    width: 390px;
+    width: 19rem;
+    margin: 0 auto;
   }
   @media screen and (min-width: 800px) {
     grid-template-columns: 1fr 1fr;

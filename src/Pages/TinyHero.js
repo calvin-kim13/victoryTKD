@@ -37,7 +37,7 @@ const TinyHero = () => {
           <br /> Plus, the Tiny Heroes have a blast!
         </Typography>
         <TinyHeroImage>
-          <img src={tinyHero} alt="Tiny Hero" />
+          <img src={tinyHero} alt="Tiny Hero" className="tiny-img" />
         </TinyHeroImage>
       </TinyHeroContent>
       <BackButton>
@@ -56,11 +56,22 @@ const TinyHeroContent = styled.div`
   .description {
     width: 25rem;
   }
+  @media screen and (max-width: 700px) {
+    .description {
+      width: 18rem;
+    }
+  }
   @media screen and (max-width: 1200px) {
     flex-direction: column-reverse;
   }
 `;
-const TinyHeroImage = styled.div``;
+const TinyHeroImage = styled.div`
+  @media screen and (max-width: 700px) {
+    .tiny-img {
+      width: 20rem;
+    }
+  }
+`;
 
 const BackButton = styled.div`
   text-align: center;

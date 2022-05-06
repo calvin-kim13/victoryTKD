@@ -93,7 +93,7 @@ const ClassesContent = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   .paper-container {
-    width: 25rem;
+    width: 22rem;
     height: 20rem;
     margin: 0.3rem;
     display: flex;

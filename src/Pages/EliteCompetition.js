@@ -39,7 +39,11 @@ const TinyHero = () => {
           are highly encouraged to join.
         </Typography>
         <EliteCompetitionImage>
-          <img src={elitecomp} alt="Elite Competition" />
+          <img
+            src={elitecomp}
+            alt="Elite Competition"
+            className="eliteComp-img"
+          />
         </EliteCompetitionImage>
       </EliteCompetitionContent>
       <BackButton>
@@ -58,11 +62,22 @@ const EliteCompetitionContent = styled.div`
   .description {
     width: 25rem;
   }
+  @media screen and (max-width: 700px) {
+    .description {
+      width: 18rem;
+    }
+  }
   @media screen and (max-width: 1200px) {
     flex-direction: column-reverse;
   }
 `;
-const EliteCompetitionImage = styled.div``;
+const EliteCompetitionImage = styled.div`
+  @media screen and (max-width: 700px) {
+    .eliteComp-img {
+      width: 20rem;
+    }
+  }
+`;
 
 const BackButton = styled.div`
   text-align: center;

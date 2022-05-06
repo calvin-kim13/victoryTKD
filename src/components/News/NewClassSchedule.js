@@ -7,7 +7,7 @@ const NewClassSchedule = () => {
   return (
     <Paper elevation={12} className="new-class-schedule-wrapper">
       <Typography
-        variant="h5"
+        variant="h6"
         gutterBottom
         component="div"
         textAlign="center"
@@ -17,7 +17,7 @@ const NewClassSchedule = () => {
         borderBottom="2px solid black"
         paddingBottom="2rem"
       >
-        NEW CLASS SCHEDULE
+        NEW SCHEDULE
       </Typography>
       <div className="new-class-schedule-text">
         <Typography variant="overline">
