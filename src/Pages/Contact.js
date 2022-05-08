@@ -132,7 +132,7 @@ const ContactContent = styled.div`
   }
   .info {
     background-color: #e8e8e8;
-    /* width: fit-content; */
+    width: 21.5rem;
     padding: 1rem;
   }
   .send-message {
@@ -142,7 +142,7 @@ const ContactContent = styled.div`
     display: flex;
     flex-direction: column;
     margin: 2rem auto;
-    width: 25rem;
+    width: fit-content;
     padding: 1rem;
   }
   .input {
@@ -156,8 +156,24 @@ const ContactContent = styled.div`
     width: 19rem;
     margin: 0 auto;
   }
+  @media screen and (min-width: 425px) {
+    .info {
+      width: 24.5rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .info {
+      width: 46rem;
+    }
+  }
   @media screen and (min-width: 800px) {
     grid-template-columns: 1fr 1fr;
+    .info {
+      width: 100%;
+    }
+    form {
+      width: 80%;
+    }
   }
   @media screen and (min-width: 1200px) {
     grid-template-columns: 1fr 1fr 1fr;

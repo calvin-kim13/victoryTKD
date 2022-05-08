@@ -30,10 +30,35 @@ const Header = () => {
       <div className="logo">
         <img className="header-logo" src={logo} alt="Victory Taekwondo logo" />
 
-        <img className="header-link" src={facebook} alt="" />
-        <img className="header-link" src={instagram} alt="" />
-        <img className="header-link" src={yelp} alt="" />
-        <img className="header-link" src={twitter} alt="" />
+        <a
+          href="https://www.facebook.com/victorytkdcenter/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img className="header-link" src={facebook} alt="" />
+        </a>
+        <a
+          href="https://www.instagram.com/victorytkdcenter/?hl=en"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img className="header-link" src={instagram} alt="" />
+        </a>
+        <a
+          href="https://www.yelp.com/biz/victory-taekwondo-center-whittier?osq=victory+taekwondo"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img className="header-link" src={yelp} alt="" />
+        </a>
+        <a
+          href="https://twitter.com/victorytkd11"
+          rel="noreferrer"
+          target="_blank"
+        >
+          {" "}
+          <img className="header-link" src={twitter} alt="" />
+        </a>
       </div>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li className="nav-item">
