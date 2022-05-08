@@ -26,16 +26,22 @@ const ContactInfo = () => {
         <div>
           <div className="item">
             <LocalPhoneOutlinedIcon />{" "}
-            <span className="item-content">(562) 907-2700</span>
+            <span className="item-content">
+              <a href="tel:5629072700">(562) 907-2700</a>
+            </span>
           </div>
           <div className="item">
             <AlternateEmailOutlinedIcon />{" "}
-            <span className="item-content">victorytkdcenter@gmail.com</span>
+            <span className="item-content">
+              <a href="mailto:victorytkdcenter@gmail.com">
+                victorytkdcenter@gmail.com
+              </a>
+            </span>
           </div>
           <div className="item">
             <RoomOutlinedIcon />{" "}
             <span className="item-content">
-              11758 E. Whittier Blvd. Whittier, CA 90601
+              11758 Whittier Blvd, Whittier, CA 90601
             </span>
           </div>
         </div>

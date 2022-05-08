@@ -3,4 +3,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url("../../assets/img1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1200px 700px;
+  /* justify-content: center; */
 }

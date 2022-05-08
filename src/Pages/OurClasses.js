@@ -133,7 +133,7 @@ const ClassesContent = styled.div`
     text-align: center;
   }
   @media screen and (min-width: 1200px) {
-    padding: 2rem 9rem;
+    padding: 2rem 15rem;
   }
 `;
 

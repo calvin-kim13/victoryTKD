@@ -21,7 +21,7 @@ const NewClassSchedule = () => {
       </Typography>
       <div className="new-class-schedule-text">
         <Typography variant="overline">
-          We will implement a new class schedule effective March 1, 2022. We
+          We will implement a new class schedule effective May 31, 2022. We
           moved around some belt levels to different classes to create more
           space so that we can offer more individualized attention to our
           students.

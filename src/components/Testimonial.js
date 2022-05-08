@@ -3,12 +3,11 @@ import { Typography } from "@mui/material";
 import React from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Carousel from "./Carousel";
-import stone from "../assets/stones.png";
 
 const Testimonial = () => {
   return (
     <TestimonialPage>
-      <img className="stone-img" src={stone} alt="stone" />
+      {/* <img className="stone-img" src={stone} alt="stone" /> */}
       <TestimonialHeader>
         <Typography
           variant="h5"
@@ -32,7 +31,7 @@ const TestimonialPage = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0);
+  /* background: rgba(0, 0, 0); */
   .stone-img {
     position: absolute;
     width: 100%;

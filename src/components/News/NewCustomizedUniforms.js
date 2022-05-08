@@ -19,7 +19,7 @@ const NewCustomizedUniforms = () => {
         borderBottom="2px solid black"
         paddingBottom="2rem"
       >
-        NEW CUSTOMIZED UNIFORMS
+        NEW UNIFORMS
       </Typography>
       <div className="new-uniform-text">
         <Typography variant="overline">

@@ -55,8 +55,14 @@ const Footer = () => {
             </Typography>
           </ContactHeader>
           <ContactContent>
-            <span className="email">victorytkdcenter@gmail.com</span>
-            <div className="phone">(562) 907-2700</div>
+            <span className="email">
+              <a href="mailto:victorytkdcenter@gmail.com">
+                victorytkdcenter@gmail.com
+              </a>
+            </span>
+            <div className="phone">
+              <a href="tel:5629072700">(562) 907-2700</a>
+            </div>
             <div className="social-links">
               <a
                 href="https://www.facebook.com/victorytkdcenter/"
@@ -133,7 +139,7 @@ const Footer = () => {
           </AddressHeader>
           <AddressContent>
             <Typography fontSize=".8rem">
-              11758 E. Whittier Blvd. Whittier, CA 90601
+              11758 Whittier Blvd, Whittier, CA 90601
             </Typography>
           </AddressContent>
         </AddressContainer>

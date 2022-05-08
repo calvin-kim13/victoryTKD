@@ -10,14 +10,16 @@ const Trial = () => {
       {/* <img className="trial-background" src={image} alt="" /> */}
       <TrialContainer>
         <TrialOffer>
-          <Typography
-            className="offer"
-            variant="h4"
-            fontWeight="bold"
-            marginBottom="1rem"
-          >
-            EXCLUSIVE OFFER
-          </Typography>
+          <div className="offer-wrapper">
+            <Typography
+              className="offer"
+              variant="h4"
+              fontWeight="bold"
+              marginBottom="1rem"
+            >
+              EXCLUSIVE OFFER
+            </Typography>
+          </div>
           <Typography
             className="offer-description"
             variant="h6"
@@ -27,8 +29,8 @@ const Trial = () => {
             student at Victory Taekwondo for{" "}
             <span className="trial-price">ONLY $39</span>!
           </Typography>
-          <a href="/classes">
-            <CustomBtn className="solid-btn view-btn">VIEW CLASSES</CustomBtn>
+          <a href="#contact">
+            <CustomBtn className="solid-btn view-btn">SIGN UP</CustomBtn>
           </a>
         </TrialOffer>
         <TrialIncludes>

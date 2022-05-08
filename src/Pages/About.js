@@ -66,7 +66,7 @@ const AboutContent = styled.div`
   margin-top: 3rem;
   @media screen and (max-width: 700px) {
     width: 18rem;
-    font-size: .2rem
+    font-size: 0.2rem;
     text-align: justify;
   }
   @media screen and (min-width: 700px) {

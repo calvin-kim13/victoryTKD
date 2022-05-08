@@ -12,6 +12,7 @@ const Contact = () => {
       initial={{ scaleY: 0 }}
       animate={{ scaleY: 1 }}
       exit={{ scaleY: 0 }}
+      id="contact"
     >
       <ContactContainer id="contact">
         <ContactHeader>
@@ -26,7 +27,7 @@ const Contact = () => {
             fontWeight="bold"
             className="talk"
           >
-            LET'S TALK
+            CONTACT US
           </Typography>
           {/* <img src={contact2} alt="Student" className="studentthree" />
           <img src={contact4} alt="Student" className="studentfour" /> */}
@@ -47,7 +48,7 @@ const Contact = () => {
               Send an Email directly
             </Typography>
             <form
-              action="https://formsubmit.co/calvinkim1230@gmail.com"
+              action="https://formsubmit.co/victorytkdcenter@gmail.com"
               method="POST"
             >
               <input
@@ -131,7 +132,7 @@ const ContactContent = styled.div`
   }
   .info {
     background-color: #e8e8e8;
-    width: fit-content;
+    /* width: fit-content; */
     padding: 1rem;
   }
   .send-message {
@@ -141,7 +142,7 @@ const ContactContent = styled.div`
     display: flex;
     flex-direction: column;
     margin: 2rem auto;
-    width: fit-content;
+    width: 25rem;
     padding: 1rem;
   }
   .input {

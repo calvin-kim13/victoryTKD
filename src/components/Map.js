@@ -5,12 +5,16 @@ import "../App.css";
 
 const Map = () => {
   return (
-    <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
+    <MapContainer
+      center={[33.98053, -118.05089]}
+      zoom={13}
+      scrollWheelZoom={false}
+    >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"
       />
-      <Marker position={[51.505, -0.09]}>
+      <Marker position={[33.98053, -118.05089]}>
         <Popup>Victory Taekwondo (V1)</Popup>
       </Marker>
     </MapContainer>

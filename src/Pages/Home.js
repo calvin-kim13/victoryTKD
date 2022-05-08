@@ -5,7 +5,7 @@ import Trial from "../components/Trial";
 import DownArrow from "../components/DownArrow";
 import Testimonial from "../components/Testimonial";
 import Contact from "./Contact";
-import video from "../assets/background.mp4";
+import video from "../assets/video.mp4";
 import CustomBtn from "../components/Button";
 import { motion } from "framer-motion";
 import {
@@ -92,7 +92,7 @@ const HomeContent = styled.div`
   background: rgba(0, 0, 0, 0.6);
   video {
     z-index: -1;
-    height: 85vh;
+    height: 87vh;
     width: 100%;
     position: absolute;
     object-fit: fill;
