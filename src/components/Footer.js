@@ -267,6 +267,14 @@ const ContactContent = styled.div`
     font-size: 0.8rem;
     opacity: 0.7;
   }
+  .email:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+  .phone:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
   .social-links {
     margin-top: 1.4rem;
   }

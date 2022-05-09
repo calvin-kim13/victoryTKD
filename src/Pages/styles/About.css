@@ -3,9 +3,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../../assets/img1.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 1200px 700px;
-  /* justify-content: center; */
+}
+.about-container img {
+  height: 25rem;
+  width: 22rem;
+  position: absolute;
+  top: 35%;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+@media screen and (min-width: 768px) {
+  .about-container img {
+    height: 25rem;
+    width: 40rem;
+    top: 35%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-container img {
+    top: 30%;
+  }
 }

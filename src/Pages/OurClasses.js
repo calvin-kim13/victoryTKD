@@ -93,7 +93,7 @@ const ClassesContent = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   .paper-container {
-    width: 22rem;
+    width: 20rem;
     height: 20rem;
     margin: 0.3rem;
     display: flex;
@@ -132,8 +132,24 @@ const ClassesContent = styled.div`
     width: 10rem;
     text-align: center;
   }
+  @media screen and (min-width: 1024px) {
+    padding: 2rem 5rem;
+    .paper-container {
+      width: 15rem;
+      height: 17rem;
+    }
+  }
   @media screen and (min-width: 1200px) {
-    padding: 2rem 15rem;
+    .paper-container {
+      width: 19rem;
+      height: 20rem;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    .paper-container {
+      width: 21rem;
+      height: 21rem;
+    }
   }
 `;
 

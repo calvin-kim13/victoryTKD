@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 import { Typography } from "@mui/material";
 import React from "react";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import CustomBtn from "./Button";
 
 const Trial = () => {
@@ -53,23 +52,12 @@ const Trial = () => {
           </ul>
         </TrialIncludes>
       </TrialContainer>
-      <ArrowWrapper>
-        <KeyboardArrowDownIcon fontSize="large" className="down-arrow" />
-      </ArrowWrapper>
     </TrialPage>
   );
 };
 
 const TrialPage = styled.div`
-  .trial-background {
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    object-fit: fit;
-    opacity: 0.6;
-  }
-  height: fit-content;
+  height: 70vh;
   padding: 5rem 0;
   .down-arrow {
     animation: animateDown infinite 1.5s;
@@ -130,11 +118,6 @@ const TrialIncludes = styled.div`
       font-size: 1.7rem;
     }
   }
-`;
-
-const ArrowWrapper = styled.div`
-  text-align: center;
-  // margin-top: 2rem;
 `;
 
 export default Trial;

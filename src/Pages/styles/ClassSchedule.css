@@ -2,31 +2,35 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
+  height: 60vh;
   margin-bottom: 4rem;
 }
 .schedule {
-  width: 55rem;
-  height: 30rem;
+  width: 20rem;
+  height: 13rem;
   border: 5px solid black;
   margin-top: 2rem;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 768px) {
   .schedule {
-    width: 21rem;
-    height: 13rem;
+    width: 30rem;
+    height: 20rem;
   }
 }
-@media screen and (min-width: 700px) {
+
+@media screen and (min-width: 1024px) {
+  .class-schedule-container {
+    height: 70vh;
+  }
   .schedule {
-    width: 35rem;
-    height: 20rem;
+    width: 38rem;
+    height: 25rem;
   }
 }
 @media screen and (min-width: 1440px) {
   .schedule {
-    width: 60rem;
-    height: 35rem;
+    width: 45rem;
+    height: 28rem;
   }
 }

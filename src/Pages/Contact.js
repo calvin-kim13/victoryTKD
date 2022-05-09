@@ -16,8 +16,6 @@ const Contact = () => {
     >
       <ContactContainer id="contact">
         <ContactHeader>
-          {/* <img src={contact1} alt="Student" className="studentone" />
-          <img src={contact3} alt="Student" className="studenttwo" /> */}
           <Typography
             variant="h5"
             gutterBottom
@@ -29,13 +27,9 @@ const Contact = () => {
           >
             CONTACT US
           </Typography>
-          {/* <img src={contact2} alt="Student" className="studentthree" />
-          <img src={contact4} alt="Student" className="studentfour" /> */}
         </ContactHeader>
         <ContactContent>
-          <div className="info">
-            <ContactInfo />
-          </div>
+          <ContactInfo />
           <div className="send-message">
             <Typography
               variant="h6"
@@ -48,7 +42,7 @@ const Contact = () => {
               Send an Email directly
             </Typography>
             <form
-              action="https://formsubmit.co/victorytkdcenter@gmail.com"
+              action="https://formsubmit.co/calvinkim1230@gmail.com"
               method="POST"
             >
               <input
@@ -128,13 +122,6 @@ const ContactContent = styled.div`
   height: 80%;
   display: grid;
   grid-template-columns: 1fr;
-  .map {
-  }
-  .info {
-    background-color: #e8e8e8;
-    width: 21.5rem;
-    padding: 1rem;
-  }
   .send-message {
     padding: 1rem;
   }
@@ -143,7 +130,6 @@ const ContactContent = styled.div`
     flex-direction: column;
     margin: 2rem auto;
     width: fit-content;
-    padding: 1rem;
   }
   .input {
     margin-bottom: 0.7rem;
@@ -156,27 +142,17 @@ const ContactContent = styled.div`
     width: 19rem;
     margin: 0 auto;
   }
-  @media screen and (min-width: 425px) {
-    .info {
-      width: 24.5rem;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    .info {
-      width: 46rem;
-    }
-  }
   @media screen and (min-width: 800px) {
     grid-template-columns: 1fr 1fr;
-    .info {
-      width: 100%;
-    }
     form {
-      width: 80%;
+      width: 70%;
     }
   }
   @media screen and (min-width: 1200px) {
     grid-template-columns: 1fr 1fr 1fr;
+    .contact-btn {
+      width: 18rem;
+    }
   }
 `;
 

@@ -3,6 +3,7 @@ import { Typography } from "@mui/material";
 import React from "react";
 import "./styles/About.css";
 import { motion } from "framer-motion";
+import background from "../assets/img1.png";
 
 const About = () => {
   return (
@@ -12,6 +13,7 @@ const About = () => {
       animate={{ scaleY: 1 }}
       exit={{ scaleY: 0 }}
     >
+      <img src={background} alt="background" />
       <AboutHeader>
         <Typography
           variant="h4"
@@ -27,7 +29,7 @@ const About = () => {
         </Typography>
       </AboutHeader>
       <AboutContent className="paragraph">
-        <Typography variant="subtitle2" gutterBottom>
+        <Typography variant="caption" fontWeight="bold" gutterBottom>
           Taekwondo is a Korean martial art that strengthens the mind and body
           through disciplined training. Tae ("foot"), Kwon ("fist"), and Do
           ("way") translates to "the way of the foot and fist." <br /> <br />

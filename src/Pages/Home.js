@@ -3,7 +3,6 @@ import { Typography } from "@mui/material";
 import React from "react";
 import Trial from "../components/Trial";
 import DownArrow from "../components/DownArrow";
-import Testimonial from "../components/Testimonial";
 import Contact from "./Contact";
 import video from "../assets/video.mp4";
 import CustomBtn from "../components/Button";
@@ -13,8 +12,8 @@ import {
   MoveOut,
   ScrollPage,
   ScrollContainer,
-  MoveIn,
 } from "react-scroll-motion";
+import Testimonial from "../components/Testimonial";
 
 const Home = () => {
   return (
@@ -36,7 +35,7 @@ const Home = () => {
                   gutterBottom
                   className="victory-tkd"
                   fontWeight="bold"
-                  color="#fafafa"
+                  color="#fff"
                 >
                   VICTORY <br /> TAEKWONDO
                 </Typography>
@@ -45,7 +44,7 @@ const Home = () => {
                   component="div"
                   gutterBottom
                   className="three-values"
-                  color="#eeeeee"
+                  color="#fff"
                 >
                   BETTER ATTITUDE <br />
                   BETTER DISCIPLINE <br />
@@ -66,16 +65,8 @@ const Home = () => {
             </HomeContent>
           </Animator>
         </ScrollPage>
-        <ScrollPage page={1}>
-          <Animator animation={MoveIn(800, 0)}>
-            <Trial />
-          </Animator>
-        </ScrollPage>
-        <ScrollPage page={2}>
-          <Animator animation={MoveIn(-800, 0)}>
-            <Testimonial />
-          </Animator>
-        </ScrollPage>
+        <Trial />
+        <Testimonial />
         <Contact />
       </motion.div>
     </ScrollContainer>
@@ -89,7 +80,7 @@ const HomeContent = styled.div`
   justify-content: center;
   width: 100%;
   height: 87vh;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.3);
   video {
     z-index: -1;
     height: 87vh;
