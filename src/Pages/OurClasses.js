@@ -8,17 +8,17 @@ import weapons from "../assets/weapons.png";
 import sparring from "../assets/sparring.png";
 import elitecomp from "../assets/elitecomp.png";
 import { Link } from "react-router-dom";
-import "./styles/OurClasses.css";
 import { motion } from "framer-motion";
+import Sidebar from "../components/Sidebar";
 
 const OurClasses = () => {
   return (
     <motion.div
-      className="classes-container"
       initial={{ scaleY: 0 }}
       animate={{ scaleY: 1 }}
       exit={{ scaleY: 0 }}
     >
+      <Sidebar />
       <ClassesHeader>
         <Typography
           variant="h5"
@@ -27,7 +27,7 @@ const OurClasses = () => {
           textAlign="center"
           letterSpacing="0.2rem"
           fontWeight="bold"
-          marginTop="2rem"
+          marginTop="4rem"
         >
           OUR CLASSES
         </Typography>
@@ -133,22 +133,32 @@ const ClassesContent = styled.div`
     text-align: center;
   }
   @media screen and (min-width: 1024px) {
-    padding: 2rem 5rem;
     .paper-container {
-      width: 15rem;
-      height: 17rem;
+      width: 18rem;
+      height: 19rem;
     }
   }
   @media screen and (min-width: 1200px) {
     .paper-container {
-      width: 19rem;
+      width: 22rem;
       height: 20rem;
     }
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1447px) {
     .paper-container {
-      width: 21rem;
+      width: 22rem;
       height: 21rem;
+    }
+  }
+  @media screen and (min-width: 1520px) {
+    .paper-container {
+      width: 25rem;
+      height: 22rem;
+    }
+  }
+  @media screen and (min-width: 1600px) {
+    .paper-container {
+      width: 29rem;
     }
   }
 `;

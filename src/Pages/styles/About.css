@@ -1,10 +1,11 @@
 .about-container {
-  height: 75vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
-.about-container img {
+.background {
   height: 25rem;
   width: 22rem;
   position: absolute;
@@ -14,7 +15,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .about-container img {
+  .background {
     height: 25rem;
     width: 40rem;
     top: 35%;
@@ -22,7 +23,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .about-container img {
+  .background {
     top: 30%;
   }
 }

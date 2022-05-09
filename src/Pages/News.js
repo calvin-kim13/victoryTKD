@@ -5,6 +5,7 @@ import NewCustomizedUniforms from "../components/News/NewCustomizedUniforms";
 import ExtraClasses from "../components/News/ExtraClasses";
 import FakeEmail from "../components/News/FakeEmail";
 import Zoom from "../components/News/Zoom";
+import Sidebar from "../components/Sidebar";
 
 const News = () => {
   return (
@@ -13,6 +14,7 @@ const News = () => {
       animate={{ scaleY: 1 }}
       exit={{ scaleY: 0 }}
     >
+      <Sidebar />
       <NewClassSchedule />
       <NewCustomizedUniforms />
       <ExtraClasses />

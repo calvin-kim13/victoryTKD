@@ -6,6 +6,7 @@ import Button from "../components/Button";
 import "./styles/TinyHero.css";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import Sidebar from "../components/Sidebar";
 
 const TinyHero = () => {
   const navigate = useNavigate();
@@ -15,6 +16,7 @@ const TinyHero = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
+      <Sidebar />
       <Typography
         variant="h5"
         gutterBottom

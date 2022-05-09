@@ -5,9 +5,8 @@ import Map from "../components/Map";
 import ContactInfo from "../components/ContactInfo";
 import CustomBtn from "../components/Button";
 import { motion } from "framer-motion";
-import Sidebar from "../components/Sidebar";
 
-const Contact = () => {
+const ContactHome = () => {
   return (
     <motion.div
       initial={{ scaleY: 0 }}
@@ -15,7 +14,6 @@ const Contact = () => {
       exit={{ scaleY: 0 }}
       id="contact"
     >
-      <Sidebar />
       <ContactContainer id="contact">
         <ContactHeader>
           <Typography
@@ -158,4 +156,4 @@ const ContactContent = styled.div`
   }
 `;
 
-export default Contact;
+export default ContactHome;

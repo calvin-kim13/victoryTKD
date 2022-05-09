@@ -6,6 +6,7 @@ import michaelImg from "../assets/michael.jpg";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import { motion } from "framer-motion";
+import Sidebar from "../components/Sidebar";
 
 const Instructors = () => {
   return (
@@ -14,6 +15,7 @@ const Instructors = () => {
       animate={{ scaleY: 1 }}
       exit={{ scaleY: 0 }}
     >
+      <Sidebar />
       <InstructorsHeader>
         <Typography
           variant="h5"

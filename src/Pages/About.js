@@ -4,6 +4,7 @@ import React from "react";
 import "./styles/About.css";
 import { motion } from "framer-motion";
 import background from "../assets/img1.png";
+import Sidebar from "../components/Sidebar";
 
 const About = () => {
   return (
@@ -13,7 +14,8 @@ const About = () => {
       animate={{ scaleY: 1 }}
       exit={{ scaleY: 0 }}
     >
-      <img src={background} alt="background" />
+      <Sidebar />
+      <img src={background} alt="background" className="background" />
       <AboutHeader>
         <Typography
           variant="h4"
@@ -54,7 +56,7 @@ const AboutHeader = styled.div`
   }
   @media screen and (min-width: 700px) {
     .aboutHeader {
-      font-size: 1.2rem;
+      font-size: 1.7rem;
     }
   }
 `;

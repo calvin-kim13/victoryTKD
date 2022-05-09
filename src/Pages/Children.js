@@ -5,6 +5,7 @@ import children from "../assets/children.png";
 import Button from "../components/Button";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import Sidebar from "../components/Sidebar";
 
 const Children = () => {
   const navigate = useNavigate();
@@ -14,6 +15,7 @@ const Children = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
+      <Sidebar />
       <Typography
         variant="h5"
         gutterBottom

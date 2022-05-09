@@ -1,28 +1,31 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
-import { SidebarData } from "./SidebarData";
-import SubMenu from "./SubMenu";
 import { IconContext } from "react-icons/lib";
 import logo from "../assets/logo.png";
+import facebook from "../assets/facebook.png";
+import instagram from "../assets/instagram.png";
+import yelp from "../assets/yelp.png";
+import twitter from "../assets/twitter.png";
 
 const Nav = styled.div`
-  background: #15171c;
-  height: 140px;
+  background: rgba(0, 0, 0, 0.2);
+  width: inherit;
+  height: 10rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   .header-logo {
     width: 12rem;
+    margin-left: 5rem;
   }
 `;
 
 const NavIcon = styled(Link)`
-  margin-right: 2rem;
+  margin-right: 5rem;
   font-size: 2rem;
-  height: 140px;
+  height: 10rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -38,17 +41,64 @@ const SidebarNav = styled.nav`
   top: 0;
   right: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
   transition: 350ms;
-  z-index: 10;
+  z-index: 100000;
+  .nav-link {
+    display: flex;
+    color: #e1e9fc;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    list-style: none;
+    height: 40px;
+    text-decoration: none;
+    font-size: 16px;
+    opacity: 0.7;
+    &:hover {
+      background: #252831;
+      opacity: 1;
+      border-left: 4px solid #632ce4;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+  a.active {
+    font-weight: bold;
+    opacity: 1;
+    text-transform: uppercase;
+    background-color: #252831;
+    border-left: 4px solid #632ce4;
+  }
 `;
 
 const SidebarWrap = styled.div`
   width: 100%;
+  .header-social-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .header-social-link {
+    padding: 0.3rem;
+  }
+  img {
+    width: 2.2rem;
+    opacity: 0.7;
+  }
+  img:hover {
+    transform: scale(1.1);
+    transition: transform 200ms;
+    opacity: 1;
+  }
 `;
 
 const Sidebar = () => {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
+
+  const handleNavClick = () => setSidebar(false);
 
   return (
     <>
@@ -64,11 +114,79 @@ const Sidebar = () => {
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>
             <NavIcon to="#">
-              <AiIcons.AiOutlineClose onClick={showSidebar} />
+              <FaIcons.FaTimes onClick={showSidebar} />
             </NavIcon>
-            {SidebarData.map((item, index) => {
-              return <SubMenu item={item} key={index} />;
-            })}
+            <NavLink to="/" className="nav-link" onClick={handleNavClick}>
+              Home
+            </NavLink>
+            <NavLink to="/about" className="nav-link" onClick={handleNavClick}>
+              About
+            </NavLink>
+            <NavLink
+              to="/instructors"
+              className="nav-link"
+              onClick={handleNavClick}
+            >
+              Instructors
+            </NavLink>
+            <NavLink
+              to="/classes"
+              className="nav-link"
+              onClick={handleNavClick}
+            >
+              Classes
+            </NavLink>
+            <NavLink
+              to="/class-schedule"
+              className="nav-link"
+              onClick={handleNavClick}
+            >
+              Class Schedule
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className="nav-link"
+              onClick={handleNavClick}
+            >
+              Contact
+            </NavLink>
+            <NavLink to="/news" className="nav-link" onClick={handleNavClick}>
+              News
+            </NavLink>
+            <div className="header-social-row">
+              <a
+                href="https://www.facebook.com/victorytkdcenter/"
+                rel="noreferrer"
+                target="_blank"
+                className="header-social-link"
+              >
+                <img src={facebook} alt="social link"></img>
+              </a>
+              <a
+                href="https://www.instagram.com/victorytkdcenter/?hl=en"
+                rel="noreferrer"
+                target="_blank"
+                className="header-social-link"
+              >
+                <img src={instagram} alt="social link"></img>
+              </a>
+              <a
+                href="https://www.yelp.com/biz/victory-taekwondo-center-whittier?osq=victory+taekwondo"
+                rel="noreferrer"
+                target="_blank"
+                className="header-social-link"
+              >
+                <img src={yelp} alt="social link"></img>
+              </a>
+              <a
+                href="https://twitter.com/victorytkd11"
+                rel="noreferrer"
+                target="_blank"
+                className="header-social-link"
+              >
+                <img src={twitter} alt="social link"></img>
+              </a>
+            </div>
           </SidebarWrap>
         </SidebarNav>
       </IconContext.Provider>

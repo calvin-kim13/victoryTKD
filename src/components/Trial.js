@@ -57,11 +57,9 @@ const Trial = () => {
 };
 
 const TrialPage = styled.div`
-  height: 70vh;
+  height: 85vh;
+  border: 1px solid red;
   padding: 5rem 0;
-  .down-arrow {
-    animation: animateDown infinite 1.5s;
-  }
   display: flex;
   align-items: space-evenly;
   justify-content: space-evenly;

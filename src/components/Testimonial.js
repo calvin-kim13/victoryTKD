@@ -1,45 +1,56 @@
 import React from "react";
 import FormatQuoteRoundedIcon from "@mui/icons-material/FormatQuoteRounded";
 import "./styles/Testimonial.css";
+import { Typography } from "@mui/material";
 
 const Testimonial = () => {
   return (
     <div className="wrapper">
-      <h1>What they say...</h1>
-      <h5>Check what they say about us...</h5>
+      <Typography
+        variant="h3"
+        fontWeight="bold"
+        margin="25px 0"
+        textTransform="uppercase"
+      >
+        Testimonial
+      </Typography>
+      <Typography
+        variant="overline"
+        textAlign="center"
+        fontSize="18px"
+        marginBottom="80px"
+      >
+        What our students say about us...
+      </Typography>
       <div className="cards">
         <div className="card">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-            eos tenetur, dolore adipisci illo modi aliquid nemo corrupti ea
-            nobis at aut accusamus fugiat omnis molestias expedita eveniet
-            voluptatum ullam.
+            The best thing to ever happen to my son. Bring your kids to Victory
+            Taekwondo. You will not be disappointed!
           </p>
-          <h2>sandra bullok</h2>
-          <h4>march 10, 2020</h4>
-          <FormatQuoteRoundedIcon className="quote" />
+          <h2>Veronica M.</h2>
+          <h4>June 10, 2019</h4>
+          <FormatQuoteRoundedIcon className="quote" fontSize="" />
         </div>
         <div className="card">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-            eos tenetur, dolore adipisci illo modi aliquid nemo corrupti ea
-            nobis at aut accusamus fugiat omnis molestias expedita eveniet
-            voluptatum ullam.
+            It's a great studio. At first, our son didn't want to join, but now
+            he rushes to class. They have an awesome staff and the way they
+            teach is unique!
           </p>
-          <h2>sandra bullok</h2>
-          <h4>march 10, 2020</h4>
-          <FormatQuoteRoundedIcon className="quote" />
+          <h2>Ana Gutierrez</h2>
+          <h4>March 18, 2018</h4>
+          <FormatQuoteRoundedIcon className="quote" fontSize="" />
         </div>
         <div className="card">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-            eos tenetur, dolore adipisci illo modi aliquid nemo corrupti ea
-            nobis at aut accusamus fugiat omnis molestias expedita eveniet
-            voluptatum ullam.
+            If you're looking to teach your kids discipline, respect, and
+            self-defense while having fun, Victory Taekwondo is the best place
+            to go!
           </p>
-          <h2>sandra bullok</h2>
-          <h4>march 10, 2020</h4>
-          <FormatQuoteRoundedIcon className="quote" />
+          <h2>JL Cotton</h2>
+          <h4>September 21, 2017</h4>
+          <FormatQuoteRoundedIcon className="quote" fontSize="" />
         </div>
       </div>
     </div>
