@@ -63,6 +63,8 @@ const TrialPage = styled.div`
   align-items: space-evenly;
   justify-content: space-evenly;
   flex-direction: column;
+  background-color: #f5f5f5;
+
   @media screen and (min-width: 1000px) {
     padding: 0;
   }

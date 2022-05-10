@@ -22,7 +22,6 @@ const Instructors = () => {
           textAlign="center"
           letterSpacing="0.2rem"
           fontWeight="bold"
-          className="meetTeam"
         >
           MEET THE TEAM
         </Typography>
@@ -112,11 +111,23 @@ const Instructors = () => {
 };
 
 const InstructorsHeader = styled.div`
-  margin-top: 4rem;
-  @media screen and (max-width: 1000px) {
-    .meetTeam {
-      // font-size: 2rem;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  color: #252831;
+  border-bottom: 1px solid #252831;
+  max-width: 80%;
+  margin: 2rem auto;
+  padding: 0.2rem;
+  @media screen and (min-width: 768px) {
+    max-width: 40%;
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 30%;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 25%;
   }
 `;
 

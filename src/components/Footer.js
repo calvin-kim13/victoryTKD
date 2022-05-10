@@ -5,7 +5,7 @@ import { FaYelp, FaFacebook, FaTwitter } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { grey } from "@mui/material/colors";
 import { NavLink } from "react-router-dom";
-const footerColor = grey[900];
+// const footerColor = grey[900];
 const footerTextColor = grey[200];
 
 const Footer = () => {
@@ -169,7 +169,7 @@ const Footer = () => {
 const FooterWrapper = styled.div`
   height: 58vh;
   //   margin-top: 1rem;
-  background-color: ${footerColor};
+  background-color: #252831;
   color: ${footerTextColor};
   padding: 2rem;
   display: flex;

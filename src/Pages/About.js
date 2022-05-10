@@ -50,7 +50,7 @@ const AboutHeader = styled.div``;
 
 const AboutContent = styled.div`
   .solid-btn {
-    margin-top: 2rem;
+    margin-top: 3rem;
     height: 2rem;
     font-size: 0.7rem;
     display: flex;
@@ -63,6 +63,7 @@ const AboutContent = styled.div`
   @media screen and (min-width: 1024px) {
     .solid-btn {
       height: 3rem;
+      width: 15rem;
       font-size: 0.8rem;
     }
     .solid-btn span {

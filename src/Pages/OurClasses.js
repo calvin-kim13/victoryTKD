@@ -25,9 +25,8 @@ const OurClasses = () => {
           textAlign="center"
           letterSpacing="0.2rem"
           fontWeight="bold"
-          marginTop="4rem"
         >
-          OUR CLASSES
+          CLASSES WE OFFER
         </Typography>
       </ClassesHeader>
       <ClassesContent>
@@ -84,9 +83,29 @@ const OurClasses = () => {
   );
 };
 
-const ClassesHeader = styled.div``;
+const ClassesHeader = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  color: #252831;
+  border-bottom: 1px solid #252831;
+  max-width: 80%;
+  margin: 2rem auto;
+  padding: 0.2rem;
+  @media screen and (min-width: 768px) {
+    max-width: 40%;
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 30%;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 25%;
+  }
+`;
 const ClassesContent = styled.div`
-  padding: 2rem;
+  /* padding: 2rem; */
+  margin: 2rem 3rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

@@ -39,7 +39,7 @@ const Contact = () => {
               textAlign="center"
               textTransform="uppercase"
             >
-              Send an Email directly
+              Ask anything!
             </Typography>
             <form
               action="https://formsubmit.co/calvinkim1230@gmail.com"
@@ -106,15 +106,23 @@ const ContactContainer = styled.div`
 `;
 
 const ContactHeader = styled.div`
-  height: 20vh;
   display: flex;
-  align-items: center;
   justify-content: center;
-  background-color: #181818;
-  color: white;
-  @media screen and (max-width: 1200px) {
-    height: 10rem;
-    grid-template-columns: 1fr;
+  align-items: center;
+  height: 5vh;
+  color: #252831;
+  border-bottom: 1px solid #252831;
+  max-width: 70%;
+  margin: 2rem auto;
+  padding: 0.2rem;
+  @media screen and (min-width: 768px) {
+    max-width: 30%;
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 25%;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 20%;
   }
 `;
 
@@ -124,6 +132,7 @@ const ContactContent = styled.div`
   grid-template-columns: 1fr;
   .send-message {
     padding: 1rem;
+    background-color: #fff;
   }
   form {
     display: flex;
@@ -142,7 +151,7 @@ const ContactContent = styled.div`
     width: 19rem;
     margin: 0 auto;
     font-size: 0.8rem;
-    background: #5c6bc0;
+    background: #5072a7;
     color: #fff;
   }
   @media screen and (min-width: 800px) {

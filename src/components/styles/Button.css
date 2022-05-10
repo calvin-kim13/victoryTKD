@@ -1,6 +1,7 @@
 .solid-btn {
   border-radius: 4px;
-  background: linear-gradient(90deg, #5c6bc0 0%, #ef5350 100%);
+  /* background: linear-gradient(90deg, #5c6bc0 0%, #ef5350 100%); */
+  background-color: #5072a7;
   border: none;
   color: #ffffff;
   text-align: center;
@@ -41,8 +42,8 @@
 .outline-btn {
   border-radius: 4px;
   background: transparent;
-  border: 1px solid #5c6bc0;
-  color: #5c6bc0;
+  border: 1px solid #5072a7;
+  color: #5072a7;
   text-align: center;
   text-transform: uppercase;
   font-size: 1rem;
@@ -90,7 +91,7 @@
 
 .classes-btn {
   border-radius: 4px;
-  background: linear-gradient(to right, #67b26b, #4ca2cb);
+  background-color: #5072a7;
   border: none;
   color: #ffffff;
   text-align: center;
@@ -100,7 +101,6 @@
   width: 250px;
   transition: all 0.4s;
   cursor: pointer;
-  margin: 5px;
 }
 .classes-btn:active {
   transform: scale(1.05);

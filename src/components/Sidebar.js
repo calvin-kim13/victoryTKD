@@ -10,7 +10,8 @@ import yelp from "../assets/yelp.png";
 import twitter from "../assets/twitter.png";
 
 const Nav = styled.div`
-  background: linear-gradient(90deg, #ef5350 0%, #3f51b5 100%);
+  background: linear-gradient(90deg, #252831 0%, #5072a7 100%);
+  /* background-color: #252831; */
   width: inherit;
   height: 8rem;
   display: flex;

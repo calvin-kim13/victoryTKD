@@ -106,11 +106,11 @@ const ContactContainer = styled.div`
 `;
 
 const ContactHeader = styled.div`
-  height: 20vh;
+  height: 18vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #181818;
+  background-color: #252831;
   color: white;
   @media screen and (max-width: 1200px) {
     height: 10rem;
@@ -142,7 +142,7 @@ const ContactContent = styled.div`
     width: 19rem;
     margin: 0 auto;
     font-size: 0.8rem;
-    background: #5c6bc0;
+    background: #5072a7;
     color: #fff;
   }
   @media screen and (min-width: 800px) {

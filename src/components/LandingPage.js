@@ -16,21 +16,24 @@ const LandingPage = () => {
           className="three-values"
           color="#212121"
         >
-          - BETTER ATTITUDE - BETTER DISCIPLINE - BETTER RESPECT -
+          - <span className="color1">BETTER ATTITUDE</span> -{" "}
+          <span className="color2">BETTER DISCIPLINE </span> -{" "}
+          <span className="color3">BETTER RESPECT </span> -
         </Typography>
       </div>
       <ImageTextWrapper>
-        <TextButtonWrapper>
-          <Typography
-            variant="overline"
-            component="div"
-            className="victory-tkd"
-            fontWeight="bold"
-            color="#212121"
-          >
-            <span className="home-v">V</span>ICTORY TAEKWONDO
-          </Typography>
-          {/* <Typography
+        <div className="text-img-wrap">
+          <TextButtonWrapper>
+            <Typography
+              variant="overline"
+              component="div"
+              className="victory-tkd"
+              fontWeight="bold"
+              color="#212121"
+            >
+              <span className="home-v">V</span>ICTORY TAEKWONDO
+            </Typography>
+            {/* <Typography
             variant="overline"
             component="div"
             gutterBottom
@@ -39,50 +42,47 @@ const LandingPage = () => {
           >
             - BETTER ATTITUDE - BETTER DISCIPLINE - BETTER RESPECT -
           </Typography> */}
-          <div className="home-description-wrapper">
-            <Typography variant="caption" className="home-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-              incidunt dicta reprehenderit architecto magni ipsa voluptatibus
-              vero!
-            </Typography>
-          </div>
-          <ButtonWrapper>
-            <a href="#contact">
-              <CustomBtn className="solid-btn">Sign up</CustomBtn>
-            </a>
-            <a href="#trial-info">
-              <CustomBtn className="outline-btn">Learn More</CustomBtn>
-            </a>
-          </ButtonWrapper>
-        </TextButtonWrapper>
-        <ImageWrapper>
-          <img src={home} alt="home" />
-        </ImageWrapper>
+            <div className="home-description-wrapper">
+              <Typography variant="caption" className="home-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                incidunt dicta reprehenderit architecto magni ipsa voluptatibus
+                vero!
+              </Typography>
+            </div>
+            <ButtonWrapper>
+              <a href="#contact">
+                <CustomBtn className="solid-btn">Sign up</CustomBtn>
+              </a>
+              <a href="#trial-info">
+                <CustomBtn className="outline-btn">Learn More</CustomBtn>
+              </a>
+            </ButtonWrapper>
+          </TextButtonWrapper>
+          <ImageWrapper>
+            <img src={home} alt="home" />
+          </ImageWrapper>
+        </div>
+        <ArrowWrapper>
+          <DownArrow className="down-arrow" />
+        </ArrowWrapper>
       </ImageTextWrapper>
-
-      <ArrowWrapper>
-        <DownArrow className="down-arrow" />
-      </ArrowWrapper>
     </LandingPageWrapper>
   );
 };
 
 const LandingPageWrapper = styled.div`
-  background: linear-gradient(90deg, #ffebee 0%, #e8eaf6 100%);
   height: calc(100vh - 8rem);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  .color1 {
+    color: #d32f2f;
+  }
+  .color2 {
+    color: #5072a7;
+  }
   .three-values-wrapper {
-    width: 80%;
     height: 15px;
-    /* border-radius: 15px; */
-    margin: -3rem 0 3rem 0;
     padding: 20px 30px;
-    position: relative;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.6);
+    /* background: linear-gradient(90deg, #5072a7 0%, #d32f2f 100%); */
     box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.2);
     transition: 0.5s;
     display: flex;
@@ -100,16 +100,25 @@ const LandingPageWrapper = styled.div`
   }
   @media screen and (min-width: 1440px) {
     .three-values-wrapper {
-      width: 95%;
     }
   }
 `;
 
 const ImageTextWrapper = styled.div`
+  /* background: linear-gradient(90deg, #ffebee 0%, #e8eaf6 100%); */
+  /* background-color: #f5f5f5; */
+  /* background-color: #5072a7; */
+  height: calc(100% - 55px);
+  width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  margin-top: -8rem;
+  .text-img-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const TextButtonWrapper = styled.div`
@@ -120,6 +129,7 @@ const TextButtonWrapper = styled.div`
   padding: 1rem;
   .home-v {
     color: #d32f2f;
+    /* color: #5072a7; */
     font-size: 4.5rem;
     font-family: "Satisfy", cursive;
   }
@@ -195,8 +205,22 @@ const ButtonWrapper = styled.div`
     height: 3.5rem;
     font-size: 0.8rem;
   }
+  @media screen and (min-width: 1440px) {
+    .solid-btn {
+      width: 12rem;
+      height: 3.5rem;
+      font-size: 0.8rem;
+    }
+    .outline-btn {
+      width: 12rem;
+      height: 3.5rem;
+      font-size: 0.8rem;
+    }
+  }
 `;
 
-const ArrowWrapper = styled.div``;
+const ArrowWrapper = styled.div`
+  margin-top: 3rem;
+`;
 
 export default LandingPage;

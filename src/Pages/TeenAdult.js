@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
-import { Typography } from "@mui/material";
 import React from "react";
-import teenAdult from "../assets/teenAdult.png";
+import classesImg from "../assets/teenAdult.png";
 import Button from "../components/Button";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import "./styles/EachClasses.css";
 
 const TeenAdult = () => {
   const navigate = useNavigate();
@@ -13,73 +13,63 @@ const TeenAdult = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
+      className="classes-container"
     >
-      <Typography
-        variant="h5"
-        gutterBottom
-        component="div"
-        textAlign="center"
-        letterSpacing="0.2rem"
-        fontWeight="bold"
-        marginTop="2rem"
-      >
-        TEENS & ADULTS
-      </Typography>
-      <TeenAdultContent>
-        <Typography variant="body1" gutterBottom className="description">
-          Teens & Adults Class is for those ages 13 and up. This exclusive
-          program promotes weight loss, physical fitness, flexibility, and
-          self-defense.
-          <br />
-          <br /> Through challenging, yet fun and energizing workouts, students
-          are able to maintain a healthy weight. Furthermore, they learn
-          practical self-defense techniques to protect themselves from dangerous
-          situations.
-        </Typography>
-        <TeenAdultImage>
-          <img src={teenAdult} alt="Teen Adult" className="teen-img" />
-        </TeenAdultImage>
-      </TeenAdultContent>
-      <BackButton>
-        <Button className="classes-btn" onClick={() => navigate(-1)}>
-          Back to Classes
-        </Button>
-      </BackButton>
+      <div className="classes-wrapper">
+        <div className="classes-img">
+          <img src={classesImg} alt="Classes" />
+        </div>
+        <div className="classes-text-wrapper">
+          <AboutHeader>
+            <div className="classes-header">Teen & Adult</div>
+          </AboutHeader>
+
+          <AboutContent className="classes-description-wrapper">
+            <div className="classes-paragraph">
+              Teens & Adults Class is for those ages 13 and up. This exclusive
+              program promotes weight loss, physical fitness, flexibility, and
+              self-defense. <br />
+              <br /> Through challenging, yet fun and energizing workouts,
+              students are able to maintain a healthy weight. Furthermore, they
+              learn practical self-defense techniques to protect themselves from
+              dangerous situations.
+            </div>
+            <BackButton>
+              <Button className="classes-btn" onClick={() => navigate(-1)}>
+                Back to Classes
+              </Button>
+            </BackButton>
+          </AboutContent>
+        </div>
+      </div>
     </motion.div>
   );
 };
 
-const TeenAdultContent = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .description {
-    width: 25rem;
-  }
-  @media screen and (max-width: 700px) {
-    .description {
-      width: 18rem;
-    }
-  }
-  @media screen and (max-width: 1200px) {
-    flex-direction: column-reverse;
-  }
-`;
-const TeenAdultImage = styled.div`
-  @media screen and (max-width: 700px) {
-    .teen-img {
-      width: 20rem;
-    }
-  }
-`;
+const AboutHeader = styled.div``;
+const AboutContent = styled.div``;
 
 const BackButton = styled.div`
-  text-align: center;
-  padding: 1rem;
-  margin-bottom: 4rem;
-  margin-top: 2rem;
-  @media screen and (max-width: 1200px) {
-    padding: 2rem;
+  .classes-btn {
+    margin-top: 3rem;
+    height: 2rem;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .classes-btn span {
+    top: -7.5px;
+  }
+  @media screen and (min-width: 1024px) {
+    .classes-btn {
+      height: 3rem;
+      width: 15rem;
+      font-size: 0.8rem;
+    }
+    .classes-btn span {
+      top: -8.5px;
+    }
   }
 `;
 
