@@ -5,7 +5,6 @@ import teenAdult from "../assets/teenAdult.png";
 import Button from "../components/Button";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import Sidebar from "../components/Sidebar";
 
 const TeenAdult = () => {
   const navigate = useNavigate();
@@ -15,7 +14,6 @@ const TeenAdult = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <Sidebar />
       <Typography
         variant="h5"
         gutterBottom

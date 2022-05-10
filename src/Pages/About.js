@@ -1,10 +1,9 @@
 import styled from "@emotion/styled";
-import { Typography } from "@mui/material";
 import React from "react";
 import "./styles/About.css";
 import { motion } from "framer-motion";
-import background from "../assets/img1.png";
-import Sidebar from "../components/Sidebar";
+import Button from "../components/Button";
+import about from "../assets/about.svg";
 
 const About = () => {
   return (
@@ -14,71 +13,61 @@ const About = () => {
       animate={{ scaleY: 1 }}
       exit={{ scaleY: 0 }}
     >
-      <Sidebar />
-      <img src={background} alt="background" className="background" />
-      <AboutHeader>
-        <Typography
-          variant="h4"
-          marginTop="6rem"
-          gutterBottom
-          component="div"
-          textAlign="center"
-          letterSpacing="0.2rem"
-          fontWeight="bold"
-          className="aboutHeader"
-        >
-          WHAT IS VICTORY TAE KWON DO?
-        </Typography>
-      </AboutHeader>
-      <AboutContent className="paragraph">
-        <Typography variant="caption" fontWeight="bold" gutterBottom>
-          Taekwondo is a Korean martial art that strengthens the mind and body
-          through disciplined training. Tae ("foot"), Kwon ("fist"), and Do
-          ("way") translates to "the way of the foot and fist." <br /> <br />
-          At Victory Taekwondo, we are committed to helping you develop a better
-          attitude, discipline, and respect. Whether you are a kid, teen, or
-          adult, it is important to have a positive “YES, I CAN” attitude
-          because it stimulates self-confidence and personal growth. <br />{" "}
-          <br />
-          We hope to inspire you to achieve your dreams and become future
-          leaders not just in Taekwondo, but also in life.
-        </Typography>
-      </AboutContent>
+      <div className="about-wrapper">
+        <div className="about-img">
+          <img src={about} alt="about" />
+        </div>
+        <div className="about-text-wrapper">
+          <AboutHeader>
+            <div className="aboutHeader">About Us</div>
+          </AboutHeader>
+
+          <AboutContent className="paragraph-wrapper">
+            <div className="paragraph">
+              Taekwondo is a Korean martial art that strengthens the mind and
+              body through disciplined training. Tae ("foot"), Kwon ("fist"),
+              and Do ("way") translates to "the way of the foot and fist."{" "}
+              <br /> <br />
+              At Victory Taekwondo, we are committed to helping you develop a
+              better attitude, discipline, and respect. Whether you are a kid,
+              teen, or adult, it is important to have a positive “YES, I CAN”
+              attitude because it stimulates self-confidence and personal
+              growth. <br /> <br />
+              We hope to inspire you to achieve your dreams and become future
+              leaders not just in Taekwondo, but also in life.
+            </div>
+            <a href="/contact">
+              <Button className="solid-btn">CONTACT US</Button>
+            </a>
+          </AboutContent>
+        </div>
+      </div>
     </motion.div>
   );
 };
 
-const AboutHeader = styled.div`
-  @media screen and (max-width: 700px) {
-    .aboutHeader {
-      font-size: 0.9rem;
-    }
-  }
-  @media screen and (min-width: 700px) {
-    .aboutHeader {
-      font-size: 1.7rem;
-    }
-  }
-`;
+const AboutHeader = styled.div``;
 
 const AboutContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 32rem;
-  margin-top: 3rem;
-  @media screen and (max-width: 700px) {
-    width: 18rem;
-    font-size: 0.2rem;
-    text-align: justify;
+  .solid-btn {
+    margin-top: 2rem;
+    height: 2rem;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  @media screen and (min-width: 700px) {
-    width: 22rem;
-    text-align: justify;
+  .solid-btn span {
+    top: -7.5px;
   }
-  @media screen and (min-width: 1440px) {
-    width: 35rem;
+  @media screen and (min-width: 1024px) {
+    .solid-btn {
+      height: 3rem;
+      font-size: 0.8rem;
+    }
+    .solid-btn span {
+      top: -8.5px;
+    }
   }
 `;
 

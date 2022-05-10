@@ -3,7 +3,6 @@ import React from "react";
 import scheduleImg from "../assets/schedule.png";
 import { motion } from "framer-motion";
 import "./styles/ClassSchedule.css";
-import Sidebar from "../components/Sidebar";
 
 const ClassSchedule = () => {
   return (
@@ -13,7 +12,6 @@ const ClassSchedule = () => {
       animate={{ scaleY: 1 }}
       exit={{ scaleY: 0 }}
     >
-      <Sidebar />
       <Typography
         variant="h5"
         gutterBottom

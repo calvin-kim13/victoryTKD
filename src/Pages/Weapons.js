@@ -5,7 +5,6 @@ import weapons from "../assets/weapons.png";
 import Button from "../components/Button";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import Sidebar from "../components/Sidebar";
 
 const Weapons = () => {
   const navigate = useNavigate();
@@ -15,7 +14,6 @@ const Weapons = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <Sidebar />
       <Typography
         variant="h5"
         gutterBottom

@@ -29,7 +29,7 @@ const Trial = () => {
             <span className="trial-price">ONLY $39</span>!
           </Typography>
           <a href="#contact">
-            <CustomBtn className="solid-btn view-btn">SIGN UP</CustomBtn>
+            <CustomBtn className="outline-btn view-btn">SIGN UP</CustomBtn>
           </a>
         </TrialOffer>
         <TrialIncludes>
@@ -104,7 +104,7 @@ const TrialIncludes = styled.div`
     line-height: 6rem;
   }
   .trial-list {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-left: 1rem;
   }
   @media screen and (max-width: 1000px) {

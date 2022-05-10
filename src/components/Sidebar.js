@@ -10,7 +10,7 @@ import yelp from "../assets/yelp.png";
 import twitter from "../assets/twitter.png";
 
 const Nav = styled.div`
-  background: rgba(0, 0, 0, 0.2);
+  background: linear-gradient(90deg, #ef5350 0%, #3f51b5 100%);
   width: inherit;
   height: 8rem;
   display: flex;
@@ -23,7 +23,7 @@ const Nav = styled.div`
 `;
 
 const NavIcon = styled(Link)`
-  margin-left: 5rem;
+  margin-left: 3rem;
   font-size: 2rem;
   height: 8rem;
   display: flex;
@@ -56,7 +56,7 @@ const SidebarNav = styled.nav`
     &:hover {
       background: #252831;
       opacity: 1;
-      border-left: 4px solid #632ce4;
+      border-left: 4px solid #5c6bc0;
       cursor: pointer;
       font-weight: bold;
       /* padding-left: 2rem; */
@@ -67,7 +67,7 @@ const SidebarNav = styled.nav`
     font-weight: bold;
     opacity: 1;
     background-color: #252831;
-    border-left: 4px solid #632ce4;
+    border-left: 4px solid #5c6bc0;
   }
 `;
 

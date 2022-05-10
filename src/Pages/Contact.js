@@ -5,7 +5,6 @@ import Map from "../components/Map";
 import ContactInfo from "../components/ContactInfo";
 import CustomBtn from "../components/Button";
 import { motion } from "framer-motion";
-import Sidebar from "../components/Sidebar";
 
 const Contact = () => {
   return (
@@ -15,7 +14,6 @@ const Contact = () => {
       exit={{ scaleY: 0 }}
       id="contact"
     >
-      <Sidebar />
       <ContactContainer id="contact">
         <ContactHeader>
           <Typography
@@ -89,7 +87,7 @@ const Contact = () => {
                 inputProps={{ style: { fontSize: 13 } }}
                 required
               />
-              <CustomBtn type="submit" className="solid-btn contact-btn">
+              <CustomBtn type="submit" className="outline-btn contact-btn">
                 SEND
               </CustomBtn>
             </form>
@@ -143,18 +141,21 @@ const ContactContent = styled.div`
     height: 55px;
     width: 19rem;
     margin: 0 auto;
+    font-size: 0.8rem;
+    background: #5c6bc0;
+    color: #fff;
   }
   @media screen and (min-width: 800px) {
     grid-template-columns: 1fr 1fr;
     form {
       width: 70%;
     }
+    .contact-btn {
+      width: 100%;
+    }
   }
   @media screen and (min-width: 1200px) {
     grid-template-columns: 1fr 1fr 1fr;
-    .contact-btn {
-      width: 18rem;
-    }
   }
 `;
 

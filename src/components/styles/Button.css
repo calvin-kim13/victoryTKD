@@ -1,6 +1,6 @@
 .solid-btn {
   border-radius: 4px;
-  background: linear-gradient(to right, #67b26b, #4ca2cb);
+  background: linear-gradient(90deg, #5c6bc0 0%, #ef5350 100%);
   border: none;
   color: #ffffff;
   text-align: center;
@@ -10,7 +10,7 @@
   width: 175px;
   transition: all 0.4s;
   cursor: pointer;
-  margin: 5px;
+  margin: 5px 5px 0 0;
 }
 .solid-btn:active {
   transform: scale(1.05);
@@ -41,8 +41,8 @@
 .outline-btn {
   border-radius: 4px;
   background: transparent;
-  border: 1px solid #4ca2cb;
-  color: #ffffff;
+  border: 1px solid #5c6bc0;
+  color: #5c6bc0;
   text-align: center;
   text-transform: uppercase;
   font-size: 1rem;
@@ -50,7 +50,7 @@
   width: 175px;
   transition: all 0.4s;
   cursor: pointer;
-  margin: 5px;
+  margin: 5px 0 0 5px;
 }
 .outline-btn:active {
   transform: scale(1.05);

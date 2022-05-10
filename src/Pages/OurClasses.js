@@ -9,7 +9,6 @@ import sparring from "../assets/sparring.png";
 import elitecomp from "../assets/elitecomp.png";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import Sidebar from "../components/Sidebar";
 
 const OurClasses = () => {
   return (
@@ -18,7 +17,6 @@ const OurClasses = () => {
       animate={{ scaleY: 1 }}
       exit={{ scaleY: 0 }}
     >
-      <Sidebar />
       <ClassesHeader>
         <Typography
           variant="h5"

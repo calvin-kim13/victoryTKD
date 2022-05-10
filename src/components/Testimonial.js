@@ -7,18 +7,21 @@ const Testimonial = () => {
   return (
     <div className="wrapper">
       <Typography
-        variant="h3"
+        variant="overline"
         fontWeight="bold"
         margin="25px 0"
         textTransform="uppercase"
+        className="testimony-header"
+        fontSize="25px"
       >
         Testimonial
       </Typography>
       <Typography
         variant="overline"
         textAlign="center"
-        fontSize="18px"
-        marginBottom="80px"
+        marginBottom="30px"
+        className="testimony-description"
+        fontSize="13px"
       >
         What our students say about us...
       </Typography>

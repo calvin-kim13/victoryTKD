@@ -4,6 +4,7 @@ import React from "react";
 import { FaYelp, FaFacebook, FaTwitter } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { grey } from "@mui/material/colors";
+import { NavLink } from "react-router-dom";
 const footerColor = grey[900];
 const footerTextColor = grey[200];
 
@@ -23,24 +24,36 @@ const Footer = () => {
           </CompanyHeader>
           <CompanyContent>
             <p>
-              <a href="/about" className="footer-links">
+              {/* <a href="/about" className="footer-links">
                 About
-              </a>
+              </a> */}
+              <NavLink to="/about" className="footer-links">
+                About
+              </NavLink>
             </p>
             <p>
-              <a href="/classes" className="footer-links">
+              {/* <a href="/classes" className="footer-links">
                 Classes
-              </a>
+              </a> */}
+              <NavLink to="/classes" className="footer-links">
+                Classes
+              </NavLink>
             </p>
             <p>
-              <a href="/class-schedule" className="footer-links">
+              {/* <a href="/class-schedule" className="footer-links">
                 Schedule
-              </a>
+              </a> */}
+              <NavLink to="/class-schedule" className="footer-links">
+                Schedule
+              </NavLink>
             </p>
             <p>
-              <a href="/news-board" className="footer-links">
+              {/* <a href="/news-board" className="footer-links">
                 News
-              </a>
+              </a> */}
+              <NavLink to="/news" className="footer-links">
+                News
+              </NavLink>
             </p>
           </CompanyContent>
         </CompanyContainer>
