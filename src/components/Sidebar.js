@@ -12,22 +12,22 @@ import twitter from "../assets/twitter.png";
 const Nav = styled.div`
   background: rgba(0, 0, 0, 0.2);
   width: inherit;
-  height: 10rem;
+  height: 8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   .header-logo {
-    width: 12rem;
-    margin-left: 5rem;
+    width: 11rem;
+    margin-right: 1rem;
   }
 `;
 
 const NavIcon = styled(Link)`
-  margin-right: 5rem;
+  margin-left: 5rem;
   font-size: 2rem;
-  height: 10rem;
+  height: 8rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
 `;
 
@@ -39,7 +39,7 @@ const SidebarNav = styled.nav`
   justify-content: center;
   position: fixed;
   top: 0;
-  right: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
+  left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
   transition: 350ms;
   z-index: 100000;
   .nav-link {
@@ -49,7 +49,7 @@ const SidebarNav = styled.nav`
     align-items: center;
     padding: 20px;
     list-style: none;
-    height: 40px;
+    height: 30px;
     text-decoration: none;
     font-size: 16px;
     opacity: 0.7;
@@ -58,14 +58,14 @@ const SidebarNav = styled.nav`
       opacity: 1;
       border-left: 4px solid #632ce4;
       cursor: pointer;
-      text-transform: uppercase;
       font-weight: bold;
+      /* padding-left: 2rem; */
+      transition: 0.3s ease-in-out all;
     }
   }
   a.active {
     font-weight: bold;
     opacity: 1;
-    text-transform: uppercase;
     background-color: #252831;
     border-left: 4px solid #632ce4;
   }
@@ -104,12 +104,12 @@ const Sidebar = () => {
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav>
-          <div>
-            <img className="header-logo" src={logo} alt="Logo" />
-          </div>
           <NavIcon to="#">
             <FaIcons.FaBars onClick={showSidebar} />
           </NavIcon>
+          <div>
+            <img className="header-logo" src={logo} alt="Logo" />
+          </div>
         </Nav>
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>

@@ -58,7 +58,6 @@ const Trial = () => {
 
 const TrialPage = styled.div`
   height: 85vh;
-  border: 1px solid red;
   padding: 5rem 0;
   display: flex;
   align-items: space-evenly;
