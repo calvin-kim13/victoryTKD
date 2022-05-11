@@ -13,23 +13,26 @@ const Trial = () => {
             <Typography
               className="offer"
               variant="h4"
-              fontWeight="bold"
+              fontWeight="800"
               marginBottom="1rem"
+              fontFamily="Montserrat"
+              // color="#5072a7"
             >
-              EXCLUSIVE OFFER
+              EXCLUSIVE OFFER!
             </Typography>
           </div>
           <Typography
             className="offer-description"
             variant="h6"
             marginBottom="2rem"
+            fontFamily="Montserrat"
           >
             4 week trial that allows you to experience what it's like to be a
             student at Victory Taekwondo for{" "}
             <span className="trial-price">ONLY $39</span>!
           </Typography>
           <a href="#contact">
-            <CustomBtn className="outline-btn view-btn">SIGN UP</CustomBtn>
+            <CustomBtn className="outline-btn view-btn">Interested?</CustomBtn>
           </a>
         </TrialOffer>
         <TrialIncludes>
@@ -64,6 +67,7 @@ const TrialPage = styled.div`
   justify-content: space-evenly;
   flex-direction: column;
   background-color: #f5f5f5;
+  font-family: "Montserrat", sans-serif;
 
   @media screen and (min-width: 1000px) {
     padding: 0;
@@ -83,7 +87,9 @@ const TrialOffer = styled.div`
   width: 21rem;
   .trial-price {
     text-decoration: underline;
-    font-weight: bold;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #5072a7;
   }
   @media screen and (max-width: 1000px) {
     text-align: center;
@@ -114,7 +120,7 @@ const TrialIncludes = styled.div`
       line-height: 5rem;
     }
     .trial-list {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
     }
   }
 `;

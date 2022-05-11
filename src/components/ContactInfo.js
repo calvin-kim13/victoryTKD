@@ -87,6 +87,11 @@ const ContactInfo = () => {
             </a>
           </div>
         </div>
+        <div className="questions-wrapper">
+          <Typography variant="overline" fontSize="9px" fontWeight="bold">
+            questions? Use the form provided and we'll reach out!
+          </Typography>
+        </div>
       </InfoContainer>
     </ContactInfoContainer>
   );
@@ -117,6 +122,7 @@ const InfoContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 0.5rem;
   }
   .social {
     display: flex;
@@ -133,6 +139,9 @@ const InfoContainer = styled.div`
     transform: scale(1.1);
     transition: transform 200ms;
     opacity: 1;
+  }
+  .questions-wrapper {
+    padding-bottom: 1.2rem;
   }
   @media screen and (max-width: 700px) {
     .item {

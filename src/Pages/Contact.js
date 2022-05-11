@@ -39,7 +39,7 @@ const Contact = () => {
               textAlign="center"
               textTransform="uppercase"
             >
-              Ask anything!
+              Send us a message!{" "}
             </Typography>
             <form
               action="https://formsubmit.co/calvinkim1230@gmail.com"
@@ -80,7 +80,7 @@ const Contact = () => {
               />
               <TextField
                 name="message"
-                label="SEND A MESSAGE..."
+                label="SIGN UP OR LET US KNOW IF YOU'RE INTERESTED..."
                 rows="7"
                 multiline
                 className="input"
@@ -103,26 +103,19 @@ const Contact = () => {
 
 const ContactContainer = styled.div`
   height: fit-content;
+  font-family: "Montserrat", sans-serif;
 `;
 
 const ContactHeader = styled.div`
+  height: 18vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 5vh;
-  color: #252831;
-  border-bottom: 1px solid #252831;
-  max-width: 70%;
-  margin: 2rem auto;
-  padding: 0.2rem;
-  @media screen and (min-width: 768px) {
-    max-width: 30%;
-  }
-  @media screen and (min-width: 1024px) {
-    max-width: 25%;
-  }
-  @media screen and (min-width: 1440px) {
-    max-width: 20%;
+  justify-content: center;
+  background-color: #252831;
+  color: white;
+  @media screen and (max-width: 1200px) {
+    height: 10rem;
+    grid-template-columns: 1fr;
   }
 `;
 

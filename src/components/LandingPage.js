@@ -30,8 +30,10 @@ const LandingPage = () => {
               className="victory-tkd"
               fontWeight="bold"
               color="#212121"
+              gutterBottom
             >
-              <span className="home-v">V</span>ICTORY TAEKWONDO
+              <span className="home-v">V</span>ICTORY{" "}
+              <span className="home-t">T</span>AEKWONDO
             </Typography>
             {/* <Typography
             variant="overline"
@@ -54,7 +56,7 @@ const LandingPage = () => {
                 <CustomBtn className="solid-btn">Sign up</CustomBtn>
               </a>
               <a href="#trial-info">
-                <CustomBtn className="outline-btn">Learn More</CustomBtn>
+                <CustomBtn className="outline-btn">See Trial</CustomBtn>
               </a>
             </ButtonWrapper>
           </TextButtonWrapper>
@@ -91,7 +93,7 @@ const LandingPageWrapper = styled.div`
   }
   .three-values {
     font-size: 0.5rem;
-    font-weight: bold;
+    font-weight: bolder;
   }
   @media screen and (min-width: 1024px) {
     .three-values {
@@ -133,8 +135,15 @@ const TextButtonWrapper = styled.div`
     font-size: 4.5rem;
     font-family: "Satisfy", cursive;
   }
+  .home-t {
+    color: #5072a7;
+    /* color: #5072a7; */
+    font-size: 3rem;
+    font-family: "Satisfy", cursive;
+  }
   .victory-tkd {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    font-family: "Montserrat", sans-serif;
   }
   .home-description-wrapper {
     margin-top: -4rem;
@@ -148,8 +157,13 @@ const TextButtonWrapper = styled.div`
     .home-v {
       font-size: 6rem;
     }
+    .home-t {
+      color: #5072a7;
+      /* color: #5072a7; */
+      font-size: 5rem;
+    }
     .victory-tkd {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
     .three-values {
       font-size: 0.8rem;

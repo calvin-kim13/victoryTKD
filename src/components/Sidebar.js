@@ -10,7 +10,8 @@ import yelp from "../assets/yelp.png";
 import twitter from "../assets/twitter.png";
 
 const Nav = styled.div`
-  background: linear-gradient(90deg, #252831 0%, #5072a7 100%);
+  /* background: linear-gradient(90deg, #252831 0%, #5072a7 100%); */
+  background: linear-gradient(90deg, #5072a7 0%, #bbdefb 100%);
   /* background-color: #252831; */
   width: inherit;
   height: 8rem;
@@ -34,6 +35,7 @@ const NavIcon = styled(Link)`
 
 const SidebarNav = styled.nav`
   background: #15171c;
+  font-family: "Montserrat", sans-serif;
   width: 300px;
   height: 100vh;
   display: flex;
@@ -54,14 +56,14 @@ const SidebarNav = styled.nav`
     text-decoration: none;
     font-size: 16px;
     opacity: 0.7;
+    transition: 0.3s ease-in-out all;
     &:hover {
       background: #252831;
       opacity: 1;
       border-left: 4px solid #5c6bc0;
       cursor: pointer;
       font-weight: bold;
-      /* padding-left: 2rem; */
-      transition: 0.3s ease-in-out all;
+      padding-left: 2rem;
     }
   }
   a.active {

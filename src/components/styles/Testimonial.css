@@ -1,5 +1,7 @@
 .wrapper {
-  background: linear-gradient(90deg, #880fc4 0%, #1d39f2 100%);
+  /* background: linear-gradient(90deg, #880fc4 0%, #1d39f2 100%); */
+  background: linear-gradient(90deg, #ef5350 0%, #3d5afe 100%);
+  /* background: linear-gradient(90deg, #e53935 0%, #304ffe 100%); */
   min-height: 85vh;
   margin: 0 auto;
   display: flex;
@@ -11,12 +13,17 @@
   padding: 2rem 0;
 }
 
+.testimony-description {
+  color: rgb(224, 220, 220, 0.8);
+}
+
 .cards {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 1000px;
   margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
 }
 
 .card {
@@ -32,19 +39,20 @@
 }
 
 .card p {
-  font-size: 16px;
+  font-size: 17px;
   margin-top: 40px;
   margin-bottom: 25px;
 }
 
 .card h2 {
-  font-weight: 500;
+  font-weight: bolder;
 }
 
 .card h4 {
   color: #333;
   font-weight: 400;
   font-size: 16px;
+  font-weight: bold;
 }
 
 .quote {
@@ -52,7 +60,7 @@
   position: absolute;
   bottom: 20px;
   right: 25px;
-  color: #b2bec3;
+  color: #bdbdbd;
 }
 
 .card:hover {
@@ -69,7 +77,7 @@
     flex-wrap: wrap;
   }
   .card {
-    width: 200px;
+    width: 220px;
     height: 280px;
     margin: 20px;
   }
@@ -81,8 +89,12 @@
   }
 }
 @media (min-width: 1024px) {
+  .wrapper {
+    justify-content: flex-start;
+  }
   .cards {
     flex-direction: row;
+    margin-top: 4rem;
   }
   .card {
     width: 250px;

@@ -22,6 +22,7 @@ const Testimonial = () => {
         marginBottom="30px"
         className="testimony-description"
         fontSize="13px"
+        fontWeight="bold"
       >
         What our students say about us...
       </Typography>

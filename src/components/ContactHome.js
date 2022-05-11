@@ -39,7 +39,7 @@ const ContactHome = () => {
               textAlign="center"
               textTransform="uppercase"
             >
-              Send an Email directly
+              Send us a message!
             </Typography>
             <form
               action="https://formsubmit.co/calvinkim1230@gmail.com"
@@ -80,7 +80,7 @@ const ContactHome = () => {
               />
               <TextField
                 name="message"
-                label="SEND A MESSAGE..."
+                label="SIGN UP OR LET US KNOW IF YOU'RE INTERESTED..."
                 rows="7"
                 multiline
                 className="input"
@@ -103,6 +103,7 @@ const ContactHome = () => {
 
 const ContactContainer = styled.div`
   height: fit-content;
+  font-family: "Montserrat", sans-serif;
 `;
 
 const ContactHeader = styled.div`
