@@ -4,6 +4,7 @@ import "./styles/About.css";
 import { motion } from "framer-motion";
 import Button from "../components/Button";
 import about from "../assets/about.svg";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -36,9 +37,9 @@ const About = () => {
               We hope to inspire you to achieve your dreams and become future
               leaders not just in Taekwondo, but also in life.
             </div>
-            <a href="/contact">
+            <Link to="/contact">
               <Button className="solid-btn">CONTACT US</Button>
-            </a>
+            </Link>
           </AboutContent>
         </div>
       </div>

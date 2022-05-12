@@ -80,7 +80,7 @@ const SidebarWrap = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
   }
   .header-social-link {
     padding: 0.3rem;
@@ -93,6 +93,11 @@ const SidebarWrap = styled.div`
     transform: scale(1.1);
     transition: transform 200ms;
     opacity: 1;
+  }
+  @media screen and (min-width: 1440px) {
+    .header-social-row {
+      margin-top: 3rem;
+    }
   }
 `;
 

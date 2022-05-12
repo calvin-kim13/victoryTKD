@@ -151,9 +151,9 @@ const InfoContainer = styled.div`
       width: 2rem;
     }
   }
-  @media screen and (max-width: 1200px) {
-    .social {
-      justify-content: center;
+  @media screen and (min-width: 1200px) {
+    .item {
+      font-size: 0.9rem;
     }
   }
 `;
