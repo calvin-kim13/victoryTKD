@@ -97,14 +97,14 @@
     margin-top: 4rem;
   }
   .card {
-    width: 250px;
-    height: 250px;
+    width: 240px;
+    height: 260px;
     margin: 7px;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1400px) {
   .card {
-    width: 380px;
+    width: 360px;
     height: 250px;
     margin: 7px;
   }
