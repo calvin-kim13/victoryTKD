@@ -50,9 +50,9 @@ const SidebarNav = styled.nav`
     color: #e1e9fc;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
     list-style: none;
-    height: 30px;
+    height: 70px;
     text-decoration: none;
     font-size: 16px;
     opacity: 0.7;
@@ -63,7 +63,7 @@ const SidebarNav = styled.nav`
       border-left: 4px solid #5c6bc0;
       cursor: pointer;
       font-weight: bold;
-      padding-left: 2rem;
+      padding-left: 3rem;
     }
   }
   a.active {

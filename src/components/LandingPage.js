@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { Typography } from "@mui/material";
+import { Paper, Typography } from "@mui/material";
 import DownArrow from "../components/DownArrow";
 import CustomBtn from "../components/Button";
 import home from "../assets/home.svg";
@@ -8,19 +8,24 @@ import home from "../assets/home.svg";
 const LandingPage = () => {
   return (
     <LandingPageWrapper>
-      <div className="three-values-wrapper">
+      <Paper
+        elevation={8}
+        style={{ backgroundColor: "#f5f5f5" }}
+        className="three-values-wrapper"
+      >
         <Typography
           variant="overline"
           component="div"
           gutterBottom
           className="three-values"
           color="#212121"
+          padding=".4rem"
         >
           - <span className="color1">BETTER ATTITUDE</span> -{" "}
           <span className="color2">BETTER DISCIPLINE </span> -{" "}
           <span className="color3">BETTER RESPECT </span> -
         </Typography>
-      </div>
+      </Paper>
       <ImageTextWrapper>
         <div className="text-img-wrap">
           <TextButtonWrapper>
@@ -81,12 +86,6 @@ const LandingPageWrapper = styled.div`
     color: #5072a7;
   }
   .three-values-wrapper {
-    height: 15px;
-    padding: 20px 30px;
-    background: rgba(255, 255, 255, 0.6);
-    /* background: linear-gradient(90deg, #5072a7 0%, #d32f2f 100%); */
-    box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.2);
-    transition: 0.5s;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,10 +97,6 @@ const LandingPageWrapper = styled.div`
   @media screen and (min-width: 1024px) {
     .three-values {
       font-size: 1rem;
-    }
-  }
-  @media screen and (min-width: 1440px) {
-    .three-values-wrapper {
     }
   }
 `;
@@ -212,23 +207,23 @@ const ButtonWrapper = styled.div`
   .solid-btn {
     width: 10rem;
     height: 3.5rem;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .outline-btn {
     width: 10rem;
     height: 3.5rem;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   @media screen and (min-width: 1440px) {
     .solid-btn {
       width: 12rem;
-      height: 3.5rem;
-      font-size: 0.8rem;
+      height: 4rem;
+      font-size: 1rem;
     }
     .outline-btn {
       width: 12rem;
-      height: 3.5rem;
-      font-size: 0.8rem;
+      height: 4rem;
+      font-size: 1rem;
     }
   }
 `;

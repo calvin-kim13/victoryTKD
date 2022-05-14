@@ -62,7 +62,7 @@ const BackButton = styled.div`
     align-items: center;
   }
   .classes-btn span {
-    top: -7.5px;
+    top: -9px;
   }
   @media screen and (min-width: 1024px) {
     .classes-btn {
@@ -71,7 +71,7 @@ const BackButton = styled.div`
       font-size: 0.8rem;
     }
     .classes-btn span {
-      top: -8.5px;
+      top: -11px;
     }
   }
 `;

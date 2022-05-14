@@ -59,7 +59,7 @@ const AboutContent = styled.div`
     align-items: center;
   }
   .solid-btn span {
-    top: -7.5px;
+    top: -10px;
   }
   @media screen and (min-width: 1024px) {
     .solid-btn {
@@ -68,7 +68,7 @@ const AboutContent = styled.div`
       font-size: 0.8rem;
     }
     .solid-btn span {
-      top: -8.5px;
+      top: -11px;
     }
   }
 `;

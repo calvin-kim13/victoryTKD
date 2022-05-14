@@ -4,7 +4,11 @@ import "./styles/Zoom.css";
 
 const Zoom = () => {
   return (
-    <Paper elevation={12} className="zoom-wrapper">
+    <Paper
+      elevation={8}
+      className="zoom-wrapper"
+      style={{ backgroundColor: "#f5f5f5" }}
+    >
       <Typography
         variant="h6"
         gutterBottom

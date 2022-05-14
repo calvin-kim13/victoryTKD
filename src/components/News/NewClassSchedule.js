@@ -5,7 +5,11 @@ import scheduleImg from "../../assets/schedule.png";
 
 const NewClassSchedule = () => {
   return (
-    <Paper elevation={12} className="new-class-schedule-wrapper">
+    <Paper
+      elevation={8}
+      className="new-class-schedule-wrapper"
+      style={{ backgroundColor: "#f5f5f5" }}
+    >
       <Typography
         variant="h6"
         gutterBottom

@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { Typography } from "@mui/material";
+import { Paper, Typography } from "@mui/material";
 import grandmasterImg from "../assets/grandmaster.jpg";
 import michaelImg from "../assets/michael.jpg";
-import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import { motion } from "framer-motion";
 
@@ -14,7 +13,7 @@ const Instructors = () => {
       animate={{ scaleY: 1 }}
       exit={{ scaleY: 0 }}
     >
-      <InstructorsHeader>
+      <Paper elevation={8} style={{ backgroundColor: "#f5f5f5" }}>
         <Typography
           variant="h5"
           gutterBottom
@@ -22,14 +21,16 @@ const Instructors = () => {
           textAlign="center"
           letterSpacing="0.2rem"
           fontWeight="bold"
+          padding="2rem"
         >
           MEET THE TEAM
         </Typography>
-      </InstructorsHeader>
+      </Paper>
       <InstructorsContent>
-        <Card
+        <Paper
           sx={{ maxWidth: 800, backgroundColor: "#eee" }}
           className="grand-master"
+          elevation={4}
         >
           <div className="image">
             <img
@@ -70,11 +71,12 @@ const Instructors = () => {
               </ul>
             </Typography>
           </CardContent>
-        </Card>
+        </Paper>
 
-        <Card
+        <Paper
           sx={{ maxWidth: 800, backgroundColor: "#eee" }}
           className="master-michael"
+          elevation={4}
         >
           <div className="image">
             <img src={michaelImg} alt="michael" className="master-img" />
@@ -104,32 +106,11 @@ const Instructors = () => {
               </ul>
             </Typography>
           </CardContent>
-        </Card>
+        </Paper>
       </InstructorsContent>
     </motion.div>
   );
 };
-
-const InstructorsHeader = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 5vh;
-  color: #252831;
-  border-bottom: 1px solid #252831;
-  max-width: 80%;
-  margin: 2rem auto;
-  padding: 0.2rem;
-  @media screen and (min-width: 768px) {
-    max-width: 40%;
-  }
-  @media screen and (min-width: 1024px) {
-    max-width: 30%;
-  }
-  @media screen and (min-width: 1440px) {
-    max-width: 25%;
-  }
-`;
 
 const InstructorsContent = styled.div`
   display: flex;

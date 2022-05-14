@@ -60,8 +60,7 @@ const Trial = () => {
 };
 
 const TrialPage = styled.div`
-  height: 85vh;
-  padding: 5rem 0;
+  height: 100vh;
   display: flex;
   align-items: space-evenly;
   justify-content: space-evenly;
@@ -70,7 +69,7 @@ const TrialPage = styled.div`
   font-family: "Montserrat", sans-serif;
 
   @media screen and (min-width: 1000px) {
-    padding: 0;
+    height: 90vh;
   }
 `;
 

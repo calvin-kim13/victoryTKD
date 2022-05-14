@@ -211,7 +211,7 @@ const CompanyContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   margin-top: 0.5rem;
   @media screen and (min-width: 1200px) {
     width: 20%;
@@ -232,7 +232,7 @@ const CompanyContent = styled.div`
   align-items: center;
   justify-content: center;
   p {
-    line-height: 0.6rem;
+    line-height: 1.5rem;
     margin-bottom: -0.1rem;
   }
   .footer-links {
@@ -250,7 +250,7 @@ const ContactContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   @media screen and (min-width: 1200px) {
     width: 20%;
     height: 50%;
@@ -289,11 +289,12 @@ const ContactContent = styled.div`
     text-decoration: underline;
   }
   .social-links {
-    margin-top: 1.4rem;
+    margin-top: 1rem;
   }
   .social-links a {
     margin: 0.4rem;
     opacity: 0.7;
+    font-size: 1.4rem;
   }
   .social-links a:hover {
     opacity: 1;
@@ -307,7 +308,7 @@ const AddressContainer = styled.div`
   @media screen and (min-width: 1200px) {
     width: 20%;
     height: 50%;
-    margin-top: -6.3rem;
+    margin-top: -4.6rem;
   }
 `;
 

@@ -4,7 +4,11 @@ import "./styles/FakeEmail.css";
 
 const FakeEmail = () => {
   return (
-    <Paper elevation={12} className="fake-email-wrapper">
+    <Paper
+      elevation={8}
+      className="fake-email-wrapper"
+      style={{ backgroundColor: "#f5f5f5" }}
+    >
       <Typography
         variant="h6"
         gutterBottom

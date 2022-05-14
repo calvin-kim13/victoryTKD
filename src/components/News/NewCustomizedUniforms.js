@@ -7,7 +7,11 @@ import pants from "../../assets/pants.png";
 
 const NewCustomizedUniforms = () => {
   return (
-    <Paper elevation={12} className="new-uniform-wrapper">
+    <Paper
+      elevation={8}
+      className="new-uniform-wrapper"
+      style={{ backgroundColor: "#f5f5f5" }}
+    >
       <Typography
         variant="h6"
         gutterBottom

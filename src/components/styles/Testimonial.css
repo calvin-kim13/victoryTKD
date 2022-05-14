@@ -2,7 +2,7 @@
   /* background: linear-gradient(90deg, #880fc4 0%, #1d39f2 100%); */
   background: linear-gradient(90deg, #ef5350 0%, #3d5afe 100%);
   /* background: linear-gradient(90deg, #e53935 0%, #304ffe 100%); */
-  min-height: 85vh;
+  height: fit-content;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,9 @@
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
 }
-
+.yelp-card {
+  width: 1168px;
+}
 .card {
   width: 380px;
   height: 250px;
@@ -38,28 +40,33 @@
   transition: 0.5s;
 }
 
-.card p {
-  font-size: 17px;
+.p {
+  font-size: 14px;
   margin-top: 40px;
   margin-bottom: 25px;
 }
 
-.card h2 {
+.h2 {
   font-weight: bolder;
+  font-size: 19px;
 }
 
-.card h4 {
+.h4 {
   color: #333;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
+}
+
+.yelp-review-wrapper {
+  margin-top: -0.6rem;
 }
 
 .quote {
   font-size: 60px;
   position: absolute;
-  bottom: 20px;
-  right: 25px;
+  bottom: 10px;
+  right: 10px;
   color: #bdbdbd;
 }
 
@@ -77,9 +84,32 @@
     flex-wrap: wrap;
   }
   .card {
-    width: 220px;
-    height: 280px;
+    width: 260px;
+    height: 330px;
     margin: 20px;
+  }
+  .yelp-card {
+    width: 260px;
+    height: 130px;
+    border-radius: 15px;
+    margin: 7px;
+    padding: 20px 30px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+  }
+  .yelp-card img {
+    width: 2rem;
+  }
+  .rating {
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: #fff;
+  }
+  .yelp-card h3 {
+    color: #212121;
+    font-weight: bold;
   }
   .card:hover {
     transform: scale(1.2);
@@ -91,18 +121,28 @@
 @media (min-width: 1024px) {
   .wrapper {
     justify-content: flex-start;
+    height: 90vh;
   }
   .cards {
     flex-direction: row;
-    margin-top: 4rem;
+  }
+  .yelp-card {
+    width: 748px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .card {
     width: 240px;
-    height: 260px;
+    height: 300px;
     margin: 7px;
   }
 }
 @media (min-width: 1400px) {
+  .yelp-card {
+    width: 1108px;
+  }
   .card {
     width: 360px;
     height: 250px;

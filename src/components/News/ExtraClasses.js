@@ -8,7 +8,11 @@ import flyer4 from "../../assets/flyer4.png";
 
 const ExtraClasses = () => {
   return (
-    <Paper elevation={12} className="extra-classes-wrapper">
+    <Paper
+      elevation={8}
+      className="extra-classes-wrapper"
+      style={{ backgroundColor: "#f5f5f5" }}
+    >
       <Typography
         variant="h6"
         gutterBottom

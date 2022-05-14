@@ -131,7 +131,7 @@ const InfoContainer = styled.div`
     padding: 1rem 0 2rem 0;
   }
   .social img {
-    width: 2.5rem;
+    width: 3.2rem;
     padding: 0.7rem;
     opacity: 0.7;
   }
@@ -148,7 +148,7 @@ const InfoContainer = styled.div`
       font-size: 0.8rem;
     }
     .social img {
-      width: 2rem;
+      width: 3rem;
     }
   }
   @media screen and (min-width: 1200px) {

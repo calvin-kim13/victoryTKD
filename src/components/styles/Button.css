@@ -21,7 +21,7 @@
 .solid-btn span {
   cursor: pointer;
   position: relative;
-  top: -1.5px;
+  top: -4px;
   transition: 0.4s;
 }
 .solid-btn span:after {
@@ -61,7 +61,7 @@
 .outline-btn span {
   cursor: pointer;
   position: relative;
-  top: -1.5px;
+  top: -4px;
   transition: 0.4s;
 }
 .outline-btn span:after {
