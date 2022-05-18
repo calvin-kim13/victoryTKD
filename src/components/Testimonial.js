@@ -4,6 +4,7 @@ import "./styles/Testimonial.css";
 import { Typography } from "@mui/material";
 import { Rate } from "antd";
 import yelp from "../assets/yelp.png";
+import Button from "../components/Button";
 
 const Testimonial = () => {
   return (
@@ -18,16 +19,6 @@ const Testimonial = () => {
       >
         Testimonial
       </Typography>
-      <Typography
-        variant="overline"
-        textAlign="center"
-        marginBottom="30px"
-        className="testimony-description"
-        fontSize="13px"
-        fontWeight="bold"
-      >
-        What our students say about us...
-      </Typography>
       <div className="yelp-card">
         <h3>
           <img src={yelp} alt="social link"></img>Yelp Rating:{" "}
@@ -37,6 +28,13 @@ const Testimonial = () => {
           <Rate disabled defaultValue={4.5} allowHalf={true} />
         </div>
         <p>(76 reviews)</p>
+        <a
+          href="https://www.yelp.com/writeareview/biz/GSumnpL1TcBCtjB9vHZI8w?return_url=%2Fbiz%2FGSumnpL1TcBCtjB9vHZI8w&review_origin=biz-details-war-button"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Button className="solid-btn review-btn">Add Review</Button>
+        </a>
       </div>
       <div className="cards">
         <div className="card">

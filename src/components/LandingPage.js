@@ -38,7 +38,7 @@ const LandingPage = () => {
               gutterBottom
             >
               <span className="home-v">V</span>ICTORY{" "}
-              <span className="home-t">T</span>AEKWONDO
+              <span className="home-t">T</span>AEKWONDO{" "}
             </Typography>
             {/* <Typography
             variant="overline"
@@ -127,13 +127,13 @@ const TextButtonWrapper = styled.div`
   .home-v {
     color: #d32f2f;
     /* color: #5072a7; */
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-family: "Satisfy", cursive;
   }
   .home-t {
     color: #5072a7;
     /* color: #5072a7; */
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-family: "Satisfy", cursive;
   }
   .victory-tkd {
@@ -171,13 +171,10 @@ const TextButtonWrapper = styled.div`
   }
   @media screen and (min-width: 1300px) {
     .home-v {
-      font-size: 7rem;
+      font-size: 5rem;
     }
     .victory-tkd {
-      font-size: 2.5rem;
-    }
-    .home-description-wrapper {
-      margin-top: -5rem;
+      font-size: 2rem;
     }
   }
 `;
@@ -198,7 +195,7 @@ const ImageWrapper = styled.div`
     width: 45rem;
     img {
       width: 100%;
-      height: 25rem;
+      // height: 25rem;
     }
   }
 `;
@@ -216,20 +213,18 @@ const ButtonWrapper = styled.div`
   }
   @media screen and (min-width: 1440px) {
     .solid-btn {
-      width: 12rem;
-      height: 4rem;
-      font-size: 1rem;
+      width: 11rem;
+      font-size: 0.8rem;
     }
     .outline-btn {
-      width: 12rem;
-      height: 4rem;
-      font-size: 1rem;
+      width: 11rem;
+      font-size: 0.8rem;
     }
   }
 `;
 
 const ArrowWrapper = styled.div`
-  margin-top: 3rem;
+  // margin-top: 3rem;
 `;
 
 export default LandingPage;

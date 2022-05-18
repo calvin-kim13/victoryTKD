@@ -167,8 +167,7 @@ const Footer = () => {
 };
 
 const FooterWrapper = styled.div`
-  height: 58vh;
-  //   margin-top: 1rem;
+  height: 67vh;
   background-color: #252831;
   color: ${footerTextColor};
   padding: 2rem;
@@ -177,7 +176,7 @@ const FooterWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   @media screen and (min-width: 1200px) {
-    height: 35vh;
+    height: 45vh;
   }
 `;
 
@@ -337,7 +336,7 @@ const CopyrightContainer = styled.div`
     font-size: 0.6rem;
     color: white;
   }
-  margin-top: 2.5rem;
+  margin-top: 1.7rem;
 `;
 
 export default Footer;

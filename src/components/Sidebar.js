@@ -4,10 +4,9 @@ import { Link, NavLink } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import logo from "../assets/logo.png";
-import facebook from "../assets/facebook.png";
-import instagram from "../assets/instagram.png";
-import yelp from "../assets/yelp.png";
-import twitter from "../assets/twitter.png";
+import { FaYelp, FaFacebook, FaTwitter } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import { Tooltip } from "antd";
 
 const Nav = styled.div`
   /* background: linear-gradient(90deg, #252831 0%, #5072a7 100%); */
@@ -21,6 +20,26 @@ const Nav = styled.div`
   .header-logo {
     width: 11rem;
     margin-right: 1rem;
+  }
+  .hamburger-link-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .social-links-header {
+    position: relative;
+    bottom: 25px;
+    left: 25px;
+  }
+  .header-links {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    opacity: 0.7;
+    transition: 0.3s ease-in-out all;
+  }
+  .header-links:hover {
+    opacity: 1;
   }
 `;
 
@@ -87,7 +106,7 @@ const SidebarWrap = styled.div`
   }
   img {
     width: 2.2rem;
-    opacity: 0.7;
+    opacity: 0.9;
   }
   img:hover {
     transform: scale(1.1);
@@ -112,9 +131,73 @@ const Sidebar = () => {
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav>
-          <NavIcon to="#">
-            <FaIcons.FaBars onClick={showSidebar} />
-          </NavIcon>
+          <div className="hamburger-link-wrapper">
+            <NavIcon to="#">
+              <FaIcons.FaBars onClick={showSidebar} />
+            </NavIcon>
+            <div className="social-links-header">
+              <Tooltip placement="bottom" title="Facebook">
+                <a
+                  href="https://www.facebook.com/victorytkdcenter/"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="header-links"
+                >
+                  <FaFacebook
+                    style={{
+                      borderRadius: "50px",
+                      color: "#fff",
+                    }}
+                  />
+                </a>
+              </Tooltip>
+              <Tooltip placement="bottom" title="Instagram">
+                <a
+                  href="https://www.instagram.com/victorytkdcenter/?hl=en"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="header-links"
+                >
+                  <RiInstagramFill
+                    style={{
+                      borderRadius: "50px",
+                      color: "#fff",
+                    }}
+                  />
+                </a>
+              </Tooltip>
+              <Tooltip placement="bottom" title="Yelp">
+                <a
+                  href="https://www.yelp.com/biz/victory-taekwondo-center-whittier?osq=victory+taekwondo"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="header-links"
+                >
+                  <FaYelp
+                    style={{
+                      borderRadius: "50px",
+                      color: "#fff",
+                    }}
+                  />
+                </a>
+              </Tooltip>
+              <Tooltip placement="bottom" title="Twitter">
+                <a
+                  href="https://twitter.com/victorytkd11"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="header-links"
+                >
+                  <FaTwitter
+                    style={{
+                      borderRadius: "50px",
+                      color: "#fff",
+                    }}
+                  />
+                </a>
+              </Tooltip>
+            </div>
+          </div>
           <div>
             <img className="header-logo" src={logo} alt="Logo" />
           </div>
@@ -161,40 +244,6 @@ const Sidebar = () => {
             <NavLink to="/news" className="nav-link" onClick={handleNavClick}>
               News
             </NavLink>
-            <div className="header-social-row">
-              <a
-                href="https://www.facebook.com/victorytkdcenter/"
-                rel="noreferrer"
-                target="_blank"
-                className="header-social-link"
-              >
-                <img src={facebook} alt="social link"></img>
-              </a>
-              <a
-                href="https://www.instagram.com/victorytkdcenter/?hl=en"
-                rel="noreferrer"
-                target="_blank"
-                className="header-social-link"
-              >
-                <img src={instagram} alt="social link"></img>
-              </a>
-              <a
-                href="https://www.yelp.com/biz/victory-taekwondo-center-whittier?osq=victory+taekwondo"
-                rel="noreferrer"
-                target="_blank"
-                className="header-social-link"
-              >
-                <img src={yelp} alt="social link"></img>
-              </a>
-              <a
-                href="https://twitter.com/victorytkd11"
-                rel="noreferrer"
-                target="_blank"
-                className="header-social-link"
-              >
-                <img src={twitter} alt="social link"></img>
-              </a>
-            </div>
           </SidebarWrap>
         </SidebarNav>
       </IconContext.Provider>

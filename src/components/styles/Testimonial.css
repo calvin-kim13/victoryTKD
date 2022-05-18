@@ -71,7 +71,7 @@
 }
 
 .card:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   color: #333;
   background: #fff;
   z-index: 100;
@@ -90,7 +90,7 @@
   }
   .yelp-card {
     width: 260px;
-    height: 130px;
+    height: 180px;
     border-radius: 15px;
     margin: 7px;
     padding: 20px 30px;
@@ -98,6 +98,10 @@
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.2);
     transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .yelp-card img {
     width: 2rem;
@@ -111,27 +115,28 @@
     color: #212121;
     font-weight: bold;
   }
-  .card:hover {
-    transform: scale(1.2);
-    color: #333;
-    background: #fff;
-    z-index: 100;
+  .review-btn {
+    height: 2rem;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .review-btn span {
+    top: -11px;
   }
 }
 @media (min-width: 1024px) {
   .wrapper {
     justify-content: flex-start;
-    height: 90vh;
+    height: fit-content;
+    padding: 3rem;
   }
   .cards {
     flex-direction: row;
   }
   .yelp-card {
     width: 748px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
   .card {
     width: 240px;
@@ -147,11 +152,5 @@
     width: 360px;
     height: 250px;
     margin: 7px;
-  }
-  .card:hover {
-    transform: scale(1.2);
-    color: #333;
-    background: #fff;
-    z-index: 100;
   }
 }

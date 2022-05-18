@@ -49,9 +49,6 @@ const Trial = () => {
             <li>
               04. <span className="trial-list">Lorem ipsum</span>
             </li>
-            <li>
-              04. <span className="trial-list">Lorem ipsum</span>
-            </li>
           </ul>
         </TrialIncludes>
       </TrialContainer>
@@ -86,7 +83,7 @@ const TrialOffer = styled.div`
   width: 21rem;
   .trial-price {
     text-decoration: underline;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 800;
     color: #5072a7;
   }
@@ -99,8 +96,9 @@ const TrialOffer = styled.div`
       font-size: 1.1rem;
     }
     .view-btn {
-      width: 250px;
-      height: 60px;
+      width: 220px;
+      height: 55px;
+      font-size: 0.8rem;
     }
   }
 `;
