@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 import { Paper, Typography } from "@mui/material";
 import DownArrow from "../components/DownArrow";
 import CustomBtn from "../components/Button";
-import home from "../assets/home.svg";
+import home from "../assets/contact1.png";
 
 const LandingPage = () => {
   return (
@@ -183,19 +183,10 @@ const ImageWrapper = styled.div`
   display: none;
   @media screen and (min-width: 1024px) {
     display: block;
-    margin-top: 5rem;
     max-width: 45%;
     img {
       width: 100%;
-      height: 19rem;
-    }
-  }
-  @media screen and (min-width: 1440px) {
-    display: block;
-    width: 45rem;
-    img {
-      width: 100%;
-      // height: 25rem;
+      height: 30rem;
     }
   }
 `;
