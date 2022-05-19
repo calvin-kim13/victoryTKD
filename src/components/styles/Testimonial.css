@@ -129,7 +129,7 @@
 @media (min-width: 1024px) {
   .wrapper {
     justify-content: flex-start;
-    height: fit-content;
+    height: 90vh;
     padding: 3rem;
   }
   .cards {
@@ -145,6 +145,9 @@
   }
 }
 @media (min-width: 1400px) {
+  /* .wrapper {
+    height: 90vh;
+  } */
   .yelp-card {
     width: 1108px;
   }
