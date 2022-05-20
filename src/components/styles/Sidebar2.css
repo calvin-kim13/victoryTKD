@@ -1,0 +1,40 @@
+.drawer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  transition: 350ms;
+  z-index: 100000;
+}
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px;
+  list-style: none;
+  height: 70px;
+  text-decoration: none;
+  font-size: 16px;
+  opacity: 0.7;
+  transition: 0.2s ease-in-out all;
+  width: 100%;
+}
+
+.nav-link:hover {
+  opacity: 1;
+  border-left: 4px solid #5c6bc0;
+  cursor: pointer;
+  font-weight: bold;
+  padding-left: 3rem;
+  background-color: rgba(245, 245, 245, 0.799);
+  color: black;
+}
+
+a.active {
+  font-weight: bold;
+  opacity: 1;
+  border-left: 4px solid #5c6bc0;
+  background-color: rgba(245, 245, 245, 0.799);
+}

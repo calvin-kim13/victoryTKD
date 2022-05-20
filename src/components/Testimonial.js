@@ -5,6 +5,7 @@ import { Typography } from "@mui/material";
 import { Rate } from "antd";
 import yelp from "../assets/yelp.png";
 import Button from "../components/Button";
+import { CarouselTestimony } from "./Carousel";
 
 const Testimonial = () => {
   return (
@@ -36,6 +37,7 @@ const Testimonial = () => {
           <Button className="solid-btn review-btn">Add Review</Button>
         </a>
       </div>
+      <CarouselTestimony />
       <div className="cards">
         <div className="card">
           <div className="p">

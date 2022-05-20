@@ -8,15 +8,11 @@ import weapons from "../assets/weapons.png";
 import sparring from "../assets/sparring.png";
 import elitecomp from "../assets/elitecomp.png";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import Zoom from "react-reveal/Zoom";
 
 const OurClasses = () => {
   return (
-    <motion.div
-      initial={{ scaleY: 0 }}
-      animate={{ scaleY: 1 }}
-      exit={{ scaleY: 0 }}
-    >
+    <Zoom>
       <Paper elevation={8} style={{ backgroundColor: "#f5f5f5" }}>
         <Typography
           variant="h5"
@@ -80,7 +76,7 @@ const OurClasses = () => {
           </div>
         </Link>
       </ClassesContent>
-    </motion.div>
+    </Zoom>
   );
 };
 

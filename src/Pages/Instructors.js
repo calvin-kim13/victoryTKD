@@ -4,15 +4,11 @@ import { Paper, Typography } from "@mui/material";
 import grandmasterImg from "../assets/grandmaster.jpg";
 import michaelImg from "../assets/michael.jpg";
 import CardContent from "@mui/material/CardContent";
-import { motion } from "framer-motion";
+import Zoom from "react-reveal/Zoom";
 
 const Instructors = () => {
   return (
-    <motion.div
-      initial={{ scaleY: 0 }}
-      animate={{ scaleY: 1 }}
-      exit={{ scaleY: 0 }}
-    >
+    <Zoom>
       <Paper elevation={8} style={{ backgroundColor: "#f5f5f5" }}>
         <Typography
           variant="h5"
@@ -108,7 +104,7 @@ const Instructors = () => {
           </CardContent>
         </Paper>
       </InstructorsContent>
-    </motion.div>
+    </Zoom>
   );
 };
 

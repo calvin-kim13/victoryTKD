@@ -3,18 +3,13 @@ import React from "react";
 import classesImg from "../assets/tinyHero.png";
 import Button from "../components/Button";
 import "./styles/EachClasses.css";
-import { motion } from "framer-motion";
+import Zoom from "react-reveal/Zoom";
 import { useNavigate } from "react-router-dom";
 
 const TinyHero = () => {
   const navigate = useNavigate();
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      className="classes-container"
-    >
+    <Zoom>
       <div className="classes-wrapper">
         <div className="classes-img">
           <img src={classesImg} alt="Classes" />
@@ -42,7 +37,7 @@ const TinyHero = () => {
           </AboutContent>
         </div>
       </div>
-    </motion.div>
+    </Zoom>
   );
 };
 

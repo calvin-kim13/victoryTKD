@@ -1,16 +1,12 @@
 import { Paper, Typography } from "@mui/material";
 import React from "react";
 import scheduleImg from "../assets/schedule.png";
-import { motion } from "framer-motion";
+import Zoom from "react-reveal/Zoom";
 import "./styles/ClassSchedule.css";
 
 const ClassSchedule = () => {
   return (
-    <motion.div
-      initial={{ scaleY: 0 }}
-      animate={{ scaleY: 1 }}
-      exit={{ scaleY: 0 }}
-    >
+    <Zoom>
       <Paper elevation={8} style={{ backgroundColor: "#f5f5f5" }}>
         <Typography
           variant="h5"
@@ -31,7 +27,7 @@ const ClassSchedule = () => {
           className="schedule"
         />
       </div>
-    </motion.div>
+    </Zoom>
   );
 };
 

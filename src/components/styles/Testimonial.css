@@ -13,8 +13,12 @@
   padding: 2rem 0;
 }
 
-.testimony-description {
-  color: rgb(224, 220, 220, 0.8);
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
 }
 
 .cards {
@@ -33,7 +37,7 @@
   height: 250px;
   border-radius: 15px;
   margin: 7px;
-  padding: 20px 30px;
+  padding: 0 30px;
   position: relative;
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.2);
@@ -41,20 +45,20 @@
 }
 
 .p {
-  font-size: 14px;
+  font-size: 13px;
   margin-top: 40px;
   margin-bottom: 25px;
 }
 
 .h2 {
   font-weight: bolder;
-  font-size: 19px;
+  font-size: 14px;
 }
 
 .h4 {
   color: #333;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: bold;
 }
 
@@ -63,15 +67,14 @@
 }
 
 .quote {
-  font-size: 60px;
+  font-size: 50px;
   position: absolute;
   bottom: 10px;
   right: 10px;
-  color: #bdbdbd;
 }
 
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
   color: #333;
   background: #fff;
   z-index: 100;
@@ -85,8 +88,8 @@
   }
   .card {
     width: 260px;
-    height: 330px;
-    margin: 20px;
+    height: 280px;
+    margin: 10px;
   }
   .yelp-card {
     width: 260px;
@@ -109,7 +112,7 @@
   .rating {
     font-weight: bolder;
     font-size: 1.3rem;
-    color: #fff;
+    /* color: #fff; */
   }
   .yelp-card h3 {
     color: #212121;
@@ -129,11 +132,11 @@
 @media (min-width: 1024px) {
   .wrapper {
     justify-content: flex-start;
-    height: 90vh;
+    height: 100vh;
     padding: 3rem;
   }
   .cards {
-    flex-direction: row;
+    display: none;
   }
   .yelp-card {
     width: 748px;

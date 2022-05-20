@@ -2,7 +2,7 @@ import { Paper, Typography } from "@mui/material";
 import React from "react";
 import "./styles/Zoom.css";
 
-const Zoom = () => {
+const ZoomInfo = () => {
   return (
     <Paper
       elevation={8}
@@ -69,4 +69,4 @@ const Zoom = () => {
   );
 };
 
-export default Zoom;
+export default ZoomInfo;

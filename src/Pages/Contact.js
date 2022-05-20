@@ -4,16 +4,11 @@ import styled from "@emotion/styled";
 import Map from "../components/Map";
 import ContactInfo from "../components/ContactInfo";
 import CustomBtn from "../components/Button";
-import { motion } from "framer-motion";
+import Zoom from "react-reveal/Zoom";
 
 const Contact = () => {
   return (
-    <motion.div
-      initial={{ scaleY: 0 }}
-      animate={{ scaleY: 1 }}
-      exit={{ scaleY: 0 }}
-      id="contact"
-    >
+    <Zoom>
       <ContactContainer id="contact">
         <ContactHeader>
           <Typography
@@ -97,7 +92,7 @@ const Contact = () => {
           </div>
         </ContactContent>
       </ContactContainer>
-    </motion.div>
+    </Zoom>
   );
 };
 

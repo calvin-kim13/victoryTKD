@@ -1,19 +1,15 @@
 import React from "react";
-import { motion } from "framer-motion";
+import Zoom from "react-reveal/Zoom";
 import NewClassSchedule from "../components/News/NewClassSchedule";
 import NewCustomizedUniforms from "../components/News/NewCustomizedUniforms";
 import ExtraClasses from "../components/News/ExtraClasses";
 import FakeEmail from "../components/News/FakeEmail";
-import Zoom from "../components/News/Zoom";
+import ZoomInfo from "../components/News/ZoomInfo";
 import { Paper, Typography } from "@mui/material";
 
 const News = () => {
   return (
-    <motion.div
-      initial={{ scaleY: 0 }}
-      animate={{ scaleY: 1 }}
-      exit={{ scaleY: 0 }}
-    >
+    <Zoom>
       <Paper elevation={8} style={{ backgroundColor: "#f5f5f5" }}>
         <Typography
           variant="h5"
@@ -31,8 +27,8 @@ const News = () => {
       <NewCustomizedUniforms />
       <ExtraClasses />
       <FakeEmail />
-      <Zoom />
-    </motion.div>
+      <ZoomInfo />
+    </Zoom>
   );
 };
 

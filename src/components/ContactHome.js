@@ -4,16 +4,10 @@ import styled from "@emotion/styled";
 import Map from "../components/Map";
 import ContactInfo from "../components/ContactInfo";
 import CustomBtn from "../components/Button";
-import { motion } from "framer-motion";
 
 const ContactHome = () => {
   return (
-    <motion.div
-      initial={{ scaleY: 0 }}
-      animate={{ scaleY: 1 }}
-      exit={{ scaleY: 0 }}
-      id="contact"
-    >
+    <div id="contact">
       <ContactContainer id="contact">
         <ContactHeader>
           <Typography
@@ -97,7 +91,7 @@ const ContactHome = () => {
           </div>
         </ContactContent>
       </ContactContainer>
-    </motion.div>
+    </div>
   );
 };
 

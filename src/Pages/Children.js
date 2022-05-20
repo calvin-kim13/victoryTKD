@@ -2,19 +2,14 @@ import styled from "@emotion/styled";
 import React from "react";
 import classesImg from "../assets/children.png";
 import Button from "../components/Button";
-import { motion } from "framer-motion";
+import Zoom from "react-reveal/Zoom";
 import { useNavigate } from "react-router-dom";
 import "./styles/EachClasses.css";
 
 const Children = () => {
   const navigate = useNavigate();
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      className="classes-container"
-    >
+    <Zoom>
       <div className="classes-wrapper">
         <div className="classes-img">
           <img src={classesImg} alt="Classes" />
@@ -42,7 +37,7 @@ const Children = () => {
           </AboutContent>
         </div>
       </div>
-    </motion.div>
+    </Zoom>
   );
 };
 

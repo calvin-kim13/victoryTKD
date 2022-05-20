@@ -1,19 +1,14 @@
 import styled from "@emotion/styled";
 import React from "react";
 import "./styles/About.css";
-import { motion } from "framer-motion";
 import Button from "../components/Button";
-import about from "../assets/about.svg";
+import about from "../assets/contact4.png";
 import { Link } from "react-router-dom";
+import Zoom from "react-reveal/Zoom";
 
 const About = () => {
   return (
-    <motion.div
-      className="about-container"
-      initial={{ scaleY: 0 }}
-      animate={{ scaleY: 1 }}
-      exit={{ scaleY: 0 }}
-    >
+    <Zoom>
       <div className="about-wrapper">
         <div className="about-img">
           <img src={about} alt="about" />
@@ -43,7 +38,7 @@ const About = () => {
           </AboutContent>
         </div>
       </div>
-    </motion.div>
+    </Zoom>
   );
 };
 
