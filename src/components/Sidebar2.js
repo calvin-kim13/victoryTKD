@@ -7,6 +7,7 @@ import { RiInstagramFill } from "react-icons/ri";
 import * as FaIcons from "react-icons/fa";
 import logo from "../assets/logo.png";
 import styled from "styled-components";
+import { CloseOutlined } from "@ant-design/icons";
 
 const Sidebar2 = () => {
   const [visible, setVisible] = useState(false);
@@ -93,7 +94,13 @@ const Sidebar2 = () => {
           <img className="header-logo" src={logo} alt="Logo" />
         </div>
       </Nav>
-      <Drawer placement="left" onClose={showDrawer} visible={visible}>
+      <Drawer
+        closeIcon={<CloseOutlined style={{ fontSize: "1.5rem" }} />}
+        width="300px"
+        placement="left"
+        onClose={showDrawer}
+        visible={visible}
+      >
         <div className="drawer-links">
           <NavLink to="/" className="nav-link" onClick={showDrawer}>
             Home
@@ -160,7 +167,7 @@ const Nav = styled.div`
 `;
 
 const NavIcon = styled(Link)`
-  margin-left: 3rem;
+  margin-left: 1rem;
   font-size: 2rem;
   height: 8rem;
   display: flex;

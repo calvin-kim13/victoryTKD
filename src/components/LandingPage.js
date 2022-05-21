@@ -95,6 +95,7 @@ const LandingPageWrapper = styled.div`
     font-weight: bolder;
   }
   @media screen and (min-width: 1024px) {
+    padding-bottom: 4rem;
     .three-values {
       font-size: 1rem;
     }

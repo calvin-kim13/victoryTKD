@@ -8,11 +8,12 @@ import weapons from "../assets/weapons.png";
 import sparring from "../assets/sparring.png";
 import elitecomp from "../assets/elitecomp.png";
 import { Link } from "react-router-dom";
-import Zoom from "react-reveal/Zoom";
+// import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 
 const OurClasses = () => {
   return (
-    <Zoom>
+    <Fade right>
       <Paper elevation={8} style={{ backgroundColor: "#f5f5f5" }}>
         <Typography
           variant="h5"
@@ -76,7 +77,7 @@ const OurClasses = () => {
           </div>
         </Link>
       </ClassesContent>
-    </Zoom>
+    </Fade>
   );
 };
 

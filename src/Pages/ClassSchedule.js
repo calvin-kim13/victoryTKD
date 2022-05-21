@@ -1,12 +1,12 @@
 import { Paper, Typography } from "@mui/material";
 import React from "react";
 import scheduleImg from "../assets/schedule.png";
-import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 import "./styles/ClassSchedule.css";
 
 const ClassSchedule = () => {
   return (
-    <Zoom>
+    <Fade left>
       <Paper elevation={8} style={{ backgroundColor: "#f5f5f5" }}>
         <Typography
           variant="h5"
@@ -27,7 +27,7 @@ const ClassSchedule = () => {
           className="schedule"
         />
       </div>
-    </Zoom>
+    </Fade>
   );
 };
 

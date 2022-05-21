@@ -4,7 +4,7 @@ import React from "react";
 import { FaYelp, FaFacebook, FaTwitter } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { grey } from "@mui/material/colors";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 // const footerColor = grey[900];
 const footerTextColor = grey[200];
 
@@ -27,33 +27,33 @@ const Footer = () => {
               {/* <a href="/about" className="footer-links">
                 About
               </a> */}
-              <NavLink to="/about" className="footer-links">
+              <Link to="/about" className="footer-links">
                 About
-              </NavLink>
+              </Link>
             </p>
             <p>
               {/* <a href="/classes" className="footer-links">
                 Classes
               </a> */}
-              <NavLink to="/classes" className="footer-links">
+              <Link to="/classes" className="footer-links">
                 Classes
-              </NavLink>
+              </Link>
             </p>
             <p>
               {/* <a href="/class-schedule" className="footer-links">
                 Schedule
               </a> */}
-              <NavLink to="/class-schedule" className="footer-links">
+              <Link to="/class-schedule" className="footer-links">
                 Schedule
-              </NavLink>
+              </Link>
             </p>
             <p>
               {/* <a href="/news-board" className="footer-links">
                 News
               </a> */}
-              <NavLink to="/news" className="footer-links">
+              <Link to="/news" className="footer-links">
                 News
-              </NavLink>
+              </Link>
             </p>
           </CompanyContent>
         </CompanyContainer>

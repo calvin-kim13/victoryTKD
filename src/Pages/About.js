@@ -4,11 +4,11 @@ import "./styles/About.css";
 import Button from "../components/Button";
 import about from "../assets/contact4.png";
 import { Link } from "react-router-dom";
-import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 
 const About = () => {
   return (
-    <Zoom>
+    <Fade right>
       <div className="about-wrapper">
         <div className="about-img">
           <img src={about} alt="about" />
@@ -38,7 +38,7 @@ const About = () => {
           </AboutContent>
         </div>
       </div>
-    </Zoom>
+    </Fade>
   );
 };
 

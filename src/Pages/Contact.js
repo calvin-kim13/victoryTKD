@@ -4,11 +4,11 @@ import styled from "@emotion/styled";
 import Map from "../components/Map";
 import ContactInfo from "../components/ContactInfo";
 import CustomBtn from "../components/Button";
-import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 
 const Contact = () => {
   return (
-    <Zoom>
+    <Fade right>
       <ContactContainer id="contact">
         <ContactHeader>
           <Typography
@@ -92,7 +92,7 @@ const Contact = () => {
           </div>
         </ContactContent>
       </ContactContainer>
-    </Zoom>
+    </Fade>
   );
 };
 

@@ -3,16 +3,16 @@ import Trial from "../components/Trial";
 import ContactHome from "../components/ContactHome";
 import Testimonial from "../components/Testimonial";
 import LandingPage from "../components/LandingPage";
-import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 
 const Home = () => {
   return (
-    <Zoom>
+    <Fade left>
       <LandingPage />
       <Trial />
       <Testimonial />
       <ContactHome />
-    </Zoom>
+    </Fade>
   );
 };
 

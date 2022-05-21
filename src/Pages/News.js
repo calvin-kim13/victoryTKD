@@ -1,5 +1,5 @@
 import React from "react";
-import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 import NewClassSchedule from "../components/News/NewClassSchedule";
 import NewCustomizedUniforms from "../components/News/NewCustomizedUniforms";
 import ExtraClasses from "../components/News/ExtraClasses";
@@ -9,7 +9,7 @@ import { Paper, Typography } from "@mui/material";
 
 const News = () => {
   return (
-    <Zoom>
+    <Fade left>
       <Paper elevation={8} style={{ backgroundColor: "#f5f5f5" }}>
         <Typography
           variant="h5"
@@ -28,7 +28,7 @@ const News = () => {
       <ExtraClasses />
       <FakeEmail />
       <ZoomInfo />
-    </Zoom>
+    </Fade>
   );
 };
 
