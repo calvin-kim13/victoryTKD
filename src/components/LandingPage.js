@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { Paper, Typography } from "@mui/material";
-// import DownArrow from "../components/DownArrow";
+import DownArrow from "../components/DownArrow";
 import CustomBtn from "../components/Button";
 import home from "../assets/contact1.png";
 
@@ -29,34 +29,9 @@ const LandingPage = () => {
       <ImageTextWrapper>
         <div className="text-img-wrap">
           <TextButtonWrapper>
-            {/* <Typography
-              variant="overline"
-              component="div"
-              className="victory-tkd"
-              fontWeight="bold"
-              color="#212121"
-              gutterBottom
-            > */}
             <div className="victory-tkd">
               <span className="home-v">V</span>ICTORY <br />
               <span className="home-t">T</span>AEKWONDO{" "}
-            </div>
-            {/* </Typography> */}
-            {/* <Typography
-            variant="overline"
-            component="div"
-            gutterBottom
-            className="three-values"
-            color="#212121"
-          >
-            - BETTER ATTITUDE - BETTER DISCIPLINE - BETTER RESPECT -
-          </Typography> */}
-            <div className="home-description-wrapper">
-              <Typography variant="caption" className="home-description">
-                {/* <span className="color1">BETTER ATTITUDE</span> &#8226;{" "}
-                <span className="color2">BETTER DISCIPLINE </span> &#8226;{" "}
-                <span className="color3">BETTER RESPECT </span> */}
-              </Typography>
             </div>
             <ButtonWrapper>
               <a href="#contact">
@@ -71,9 +46,9 @@ const LandingPage = () => {
             <img src={home} alt="home" />
           </ImageWrapper>
         </div>
-        {/* <ArrowWrapper>
+        <ArrowWrapper>
           <DownArrow className="down-arrow" />
-        </ArrowWrapper> */}
+        </ArrowWrapper>
       </ImageTextWrapper>
     </LandingPageWrapper>
   );
@@ -126,6 +101,7 @@ const TextButtonWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   padding: 1rem;
   .home-v {
     color: #d32f2f;
@@ -142,37 +118,24 @@ const TextButtonWrapper = styled.div`
   .victory-tkd {
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 2rem;
     letter-spacing: 0.2rem;
+    line-height: 6rem;
+    margin-bottom: 1rem;
     font-family: "Montserrat", sans-serif;
-  }
-  .home-description-wrapper {
-    margin-top: -4rem;
-    margin-bottom: 2rem;
-    width: 15rem;
-    text-align: center;
   }
   @media screen and (min-width: 1024px) {
     align-items: flex-start;
     margin-left: 4rem;
+    text-align: left;
     .home-v {
       font-size: 6rem;
     }
     .home-t {
       color: #5072a7;
-      /* color: #5072a7; */
       font-size: 6rem;
     }
     .victory-tkd {
       font-size: 1.8rem;
-    }
-    .three-values {
-      font-size: 0.8rem;
-      margin-top: -5rem;
-    }
-    .home-description-wrapper {
-      width: 20rem;
-      text-align: justify;
     }
   }
   @media screen and (min-width: 1300px) {
@@ -181,9 +144,7 @@ const TextButtonWrapper = styled.div`
     }
     .victory-tkd {
       font-size: 3rem;
-      font-weight: bold;
-      margin-bottom: 3rem;
-      letter-spacing: 0.2rem;
+      line-height: 7.5rem;
     }
   }
   @media screen and (min-width: 1600px) {
@@ -191,10 +152,7 @@ const TextButtonWrapper = styled.div`
       font-size: 7rem;
     }
     .victory-tkd {
-      font-size: 4rem;
-      font-weight: bold;
-      margin-bottom: 3rem;
-      letter-spacing: 0.2rem;
+      font-size: 3rem;
     }
   }
 `;
@@ -212,30 +170,37 @@ const ImageWrapper = styled.div`
 `;
 
 const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .solid-btn {
     width: 10rem;
     height: 3.5rem;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .outline-btn {
     width: 10rem;
     height: 3.5rem;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   @media screen and (min-width: 1440px) {
     .solid-btn {
-      width: 11rem;
-      font-size: 0.8rem;
+      width: 12rem;
     }
     .outline-btn {
-      width: 11rem;
-      font-size: 0.8rem;
+      width: 12rem;
     }
   }
 `;
 
-// const ArrowWrapper = styled.div`
-//   // margin-top: 3rem;
-// `;
+const ArrowWrapper = styled.div`
+  padding: 2rem;
+`;
 
 export default LandingPage;

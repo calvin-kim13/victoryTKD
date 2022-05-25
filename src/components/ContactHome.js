@@ -67,7 +67,7 @@ const ContactHome = () => {
                 inputProps={{ style: { fontSize: 13 } }}
                 required
               />
-              <CustomBtn type="submit" className="outline-btn contact-btn">
+              <CustomBtn type="submit" className="contact-btn">
                 SEND
               </CustomBtn>
             </form>
@@ -137,6 +137,13 @@ const ContactContent = styled.div`
     font-size: 0.8rem;
     background: #5072a7;
     color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+  .contact-btn:hover {
+    transform: scale(1.01);
+    transition: transform 200ms;
   }
   @media screen and (min-width: 800px) {
     grid-template-columns: 1fr 1fr;

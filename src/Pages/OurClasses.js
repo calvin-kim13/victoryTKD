@@ -115,7 +115,7 @@ const ClassesContent = styled.div`
     color: white;
     position: absolute;
     font-weight: bold;
-    width: 15rem;
+    width: 17rem;
     text-align: center;
   }
   @media screen and (min-width: 1024px) {

@@ -26,7 +26,7 @@
   align-items: flex-start;
 }
 
-.classes-header {
+.eachClasses-header {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   font-weight: bold;
@@ -48,7 +48,7 @@
   .classes-text-wrapper {
     width: 350px;
   }
-  .classes-header {
+  .eachClasses-header {
     font-size: 3.2rem;
   }
 }

@@ -12,7 +12,7 @@ const testimonies = [
   },
   {
     description:
-      "6months at this studio and my Kid has learned so much Discipline, respect and has a great attitude about everyday life! The instructors are very good with kids of all ages! This studio definitely gets 5 STARS.",
+      "6 months at this studio and my Kid has learned so much Discipline, respect and has a great attitude about everyday life! The instructors are very good with kids of all ages! This studio definitely gets 5 STARS.",
     name: "Kristina D.",
     date: "April 19, 2021",
   },

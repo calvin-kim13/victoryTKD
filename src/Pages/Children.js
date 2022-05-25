@@ -16,7 +16,7 @@ const Children = () => {
         </div>
         <div className="classes-text-wrapper">
           <AboutHeader>
-            <div className="classes-header">Children</div>
+            <div className="eachClasses-header">Children</div>
           </AboutHeader>
 
           <AboutContent className="classes-description-wrapper">
@@ -54,7 +54,7 @@ const BackButton = styled.div`
     align-items: center;
   }
   .classes-btn span {
-    top: -9px;
+    top: -10px;
   }
   @media screen and (min-width: 1024px) {
     .classes-btn {

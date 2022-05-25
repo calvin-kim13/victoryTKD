@@ -16,7 +16,7 @@ const Weapons = () => {
         </div>
         <div className="classes-text-wrapper">
           <AboutHeader>
-            <div className="classes-header">Weapons</div>
+            <div className="eachClasses-header">Weapons</div>
           </AboutHeader>
 
           <AboutContent className="classes-description-wrapper">
@@ -52,7 +52,7 @@ const BackButton = styled.div`
     align-items: center;
   }
   .classes-btn span {
-    top: -9px;
+    top: -10px;
   }
   @media screen and (min-width: 1024px) {
     .classes-btn {
@@ -61,7 +61,7 @@ const BackButton = styled.div`
       font-size: 0.8rem;
     }
     .classes-btn span {
-      top: -11px;
+      top: -11.5px;
     }
   }
 `;

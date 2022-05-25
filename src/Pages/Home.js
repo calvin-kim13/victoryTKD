@@ -7,12 +7,20 @@ import Fade from "react-reveal/Fade";
 
 const Home = () => {
   return (
-    <Fade left>
-      <LandingPage />
-      <Trial />
-      <Testimonial />
-      <ContactHome />
-    </Fade>
+    <>
+      <Fade left>
+        <LandingPage />
+      </Fade>
+      <Fade right>
+        <Trial />
+      </Fade>
+      <Fade left>
+        <Testimonial />
+      </Fade>
+      <Fade right>
+        <ContactHome />
+      </Fade>
+    </>
   );
 };
 

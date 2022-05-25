@@ -63,7 +63,7 @@ const AboutContent = styled.div`
       font-size: 0.8rem;
     }
     .solid-btn span {
-      top: -11px;
+      top: -12px;
     }
   }
 `;

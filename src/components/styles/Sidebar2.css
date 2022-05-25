@@ -24,17 +24,18 @@
 
 .nav-link:hover {
   opacity: 1;
-  border-left: 4px solid #5c6bc0;
+  border-left: 4px solid #5072a7;
   cursor: pointer;
   font-weight: bold;
   padding-left: 3rem;
   background-color: rgba(245, 245, 245, 0.799);
-  color: black;
+  color: #5072a7;
 }
 
 a.active {
   font-weight: bold;
   opacity: 1;
-  border-left: 4px solid #5c6bc0;
+  border-left: 4px solid #5072a7;
   background-color: rgba(245, 245, 245, 0.799);
+  color: #5072a7;
 }

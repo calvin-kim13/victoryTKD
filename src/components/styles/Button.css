@@ -21,7 +21,7 @@
 .solid-btn span {
   cursor: pointer;
   position: relative;
-  top: -4px;
+  top: -13.2px;
   transition: 0.4s;
 }
 .solid-btn span:after {
@@ -61,7 +61,7 @@
 .outline-btn span {
   cursor: pointer;
   position: relative;
-  top: -4px;
+  top: -13.2px;
   transition: 0.4s;
 }
 .outline-btn span:after {
@@ -83,6 +83,13 @@
 .view-btn {
   width: 300px;
   height: 80px;
+}
+
+.view-btn span {
+  cursor: pointer;
+  position: relative;
+  top: -4.7px;
+  transition: 0.4s;
 }
 
 .header-btn {
