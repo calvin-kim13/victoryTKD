@@ -13,7 +13,7 @@ const ContactHome = () => {
           <div className="talk">CONTACT US</div>
         </ContactHeader>
         <ContactContent>
-          <ContactInfo />
+          {/* <ContactInfo /> */}
           <div className="send-message">
             <Typography
               variant="h6"
@@ -72,6 +72,7 @@ const ContactHome = () => {
               </CustomBtn>
             </form>
           </div>
+          <ContactInfo />
           <div className="map">
             <Map />
           </div>

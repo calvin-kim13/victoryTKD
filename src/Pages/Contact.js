@@ -14,7 +14,7 @@ const Contact = () => {
           <div className="talk">CONTACT US</div>
         </ContactHeader>
         <ContactContent>
-          <ContactInfo />
+          {/* <ContactInfo /> */}
           <div className="send-message">
             <Typography
               variant="h6"
@@ -73,6 +73,7 @@ const Contact = () => {
               </CustomBtn>
             </form>
           </div>
+          <ContactInfo />
           <div className="map">
             <Map />
           </div>
