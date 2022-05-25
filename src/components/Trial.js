@@ -89,6 +89,7 @@ const TrialOffer = styled.div`
   }
   @media screen and (max-width: 1000px) {
     text-align: center;
+    margin-bottom: 2rem;
     .offer {
       font-size: 1.5rem;
     }
