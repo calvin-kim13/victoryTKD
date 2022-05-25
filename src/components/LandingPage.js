@@ -140,11 +140,12 @@ const TextButtonWrapper = styled.div`
   }
   @media screen and (min-width: 1300px) {
     .home-v {
-      font-size: 6rem;
+      font-size: 5.5rem;
     }
     .victory-tkd {
-      font-size: 3rem;
-      line-height: 7.5rem;
+      font-size: 2rem;
+      line-height: 6rem;
+      margin-top: 4rem;
     }
   }
   @media screen and (min-width: 1600px) {
@@ -153,6 +154,7 @@ const TextButtonWrapper = styled.div`
     }
     .victory-tkd {
       font-size: 3rem;
+      margin-top: 0;
     }
   }
 `;
@@ -160,6 +162,14 @@ const TextButtonWrapper = styled.div`
 const ImageWrapper = styled.div`
   display: none;
   @media screen and (min-width: 1024px) {
+    display: block;
+    max-width: 45%;
+    img {
+      width: 100%;
+      height: 30rem;
+    }
+  }
+  @media screen and (min-width: 1600px) {
     display: block;
     max-width: 45%;
     img {
