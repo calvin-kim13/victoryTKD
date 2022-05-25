@@ -5,23 +5,14 @@ import NewCustomizedUniforms from "../components/News/NewCustomizedUniforms";
 import ExtraClasses from "../components/News/ExtraClasses";
 import FakeEmail from "../components/News/FakeEmail";
 import ZoomInfo from "../components/News/ZoomInfo";
-import { Paper, Typography } from "@mui/material";
+import { Paper } from "@mui/material";
+import "./styles/News.css";
 
 const News = () => {
   return (
     <Fade left>
       <Paper elevation={8} style={{ backgroundColor: "#f5f5f5" }}>
-        <Typography
-          variant="h3"
-          gutterBottom
-          component="div"
-          textAlign="center"
-          letterSpacing="0.2rem"
-          fontWeight="bold"
-          padding="2rem"
-        >
-          NEWS BOARD
-        </Typography>
+        <div className="news-header">NEWS BOARD</div>
       </Paper>
       <NewClassSchedule />
       <NewCustomizedUniforms />

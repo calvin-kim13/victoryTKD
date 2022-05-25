@@ -1,0 +1,13 @@
+.classes-header {
+  text-align: center;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .classes-header {
+    font-size: 40px;
+  }
+}

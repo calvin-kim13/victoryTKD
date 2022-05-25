@@ -8,17 +8,7 @@ const ClassSchedule = () => {
   return (
     <Fade left>
       <Paper elevation={8} style={{ backgroundColor: "#f5f5f5" }}>
-        <Typography
-          variant="h3"
-          gutterBottom
-          component="div"
-          textAlign="center"
-          letterSpacing="0.2rem"
-          fontWeight="bold"
-          padding="2rem"
-        >
-          CLASS SCHEDULE
-        </Typography>
+        <div className="schedule-header">CLASS SCHEDULE</div>
       </Paper>
       <div className="class-schedule-container">
         <img

@@ -5,22 +5,13 @@ import grandmasterImg from "../assets/grandmaster.jpg";
 import michaelImg from "../assets/michael.jpg";
 import CardContent from "@mui/material/CardContent";
 import Fade from "react-reveal/Fade";
+import "./styles/Instructors.css";
 
 const Instructors = () => {
   return (
     <Fade left>
       <Paper elevation={8} style={{ backgroundColor: "#f5f5f5" }}>
-        <Typography
-          variant="h3"
-          gutterBottom
-          component="div"
-          textAlign="center"
-          letterSpacing="0.2rem"
-          fontWeight="bold"
-          padding="2rem"
-        >
-          MEET THE TEAM
-        </Typography>
+        <div className="instructor-header">INSTRUCTORS</div>
       </Paper>
       <InstructorsContent>
         <Paper
@@ -42,13 +33,17 @@ const Instructors = () => {
               component="div"
               textAlign="center"
               fontWeight="bold"
+              fontSize=""
+              className="title"
             >
               Grand Master Hyun Y. Kim
             </Typography>
             <Typography
               variant="caption"
               color="text.secondary"
-              lineHeight="1.5rem"
+              lineHeight="1.7rem"
+              fontSize=""
+              className="title-description"
             >
               <ul>
                 <li>Founder of Victory Taekwondo Center</li>
@@ -84,13 +79,17 @@ const Instructors = () => {
               component="div"
               textAlign="center"
               fontWeight="bold"
+              fontSize=""
+              className="title"
             >
               Master Michael Guajardo
             </Typography>
             <Typography
               variant="caption"
               color="text.secondary"
-              lineHeight="1.5rem"
+              lineHeight="1.7rem"
+              fontSize=""
+              className="title-description"
             >
               <ul>
                 <li>

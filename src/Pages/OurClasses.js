@@ -10,22 +10,13 @@ import elitecomp from "../assets/elitecomp.png";
 import { Link } from "react-router-dom";
 // import Zoom from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
+import "./styles/Class.css";
 
 const OurClasses = () => {
   return (
     <Fade right>
       <Paper elevation={8} style={{ backgroundColor: "#f5f5f5" }}>
-        <Typography
-          variant="h3"
-          gutterBottom
-          component="div"
-          textAlign="center"
-          letterSpacing="0.2rem"
-          fontWeight="bold"
-          padding="2rem"
-        >
-          CLASSES WE OFFER
-        </Typography>
+        <div className="classes-header">CLASSES</div>
       </Paper>
       <ClassesContent>
         <Link to="/tiny-heroes">

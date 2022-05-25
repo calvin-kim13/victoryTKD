@@ -71,9 +71,9 @@ const LandingPage = () => {
             <img src={home} alt="home" />
           </ImageWrapper>
         </div>
-        <ArrowWrapper>
+        {/* <ArrowWrapper>
           <DownArrow className="down-arrow" />
-        </ArrowWrapper>
+        </ArrowWrapper> */}
       </ImageTextWrapper>
     </LandingPageWrapper>
   );
@@ -176,6 +176,17 @@ const TextButtonWrapper = styled.div`
     }
   }
   @media screen and (min-width: 1300px) {
+    .home-v {
+      font-size: 6rem;
+    }
+    .victory-tkd {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 3rem;
+      letter-spacing: 0.2rem;
+    }
+  }
+  @media screen and (min-width: 1600px) {
     .home-v {
       font-size: 7rem;
     }

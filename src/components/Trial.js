@@ -32,7 +32,7 @@ const Trial = () => {
             <span className="trial-price">ONLY $39</span>!
           </Typography>
           <a href="#contact">
-            <CustomBtn className="outline-btn view-btn">Interested?</CustomBtn>
+            <CustomBtn className="outline-btn view-btn">Sign up</CustomBtn>
           </a>
         </TrialOffer>
         <TrialIncludes>

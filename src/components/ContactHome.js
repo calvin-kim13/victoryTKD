@@ -10,16 +10,7 @@ const ContactHome = () => {
     <div id="contact">
       <ContactContainer id="contact">
         <ContactHeader>
-          <Typography
-            variant="h3"
-            component="div"
-            textAlign="center"
-            letterSpacing="0.2rem"
-            fontWeight="bold"
-            className="talk"
-          >
-            CONTACT US
-          </Typography>
+          <div className="talk">CONTACT US</div>
         </ContactHeader>
         <ContactContent>
           <ContactInfo />
@@ -35,14 +26,10 @@ const ContactHome = () => {
               Sign up for our trial!
             </Typography>
             <form
-              action="https://formsubmit.co/calvinkim1230@gmail.com"
+              action="https://formsubmit.co/victorytkdcenter@gmail.com"
               method="POST"
             >
-              <input
-                type="hidden"
-                name="_subject"
-                value="Taekwondo website form"
-              />
+              <input type="hidden" name="_subject" value="Website form" />
               {/* <input type="hidden" name="_next" value="https://localhost3000/thanks" /> */}
               <TextField
                 type="text"
@@ -73,7 +60,7 @@ const ContactHome = () => {
               />
               <TextField
                 name="message"
-                label="SIGN UP OR LET US KNOW IF YOU'RE INTERESTED..."
+                label="MESSAGE"
                 rows="7"
                 multiline
                 className="input"
@@ -97,6 +84,18 @@ const ContactHome = () => {
 const ContactContainer = styled.div`
   height: fit-content;
   font-family: "Montserrat", sans-serif;
+  .talk {
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+  @media screen and (min-width: 1001px) {
+    .talk {
+      font-size: 40px;
+    }
+  }
 `;
 
 const ContactHeader = styled.div`
