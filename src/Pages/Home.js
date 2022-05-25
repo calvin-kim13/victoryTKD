@@ -1,6 +1,6 @@
 import React from "react";
 import Trial from "../components/Trial";
-import ContactHome from "../components/ContactHome";
+import Contact from "../Pages/Contact";
 import Testimonial from "../components/Testimonial";
 import LandingPage from "../components/LandingPage";
 import Fade from "react-reveal/Fade";
@@ -18,7 +18,7 @@ const Home = () => {
         <Testimonial />
       </Fade>
       <Fade right>
-        <ContactHome />
+        <Contact />
       </Fade>
     </>
   );

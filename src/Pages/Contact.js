@@ -1,10 +1,10 @@
 import React from "react";
-import { Typography, TextField } from "@mui/material";
+import { Typography } from "@mui/material";
 import styled from "@emotion/styled";
 import Map from "../components/Map";
 import ContactInfo from "../components/ContactInfo";
-import CustomBtn from "../components/Button";
 import Fade from "react-reveal/Fade";
+import Form from "../components/Form";
 
 const Contact = () => {
   return (
@@ -26,52 +26,7 @@ const Contact = () => {
             >
               Sign up for our trial!{" "}
             </Typography>
-            <form
-              action="https://formsubmit.co/victorytkdcenter@gmail.com"
-              method="POST"
-            >
-              <input type="hidden" name="_subject" value="Website form" />
-              {/* <input type="hidden" name="_next" value="https://localhost3000/thanks" /> */}
-              <TextField
-                type="text"
-                name="name"
-                label="NAME"
-                className="input "
-                size="small"
-                inputProps={{ style: { fontSize: 13 } }}
-                required
-              />
-              <TextField
-                type="email"
-                name="email"
-                label="EMAIL"
-                className="input"
-                size="small"
-                inputProps={{ style: { fontSize: 13 } }}
-                required
-              />
-              <TextField
-                type="phone"
-                name="phone"
-                label="PHONE"
-                className="input"
-                size="small"
-                inputProps={{ style: { fontSize: 13 } }}
-                required
-              />
-              <TextField
-                name="message"
-                label="MESSAGE"
-                rows="7"
-                multiline
-                className="input"
-                inputProps={{ style: { fontSize: 13 } }}
-                required
-              />
-              <CustomBtn type="submit" className="contact-btn">
-                SEND
-              </CustomBtn>
-            </form>
+            <Form />
           </div>
           <ContactInfo />
           <div className="map">
@@ -129,9 +84,10 @@ const ContactContent = styled.div`
   }
   .input {
     margin-bottom: 0.7rem;
-  }
-  .input label {
-    font-size: 0.7rem;
+    border: 1px solid grey;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 5px;
   }
   .contact-btn {
     height: 55px;
@@ -146,8 +102,10 @@ const ContactContent = styled.div`
     border-radius: 5px;
   }
   .contact-btn:hover {
-    transform: scale(1.01);
-    transition: transform 200ms;
+    background-color: #002d62;
+  }
+  .contact-btn:active {
+    transform: scale(1.03);
   }
   @media screen and (min-width: 800px) {
     grid-template-columns: 1fr 1fr;
