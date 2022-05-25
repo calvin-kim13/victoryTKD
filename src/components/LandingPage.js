@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { Paper, Typography } from "@mui/material";
-import DownArrow from "../components/DownArrow";
+// import DownArrow from "../components/DownArrow";
 import CustomBtn from "../components/Button";
 import home from "../assets/contact1.png";
 
@@ -234,8 +234,8 @@ const ButtonWrapper = styled.div`
   }
 `;
 
-const ArrowWrapper = styled.div`
-  // margin-top: 3rem;
-`;
+// const ArrowWrapper = styled.div`
+//   // margin-top: 3rem;
+// `;
 
 export default LandingPage;

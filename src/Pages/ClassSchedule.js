@@ -1,4 +1,4 @@
-import { Paper, Typography } from "@mui/material";
+import { Paper } from "@mui/material";
 import React from "react";
 import scheduleImg from "../assets/schedule.png";
 import Fade from "react-reveal/Fade";
