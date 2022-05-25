@@ -31,7 +31,7 @@ const OurClasses = () => {
         <Link to="/tiny-heroes">
           <div className="paper-container">
             <img src={tinyHero} alt="tinyhero" />
-            <Typography className="title" variant="overline">
+            <Typography className="title" variant="overline" fontSize="20px">
               Tiny heroes <span />
             </Typography>
           </div>
@@ -39,7 +39,7 @@ const OurClasses = () => {
         <Link to="/children">
           <div className="paper-container">
             <img src={children} alt="children" />
-            <Typography className="title" variant="overline">
+            <Typography className="title" variant="overline" fontSize="20px">
               children
             </Typography>
           </div>
@@ -47,7 +47,7 @@ const OurClasses = () => {
         <Link to="/teen-adult">
           <div className="paper-container">
             <img src={teenAdult} alt="teenAdult" />
-            <Typography className="title" variant="overline">
+            <Typography className="title" variant="overline" fontSize="20px">
               teen & adult{" "}
             </Typography>
           </div>
@@ -55,7 +55,7 @@ const OurClasses = () => {
         <Link to="/weapons">
           <div className="paper-container">
             <img src={weapons} alt="weapons" />
-            <Typography className="title" variant="overline">
+            <Typography className="title" variant="overline" fontSize="20px">
               weapons{" "}
             </Typography>
           </div>
@@ -63,7 +63,7 @@ const OurClasses = () => {
         <Link to="/sparring">
           <div className="paper-container">
             <img src={sparring} alt="sparring" />
-            <Typography className="title" variant="overline">
+            <Typography className="title" variant="overline" fontSize="20px">
               sparring{" "}
             </Typography>
           </div>
@@ -71,7 +71,7 @@ const OurClasses = () => {
         <Link to="/elite-competition">
           <div className="paper-container">
             <img src={elitecomp} alt="elitecomp" />
-            <Typography className="title" variant="overline">
+            <Typography className="title" variant="overline" fontSize="20px">
               elite competition{" "}
             </Typography>
           </div>
@@ -124,7 +124,7 @@ const ClassesContent = styled.div`
     color: white;
     position: absolute;
     font-weight: bold;
-    width: 10rem;
+    width: 15rem;
     text-align: center;
   }
   @media screen and (min-width: 1024px) {

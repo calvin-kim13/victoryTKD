@@ -20,11 +20,11 @@
 
 @media screen and (min-width: 1024px) {
   .class-schedule-container {
-    height: 80vh;
+    height: 85vh;
   }
   .schedule {
-    width: 50rem;
-    height: 28rem;
+    width: 60rem;
+    height: 30rem;
   }
 }
 @media screen and (min-width: 1440px) {
