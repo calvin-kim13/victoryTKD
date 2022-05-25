@@ -142,6 +142,7 @@ const ContactContent = styled.div`
     border: none;
     cursor: pointer;
     transition: all 0.4s;
+    border-radius: 5px;
   }
   .contact-btn:hover {
     transform: scale(1.01);
