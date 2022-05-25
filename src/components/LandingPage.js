@@ -154,6 +154,7 @@ const TextButtonWrapper = styled.div`
     }
     .victory-tkd {
       font-size: 3rem;
+      line-height: 7.2rem;
       margin-top: 0;
     }
   }
