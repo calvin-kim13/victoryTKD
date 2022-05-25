@@ -11,8 +11,7 @@ const ContactHome = () => {
       <ContactContainer id="contact">
         <ContactHeader>
           <Typography
-            variant="h5"
-            gutterBottom
+            variant="h3"
             component="div"
             textAlign="center"
             letterSpacing="0.2rem"
@@ -33,7 +32,7 @@ const ContactHome = () => {
               textAlign="center"
               textTransform="uppercase"
             >
-              Send us a message!
+              Sign up for our trial!
             </Typography>
             <form
               action="https://formsubmit.co/calvinkim1230@gmail.com"

@@ -21,25 +21,27 @@ const LandingPage = () => {
           color="#212121"
           padding=".4rem"
         >
-          - <span className="color1">BETTER ATTITUDE</span> -{" "}
-          <span className="color2">BETTER DISCIPLINE </span> -{" "}
-          <span className="color3">BETTER RESPECT </span> -
+          <span className="color1">BETTER ATTITUDE</span> &#8226;{" "}
+          <span className="color2">BETTER DISCIPLINE </span> &#8226;{" "}
+          <span className="color3">BETTER RESPECT </span>
         </Typography>
       </Paper>
       <ImageTextWrapper>
         <div className="text-img-wrap">
           <TextButtonWrapper>
-            <Typography
+            {/* <Typography
               variant="overline"
               component="div"
               className="victory-tkd"
               fontWeight="bold"
               color="#212121"
               gutterBottom
-            >
-              <span className="home-v">V</span>ICTORY{" "}
+            > */}
+            <div className="victory-tkd">
+              <span className="home-v">V</span>ICTORY <br />
               <span className="home-t">T</span>AEKWONDO{" "}
-            </Typography>
+            </div>
+            {/* </Typography> */}
             {/* <Typography
             variant="overline"
             component="div"
@@ -51,9 +53,9 @@ const LandingPage = () => {
           </Typography> */}
             <div className="home-description-wrapper">
               <Typography variant="caption" className="home-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-                incidunt dicta reprehenderit architecto magni ipsa voluptatibus
-                vero!
+                {/* <span className="color1">BETTER ATTITUDE</span> &#8226;{" "}
+                <span className="color2">BETTER DISCIPLINE </span> &#8226;{" "}
+                <span className="color3">BETTER RESPECT </span> */}
               </Typography>
             </div>
             <ButtonWrapper>
@@ -128,17 +130,20 @@ const TextButtonWrapper = styled.div`
   .home-v {
     color: #d32f2f;
     /* color: #5072a7; */
-    font-size: 4rem;
+    font-size: 5rem;
     font-family: "Satisfy", cursive;
   }
   .home-t {
     color: #5072a7;
     /* color: #5072a7; */
-    font-size: 3.5rem;
+    font-size: 5rem;
     font-family: "Satisfy", cursive;
   }
   .victory-tkd {
-    font-size: 1.4rem;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    letter-spacing: 0.2rem;
     font-family: "Montserrat", sans-serif;
   }
   .home-description-wrapper {
@@ -156,7 +161,7 @@ const TextButtonWrapper = styled.div`
     .home-t {
       color: #5072a7;
       /* color: #5072a7; */
-      font-size: 5rem;
+      font-size: 6rem;
     }
     .victory-tkd {
       font-size: 1.8rem;
@@ -172,10 +177,13 @@ const TextButtonWrapper = styled.div`
   }
   @media screen and (min-width: 1300px) {
     .home-v {
-      font-size: 5rem;
+      font-size: 7rem;
     }
     .victory-tkd {
-      font-size: 2rem;
+      font-size: 4rem;
+      font-weight: bold;
+      margin-bottom: 3rem;
+      letter-spacing: 0.2rem;
     }
   }
 `;
@@ -187,7 +195,7 @@ const ImageWrapper = styled.div`
     max-width: 45%;
     img {
       width: 100%;
-      height: 30rem;
+      height: 40rem;
     }
   }
 `;

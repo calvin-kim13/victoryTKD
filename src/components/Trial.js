@@ -38,16 +38,16 @@ const Trial = () => {
         <TrialIncludes>
           <ul>
             <li>
-              01. <span className="trial-list">8 Classes</span>
+              01. <span className="trial-list">Only $39</span>
             </li>
             <li>
-              02. <span className="trial-list">Private Assessment</span>
+              02. <span className="trial-list">4 Weeks</span>
             </li>
             <li>
-              03. <span className="trial-list">Lorem ipsum</span>
+              03. <span className="trial-list">8 Classes</span>
             </li>
             <li>
-              04. <span className="trial-list">Lorem ipsum</span>
+              04. <span className="trial-list">Private Assessment</span>
             </li>
           </ul>
         </TrialIncludes>

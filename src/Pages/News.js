@@ -12,7 +12,7 @@ const News = () => {
     <Fade left>
       <Paper elevation={8} style={{ backgroundColor: "#f5f5f5" }}>
         <Typography
-          variant="h5"
+          variant="h3"
           gutterBottom
           component="div"
           textAlign="center"
