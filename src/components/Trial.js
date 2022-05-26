@@ -32,7 +32,7 @@ const Trial = () => {
             <span className="trial-price">ONLY $39</span>!
           </Typography>
           <a href="#contact">
-            <CustomBtn className="outline-btn view-btn">Sign up</CustomBtn>
+            <CustomBtn className="solid-btn view-btn">Sign up</CustomBtn>
           </a>
         </TrialOffer>
         <TrialIncludes>
@@ -64,7 +64,8 @@ const TrialPage = styled.div`
   align-items: space-evenly;
   justify-content: space-evenly;
   flex-direction: column;
-  background: #f5f5f5;
+  background: #bbdefb;
+  // background: linear-gradient(90deg, #bbdefb 0%, #5072a7 100%);
   font-family: "Montserrat", sans-serif;
   @media screen and (min-width: 1000px) {
     height: 90vh;
@@ -83,9 +84,25 @@ const TrialContainer = styled.div`
 
 const TrialOffer = styled.div`
   width: 21rem;
-  // color: #fff;
   .offer {
-    color: #5072a7;
+    // text-shadow: 0 0 10px;
+    // color: #ef0107;
+    // animation: animate 3s infinite linear;
+  }
+  @keyframes animate {
+    0%,
+    100% {
+      color: #fd5c63;
+    }
+    25% {
+      color: #e32636;
+    }
+    50% {
+      color: #ba0021;
+    }
+    75% {
+      color: #ef0107;
+    }
   }
   .offer-description {
     // color: #fff;
