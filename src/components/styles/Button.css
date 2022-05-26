@@ -83,6 +83,8 @@
 .view-btn {
   width: 300px;
   height: 80px;
+  /* border: 1px solid #fff;
+  color: #fff; */
 }
 
 .view-btn span {

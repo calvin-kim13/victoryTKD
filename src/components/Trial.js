@@ -58,15 +58,17 @@ const Trial = () => {
 
 const TrialPage = styled.div`
   height: 100vh;
+  color: #fff;
+  padding-top: 2rem;
   display: flex;
   align-items: space-evenly;
   justify-content: space-evenly;
   flex-direction: column;
-  background-color: #f5f5f5;
+  background: #f5f5f5;
   font-family: "Montserrat", sans-serif;
-
   @media screen and (min-width: 1000px) {
     height: 90vh;
+    padding-top: 0;
   }
 `;
 
@@ -81,11 +83,18 @@ const TrialContainer = styled.div`
 
 const TrialOffer = styled.div`
   width: 21rem;
+  // color: #fff;
+  .offer {
+    color: #5072a7;
+  }
+  .offer-description {
+    // color: #fff;
+  }
   .trial-price {
     text-decoration: underline;
     font-size: 1.4rem;
     font-weight: 800;
-    color: #5072a7;
+    // color: #fff;
   }
   @media screen and (max-width: 1000px) {
     text-align: center;
@@ -105,6 +114,7 @@ const TrialOffer = styled.div`
 `;
 
 const TrialIncludes = styled.div`
+  color: #212121;
   ul li {
     list-style: none;
     line-height: 6rem;
