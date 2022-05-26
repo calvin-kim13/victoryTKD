@@ -135,6 +135,7 @@ const TrialIncludes = styled.div`
   ul li {
     list-style: none;
     line-height: 6rem;
+    font-weight: bold;
   }
   .trial-list {
     font-size: 2.5rem;
