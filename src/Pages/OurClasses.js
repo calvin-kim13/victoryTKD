@@ -14,7 +14,7 @@ import "./styles/Class.css";
 
 const OurClasses = () => {
   return (
-    <Fade right>
+    <Fade up>
       <Paper elevation={8} style={{ backgroundColor: "#f5f5f5" }}>
         <div className="classes-header">CLASSES</div>
       </Paper>

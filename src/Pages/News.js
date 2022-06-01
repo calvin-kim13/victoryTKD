@@ -10,7 +10,7 @@ import "./styles/News.css";
 
 const News = () => {
   return (
-    <Fade left>
+    <Fade up>
       <Paper elevation={8} style={{ backgroundColor: "#f5f5f5" }}>
         <div className="news-header">NEWS BOARD</div>
       </Paper>

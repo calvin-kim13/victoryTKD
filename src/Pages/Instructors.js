@@ -6,10 +6,12 @@ import michaelImg from "../assets/michael.jpg";
 import CardContent from "@mui/material/CardContent";
 import Fade from "react-reveal/Fade";
 import "./styles/Instructors.css";
+import isaacImg from "../assets/isaac.jpeg";
+import chadImg from "../assets/chad.jpeg";
 
 const Instructors = () => {
   return (
-    <Fade left>
+    <Fade up>
       <Paper elevation={8} style={{ backgroundColor: "#f5f5f5" }}>
         <div className="instructor-header">INSTRUCTORS</div>
       </Paper>
@@ -102,6 +104,82 @@ const Instructors = () => {
             </Typography>
           </CardContent>
         </Paper>
+        <Paper
+          sx={{ maxWidth: 800, backgroundColor: "#eee" }}
+          className="grand-master chad"
+          elevation={4}
+        >
+          <div className="image">
+            <img src={chadImg} alt="Master Chad" className="master-img" />
+          </div>
+          <CardContent className="team-text">
+            <Typography
+              gutterBottom
+              variant="overline"
+              component="div"
+              textAlign="center"
+              fontWeight="bold"
+              fontSize=""
+              className="title"
+            >
+              Master Chad Kim
+            </Typography>
+            <Typography
+              variant="caption"
+              color="text.secondary"
+              lineHeight="1.7rem"
+              fontSize=""
+              className="title-description"
+            >
+              <ul>
+                <li>
+                  4th Degree Black Belt certified by the World Taekwondo
+                  Federation (WTF)
+                </li>
+                <li>20+ years of Taekwondo experience</li>
+                <li>World, National, and State Gold Medalist</li>
+              </ul>
+            </Typography>
+          </CardContent>
+        </Paper>
+        <Paper
+          sx={{ maxWidth: 800, backgroundColor: "#eee" }}
+          className="master-michael isaac"
+          elevation={4}
+        >
+          <div className="image">
+            <img src={isaacImg} alt="Instructor Isaac" className="master-img" />
+          </div>
+          <CardContent className="team-text">
+            <Typography
+              gutterBottom
+              variant="overline"
+              component="div"
+              textAlign="center"
+              fontWeight="bold"
+              fontSize=""
+              className="title"
+            >
+              Instructor Isaac Trujillo
+            </Typography>
+            <Typography
+              variant="caption"
+              color="text.secondary"
+              lineHeight="1.7rem"
+              fontSize=""
+              className="title-description"
+            >
+              <ul>
+                <li>
+                  3rd Degree Black Belt certified by the World Taekwondo
+                  Federation (WTF)
+                </li>
+                <li>10 years of Taekwondo experience</li>
+                <li>CA State Gold Medalist</li>
+              </ul>
+            </Typography>
+          </CardContent>
+        </Paper>
       </InstructorsContent>
     </Fade>
   );
@@ -118,16 +196,21 @@ const InstructorsContent = styled.div`
     width: 20rem;
     margin: 1rem auto;
   }
-  .master-michael {
+  .master-michael,
+  .chad,
+  .isaac {
     margin-top: 3rem;
   }
-  ul {
-    padding: 0 2rem;
-  }
+
   ul li {
     list-style: square;
   }
   @media screen and (max-width: 1000px) {
+    ul {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
     .image {
       display: flex;
       align-items: center;

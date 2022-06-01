@@ -8,16 +8,16 @@ import Fade from "react-reveal/Fade";
 const Home = () => {
   return (
     <>
-      <Fade left>
+      <Fade up>
         <LandingPage />
       </Fade>
-      <Fade right>
+      <Fade up>
         <Trial />
       </Fade>
-      <Fade left>
+      <Fade up>
         <Testimonial />
       </Fade>
-      <Fade right>
+      <Fade up>
         <Contact />
       </Fade>
     </>

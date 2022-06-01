@@ -8,7 +8,7 @@ import Fade from "react-reveal/Fade";
 
 const About = () => {
   return (
-    <Fade right>
+    <Fade up>
       <div className="about-wrapper">
         <div className="about-img">
           <img src={about} alt="about" />

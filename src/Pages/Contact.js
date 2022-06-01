@@ -8,7 +8,7 @@ import Form from "../components/Form";
 
 const Contact = () => {
   return (
-    <Fade right>
+    <Fade up>
       <ContactContainer id="contact">
         <ContactHeader>
           <div className="talk">CONTACT US</div>

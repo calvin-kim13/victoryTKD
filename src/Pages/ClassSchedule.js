@@ -6,7 +6,7 @@ import "./styles/ClassSchedule.css";
 
 const ClassSchedule = () => {
   return (
-    <Fade left>
+    <Fade up>
       <Paper elevation={8} style={{ backgroundColor: "#f5f5f5" }}>
         <div className="schedule-header">CLASS SCHEDULE</div>
       </Paper>
