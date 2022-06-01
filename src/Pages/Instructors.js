@@ -160,7 +160,7 @@ const Instructors = () => {
               fontSize=""
               className="title"
             >
-              Instructor Isaac Trujillo
+              Instructor Iszack Trujillo
             </Typography>
             <Typography
               variant="caption"
