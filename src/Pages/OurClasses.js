@@ -9,7 +9,7 @@ import sparring from "../assets/sparring.png";
 import elitecomp from "../assets/elitecomp.png";
 import { Link } from "react-router-dom";
 // import Zoom from "react-reveal/Zoom";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 import "./styles/Class.css";
 
 const OurClasses = () => {

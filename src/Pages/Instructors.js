@@ -4,7 +4,7 @@ import { Paper, Typography } from "@mui/material";
 import grandmasterImg from "../assets/grandmaster.jpg";
 import michaelImg from "../assets/michael.jpg";
 import CardContent from "@mui/material/CardContent";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 import "./styles/Instructors.css";
 import isaacImg from "../assets/isaac.jpeg";
 import chadImg from "../assets/chad.jpeg";

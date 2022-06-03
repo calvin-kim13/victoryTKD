@@ -4,7 +4,7 @@ import "./styles/About.css";
 import Button from "../components/Button";
 import about from "../assets/contact4.png";
 import { Link } from "react-router-dom";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
 const About = () => {
   return (

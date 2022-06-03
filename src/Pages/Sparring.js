@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import React from "react";
 import classesImg from "../assets/sparring.png";
 import Button from "../components/Button";
-import Zoom from "react-reveal/Zoom";
+import { Zoom } from "react-awesome-reveal";
 import { useNavigate } from "react-router-dom";
 import "./styles/EachClasses.css";
 

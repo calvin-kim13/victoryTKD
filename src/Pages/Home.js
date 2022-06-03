@@ -3,21 +3,21 @@ import Trial from "../components/Trial";
 import Contact from "../Pages/Contact";
 import Testimonial from "../components/Testimonial";
 import LandingPage from "../components/LandingPage";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
 const Home = () => {
   return (
     <>
-      <Fade up>
+      <Fade>
         <LandingPage />
       </Fade>
-      <Fade up>
+      <Fade>
         <Trial />
       </Fade>
-      <Fade up>
+      <Fade>
         <Testimonial />
       </Fade>
-      <Fade up>
+      <Fade>
         <Contact />
       </Fade>
     </>

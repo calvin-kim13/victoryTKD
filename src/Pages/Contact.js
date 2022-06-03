@@ -3,7 +3,7 @@ import { Typography } from "@mui/material";
 import styled from "@emotion/styled";
 import Map from "../components/Map";
 import ContactInfo from "../components/ContactInfo";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 import Form from "../components/Form";
 
 const Contact = () => {
